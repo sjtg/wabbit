@@ -12,7 +12,8 @@
   $(function(){
     $('.dropdown-trigger').dropdown();
     $('.fixed-action-btn').floatingActionButton();
-    $('.select').formSelect();
+    $('select').formSelect();
+    $('.timepicker').timepicker();
     $('.sidenav').sidenav();
     $('.parallax').parallax();
     $('.modal').modal();
