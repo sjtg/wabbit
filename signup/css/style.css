@@ -101,10 +101,11 @@ body {
   margin-left: 26%;
 }
 #progressbar li {
+  
   list-style-type: none;
   color: white;
   text-transform: uppercase;
-  font-size: 9px;
+  font-size: 30px;
   width: 10%;
   float: left;
   position: relative;
