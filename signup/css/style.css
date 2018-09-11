@@ -17,12 +17,13 @@ html {
 }
 body {
   font-family: "Open Sans", arial, verdana;
+  font-weight: bold;
+
 }
 /*form styles*/
 #msform {
-  width: 600px;
+  width: 60%;
   margin: 20px auto;
-  margin-top: -20px auto;
   text-align: center;
   position: relative;
 }
@@ -102,14 +103,15 @@ body {
   /*CSS counters to number the steps*/
   counter-reset: step;
   margin-left: 26%;
+  font-size: 30px;
 }
 
 
 #progressbar li {
 
-  list-style-type: none;
+ /* list-style-type: bold;*/
   text-transform: uppercase;
-  font-size: 30px;
+  
   width: 10%;
   float: left;
   position: relative;
