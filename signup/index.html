@@ -117,7 +117,9 @@
       <li></li>
   	</ul>
   	<!-- fieldsets -->
+    <div class="row">
 
+    <div class="col s12">
     <div class="card">
     <!-- <h2 class="fs-title" style="    padding-top: 25px;
     padding-left: 25px;
@@ -159,20 +161,40 @@
              <label for="postal_address">Postal Address</label>
            </div>
 
-      <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add postal address</div> </div>
-    <div class="keywords">
-
-
-
-
-
-    </div>
-    <div class="input-field col s12">
+      <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add postal address</div>
+      <div class="input-field col s12">
         <input  id="webiste_address" type="text" class="validate" required>
         <label for="webiste_address">Website</label>
       </div>
-      <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">You can add an url to give more informations to the writer</div> </div>
+      <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">You can add an url to give more informations to the writer</div>
+       </div>
+    
+
+    </div>
+  </div>
+
+  <div class="right">
+  </div>
+
+      <div class="right">
+
+        <p style="font-size: 10px;">NOTE: Each text box on the left with an ASTERISK () above it is MANDATORILY required to be filled in while text boxes without an ASTERISK () are OPTIONAL. 
+
+        </p>
+        <p style="font-size: 10px;">For example on this section, Company Name, Physical Address and Selecting a province are MANDATORY while the P.O BOX and Website text boxes are OPTIONAL.</p>
       </div>
+      <!--    <div class="right">
+        <div class="col s4">
+        <div class="card red darken-4">
+        
+          <p style="font-size: 10px;">NOTE: Each text box on the left with an ASTERISK () above it is MANDATORILY required to be filled in while text boxes without an ASTERISK () are OPTIONAL. For example on this section, Company Name, Physical Address and Selecting a province are MANDATORY while the P.O BOX and Website text boxes are OPTIONAL.</p>
+        
+      </div> 
+      </div>         
+    </div> -->
+    </div>
+
+  </div>
 
     <!-- end of form -->
 		<input type="button" name="next" class="next action-button" value="Next" required/>
@@ -244,10 +266,7 @@
 	</fieldset>
 
 	<fieldset>
-		<h2 class="fs-title">YOUR BUSINESS HOURS (MANDATORY)</h2>
-		<h3 class="fs-subtitle" style="
-    margin-bottom: 50px;
-">YOUR BUSINESS HOURS (MANDATORY)</h3>
+		<h2 class="fs-title red-text">YOUR BUSINESS HOURS (MANDATORY)</h2>
 <ul id="progressbar">
       <li ></li>
       <li ></li>
@@ -255,20 +274,59 @@
       <li></li>
       <li></li>
     </ul>
-  <div class="input-field col s12">
+  <div class="row">
   <!-- Monday  S<input type="text" class="timepicker">
           <input type="text" class="timepicker"> -->
 
           <!--  start-->
 
-          <div  class="col s6 input-field">
-                <input type="number" id="start2" class="timepicker" />
-                <label for="start2">Start Date</label>
-          </div>
-          <div class="col s5 input-field">
-                <input type="number" id="end2" class="timepicker" />
-            <label for="end2">End Date</label>
-          </div>
+          <table class="centered responsive-table">
+        <thead>
+          <tr class="striped highlight">
+              <th >Day</th>
+              <th for="start">Start</th>
+              <th for="end">End</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td><input type="text"  class="timepicker" /></td>
+            <td><input type="text"  class="timepicker" /></td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td><input type="text"  class="timepicker" /></td>
+            <td><input type="text"  class="timepicker" /></td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+             <td><input type="text"  class="timepicker" /></td>
+            <td><input type="text"  class="timepicker" /></td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td><input type="text"  class="timepicker" /></td>
+            <td><input type="text"  class="timepicker" /></td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+             <td><input type="text"  class="timepicker" /></td>
+            <td><input type="text"  class="timepicker" /></td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+             <td><input type="text"  class="timepicker" /></td>
+            <td><input type="text"  class="timepicker" /></td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+             <td><input type="text"  class="timepicker" /></td>
+            <td><input type="text"  class="timepicker" /></td>
+          </tr>
+        </tbody>
+      </table>
 
           <!-- end -->
 
@@ -278,7 +336,7 @@
 		<input type="button" name="next" class="next action-button" value="Next" />
 	</fieldset>
 
-	<fieldset>
+	<fieldset style="width: 80%;">
 		<h2 class="fs-title">Select Category</h2>
     <ul id="progressbar">
       <li ></li>
@@ -289,7 +347,7 @@
     </ul>
 
  <div class="row">
-            <div class="col s6">
+            <div class="col s4">
               <div class="card">
                 <div class="card-image">
                   <img src="../img/logo.jpg">
