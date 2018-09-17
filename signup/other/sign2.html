@@ -13,15 +13,15 @@
 
       <style>
  
-.tabs .tab a {
+.tabs .tab .progress {
     color: #800000;  
 }
 
-.tabs .tab a:hover {
+.tabs .tab .progress:hover {
     color: #800000;  
 }
 
-.tabs .indicator {
+.tabs .indicator .progress {
     background-color: #800000;
 }
 
@@ -93,10 +93,8 @@
 
             <h3></h3>
           </li>
-            <li class="hoverable"><a href="login/index.html"><span class="red-text text-darken-4">Login</span></a></li>
-            
-      <li class="hoverable"><a href="signup/index.html"><span class="red-text text-darken-4">Sign Up
-            </span></a></li>
+             <li class="hoverable"><a href="../../index.html"><span class="red-text text-darken-4">Home page</span></a></li>
+    <li class="hoverable"><a href="../login/index.html"><span class="red-text text-darken-4">Sign Up
            
           </ul>
 
@@ -108,8 +106,8 @@
 
   <ul class="sidenav" id="mobile-demo">
     <li><a class="brand-logo" href="#">WABBIT</a></li>
-    <li class="hoverable"><a href="login/index.html"><span class="red-text text-darken-4">Login</span></a></li>
-    <li class="hoverable"><a href="signup/index.html"><span class="red-text text-darken-4">Sign Up
+    <li class="hoverable"><a href="../index.html"><span class="red-text text-darken-4">Home page</span></a></li>
+    <li class="hoverable"><a href="../login/index.html"><span class="red-text text-darken-4">Sign Up
     </span></a>
     </li>
       
@@ -122,13 +120,13 @@
    <div class="container">
     <div class="row">
 
-    <div class="container" id="tabs">
-    <div id="welcome" class="col s12">
+    <div class="container center" id="tabs">
+    <div id="welcome" class="col s8">
       <h3 class="center light">Welcome to Wabbit Sign Up page</h3>
       
 
       <div class="card">
-
+      <div class="container">
     <div class="row">
       <div class="input-field col s12">
           <input  id="first_name" type="text" class="validate" required>
@@ -137,7 +135,7 @@
     <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add company</div>
       </div>
     <div class="row">
-      <div class="input-field col s12">
+      <div class="input-field col s12 ">
           <input  id="first_name2" type="text" class="validate" required>
           <label for="first_name2">Physical Address</label>
            <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Physical Address</div>
@@ -181,9 +179,13 @@
        </div>
     
 
+     </div>
     </div>
+
+
       <!-- next  -->
     </div>
+   <!--  <input type="button" name="next" class="btn next action-button" value="Next" required /> -->
   </div>
 
   <!-- end of tab 1 -->
@@ -191,13 +193,11 @@
   <!-- tab 2 -->
 <div id="contact" class="col s12">
 
-      <h1 class="center light">Tab 2 header</h1>
+      <h3 class="center light">Contact details</h3>
       <div class="container">
         <div class="card">
- <!-- <h2 class="fs-title" style="    padding-top: 25px;
- padding-left: 25px;
- text-align: left;
- width: 100%;">Welcome to Wabbit</h2> -->
+        <div class="container">
+
  <div class="row">
    <div class="input-field col s12">
        <input  id="phone_number" type="text" class="validate">
@@ -222,7 +222,7 @@
    <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add email address</div> </div>
 
     <div class="row">
-      <div class="input-field col s12">
+      <div class="input-field ">
           <input  id="email_2" type="email" class="validate">
           <label for="email_2">Email Address (Optional)</label>
         </div>
@@ -235,7 +235,7 @@
 
 
  </div>
- <div class="input-field col s12">
+ <div class="input-field ">
       
       <label for="password">Password</label>
       <input class="password" required name="login[password]" type="password" />
@@ -243,7 +243,7 @@
         <span>Show</span>
       </div>
   </div>
-    <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">
+    <div class="row" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">
     <ul class="red-text">
     NOTE: Please Note that your password should be :
     <li >1. 8 Characters in length</li>
@@ -253,6 +253,8 @@
 
     </ul>
     </div>
+
+  </div>
    </div>
       </div>
       
@@ -264,7 +266,7 @@
 
   <div class="container">
   <div id="dateselect" class="col s10">
-    <h2 class="center light">YOUR BUSINESS HOURS</h2>
+    <h3 class="center light">YOUR BUSINESS HOURS</h3>
 
       <table>
         <thead>
@@ -322,7 +324,7 @@
 
   <!-- tab 4 -->
     <div id="categories" class="col s12">
-      <h2 class="center light">Select Category</h2>
+      <h3 class="center light">Select Category</h3>
    
 
  <div class="row">
@@ -478,34 +480,28 @@
   <!-- end tab 4 -->
 
   <div class="container">
-  <div id="submits" class="col s10">
-    <h2 class="center light">YOUR BUSINESS HOURS</h2>
+  <div id="submits" class="col s8">
 
       <div class="card">
-    <h2 class="fs-title" style="    padding-top: 25px;
-    padding-left: 25px;
-    text-align: left;
-    width: 100%;">Submit</h2>
+      <div class="container">
+    <h3 class="">Submit</h3>
 <div class="row">
       <div class="input-field col s12">
           <p>Click the Submit Button below to complete and view your Wabbit Profile
 <b>(Please note that any changes, modifications or corrections you would like to make on any of the previous sections, can STILL be made on your Wabbit Profile once you proceed with clicking the Submit button below.)</b>
 I accpet the terms of service written below</p>
+
+    
+
         </div>
 
-      </div>
-    <div class="row">
-
-
-      <div class="input-field col s12">
         <label>
         <input type="checkbox" />
         <span>I agree</span>
       </label>
 
-        </div>
-
-
+      </div>
+    
 
        <div class="row">
       <div class="input-field col s12">
@@ -520,6 +516,9 @@ These terms and conditions (the "Terms of Service") govern your access to and us
 
 
       </div>
+
+
+    </div>
     </div>
 
     </div>
