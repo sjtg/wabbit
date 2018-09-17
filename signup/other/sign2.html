@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Wabbit</title>
+  
+  
+  <link rel='stylesheet' href='../../css/materialize.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!-- navbar  -->
+  <div class="navbar-fixed">
+    <nav  class="white">
+
+        <div class="nav-wrapper container ">
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li>
+            
+           <img class="brand-logo" src="../../img/logo.png" width="6%">
+           
+          </li>
+
+          </ul>
+
+          
+          <ul class="right hide-on-med-and-down red-text">
+           
+             <li>
+            <form class="red">
+                <div class="input-field">
+                  <input id="search" type="search">
+                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                  <i class="material-icons">close</i>
+                  <div id="searchResults" ></div>
+                </div>
+              </form>
+
+          </li>
+            <li class="hoverable"><a href="login/index.html"><span class="red-text text-darken-4">Login</span></a></li>
+            
+      <li class="hoverable"><a href="signup/index.html"><span class="red-text text-darken-4">Sign Up
+            </span></a></li>
+           
+          </ul>
+
+        </div>
+
+      </nav>
+    
+  </div>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a class="brand-logo" href="#">WABBIT</a></li>
+       <form class="red">
+                <div class="input-field">
+                  <input id="search" type="search">
+                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                  <i class="material-icons">close</i>
+                  <div id="searchResults" ></div>
+                </div>
+              </form>
+
+          </li>
+            <li class="hoverable"><a href="login/index.html"><span class="red-text text-darken-4">Login</span></a></li>
+            
+      <li class="hoverable"><a href="signup/index.html"><span class="red-text text-darken-4">Sign Up
+            </span></a></li>
+      
+  </ul>
+  <!-- end of navbar -->
+
+
+
+  <!-- content  -->
+
+  <div class="row">
+  <div class="col s12">
+
+    
+    <form id="example-form">
+      <div>
+      <h3>Account</h3>
+      <section>
+        <div class="row">
+          <div class="input-field col s12">
+            <input placeholder="Event title" id="title" type="text" class="validate">
+            <label for="title">Title</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <select>
+          <option value="" disabled selected>Choose event type</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+            <label>Event type</label>
+          </div>
+          <div class="input-field col s6">
+            <select multiple>
+          <option value="" disabled selected>Choose style(s)</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+            <label>Styles</label>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <h3>Profile</h3>
+      <section>
+        <div class="row">
+          <div class="input-field col s6">
+            <label>Begin date</label>
+            <input id="beginDate" type="date" class="datepicker">
+
+          </div>
+          <div class="input-field col s6">
+            <label>End date</label>
+            <input id="endDate" type="date" class="datepicker">
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input placeholder="Who is organizing the event?" id="organizer" type="text" class="validate">
+            <label for="organizer">Organizer</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input placeholder="http://www.mywebsite.com" id="website" type="text" class="validate">
+            <label for="website">Website</label>
+          </div>
+          <div class="input-field col s6">
+            <input placeholder="contact@myweb.com" id="email" type="text" class="validate">
+            <label for="email">Contact email</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="description" class="materialize-textarea" length="140"></textarea>
+            <label for="description">Describe the event in a tweet!</label>
+          </div>
+        </div>
+      </section>
+      </div>
+    </form>
+  </div>
+</div>
+  <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js'></script>
+<script src='https://cdn.rawgit.com/rstaib/jquery-steps/master/build/jquery.steps.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
