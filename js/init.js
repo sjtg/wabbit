@@ -18,6 +18,7 @@
     $('.parallax').parallax();
     $('.modal').modal();
     $('.slider').slider();
+    $('ul.tabs').tabs();
     $('.tooltipped').tooltip();
     $('html, body').animate({
       scrollTop: $(".intro").offset().top

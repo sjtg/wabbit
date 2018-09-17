@@ -8,7 +8,45 @@
   
   <link rel='stylesheet' href='../../css/materialize.min.css'>
 
-      <link rel="stylesheet" href="css/style.css">
+      <!-- <link rel="stylesheet" href="css/style.css"> -->
+      <link rel="stylesheet" href="../css/progress.css">
+
+      <style>
+        #tabs {
+  margin-top: 60px;
+}
+
+.tabs .tab a {
+    color: #800000;  
+}
+
+.tabs .tab a:hover {
+    color: #000000;  
+}
+
+.tabs .indicator {
+    background-color: #81c784;
+}
+
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 302px) {
+    .container {
+        width: 90%;
+    }
+}
+
+    </style>
 
   
 </head>
@@ -24,7 +62,7 @@
           <ul id="nav-mobile" class="left hide-on-med-and-down">
           <li>
             
-           <img class="brand-logo" src="../../img/logo.png" width="6%">
+           <img class="brand-logo" src="../../img/logo.png" width="5%">
            
           </li>
 
@@ -32,17 +70,30 @@
 
           
           <ul class="right hide-on-med-and-down red-text">
-           
+              
              <li>
-            <form class="red">
-                <div class="input-field">
-                  <input id="search" type="search">
-                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                  <i class="material-icons">close</i>
-                  <div id="searchResults" ></div>
-                </div>
-              </form>
+                <ul class="tabs ">
+                    <li class="tab col s3"><a class="active waves-effect waves-light" href="#test1">Tab 1</a></li>
+                    <li class="tab col s3"><a href="#test2" class="waves-effect waves-light">Tab 2</a></li>
+                    <li class="tab col s3"><a href="#test3" class="waves-effect waves-light">Tab 3</a></li>
+                    <li class="tab col s3"><a href="#test4" class="waves-effect waves-light">Tab 4</a></li>
+                  </ul>
+              
+                <!-- <div class="progressbar">
+                    
+                    <span class="progress tabs"></span>
+                    <span class="progress"></span>
+                    <span class="progress"></span>
+                    <span class="progress"></span>
+                    <span class="progress"></span>
+      
+      
+                </div> -->
 
+          </li>
+          <li>
+
+            <h3></h3>
           </li>
             <li class="hoverable"><a href="login/index.html"><span class="red-text text-darken-4">Login</span></a></li>
             
@@ -59,20 +110,10 @@
 
   <ul class="sidenav" id="mobile-demo">
     <li><a class="brand-logo" href="#">WABBIT</a></li>
-       <form class="red">
-                <div class="input-field">
-                  <input id="search" type="search">
-                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                  <i class="material-icons">close</i>
-                  <div id="searchResults" ></div>
-                </div>
-              </form>
-
-          </li>
-            <li class="hoverable"><a href="login/index.html"><span class="red-text text-darken-4">Login</span></a></li>
-            
-      <li class="hoverable"><a href="signup/index.html"><span class="red-text text-darken-4">Sign Up
-            </span></a></li>
+    <li class="hoverable"><a href="login/index.html"><span class="red-text text-darken-4">Login</span></a></li>
+    <li class="hoverable"><a href="signup/index.html"><span class="red-text text-darken-4">Sign Up
+    </span></a>
+    </li>
       
   </ul>
   <!-- end of navbar -->
@@ -80,95 +121,109 @@
 
 
   <!-- content  -->
+   <div class="container">
+    <div class="row">
 
-  <div class="row">
-  <div class="col s12">
-
-    
-    <form id="example-form">
-      <div>
-      <h3>Account</h3>
-      <section>
-        <div class="row">
-          <div class="input-field col s12">
-            <input placeholder="Event title" id="title" type="text" class="validate">
-            <label for="title">Title</label>
+    <div class="container" id="tabs">
+    <div id="test1" class="col s12">
+      <h1 class="center light">Tab 1 header</h1>
+      <p>In hac habitasse platea dictumst. Maecenas nec odio et ante tincidunt tempus. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec orci lectus, aliquam ut, faucibus non, euismod id,
+        nulla. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Vestibulum fringilla pede sit amet augue. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas. Maecenas egestas arcu quis ligula mattis placerat. Phasellus gravida semper nisi.</p>
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card grey lighten-3 hoverable">
+            <div class="card-content grey-text text-darken-4">
+              <span class="card-title">Card Title</span>
+              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="input-field col s6">
-            <select>
-          <option value="" disabled selected>Choose event type</option>
-          <option value="1">Option 1</option>
-          <option value="2">Option 2</option>
-          <option value="3">Option 3</option>
-        </select>
-            <label>Event type</label>
-          </div>
-          <div class="input-field col s6">
-            <select multiple>
-          <option value="" disabled selected>Choose style(s)</option>
-          <option value="1">Option 1</option>
-          <option value="2">Option 2</option>
-          <option value="3">Option 3</option>
-        </select>
-            <label>Styles</label>
+                <div class="col s12 m6">
+          <div class="card grey lighten-3 hoverable">
+            <div class="card-content grey-text text-darken-4">
+              <span class="card-title">Card Title</span>
+              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div>
           </div>
         </div>
-      </section>
-
-
-
-
-      <h3>Profile</h3>
-      <section>
-        <div class="row">
-          <div class="input-field col s6">
-            <label>Begin date</label>
-            <input id="beginDate" type="date" class="datepicker">
-
-          </div>
-          <div class="input-field col s6">
-            <label>End date</label>
-            <input id="endDate" type="date" class="datepicker">
-
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input placeholder="Who is organizing the event?" id="organizer" type="text" class="validate">
-            <label for="organizer">Organizer</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s6">
-            <input placeholder="http://www.mywebsite.com" id="website" type="text" class="validate">
-            <label for="website">Website</label>
-          </div>
-          <div class="input-field col s6">
-            <input placeholder="contact@myweb.com" id="email" type="text" class="validate">
-            <label for="email">Contact email</label>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="input-field col s12">
-            <textarea id="description" class="materialize-textarea" length="140"></textarea>
-            <label for="description">Describe the event in a tweet!</label>
-          </div>
-        </div>
-      </section>
       </div>
-    </form>
+      <p>In hac habitasse platea dictumst. Maecenas nec odio et ante tincidunt tempus. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec orci lectus, aliquam ut, faucibus non, euismod id,
+        nulla. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Vestibulum fringilla pede sit amet augue. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas. Maecenas egestas arcu quis ligula mattis placerat. Phasellus gravida semper nisi.</p>
+    </div>
   </div>
+
+  <!-- end of tab 1 -->
+
+  <!-- tab 2 -->
+<div id="test2" class="col s12">
+      <h1 class="center light">Tab 2 header</h1>
+      <p>In hac habitasse platea dictumst. Maecenas nec odio et ante tincidunt tempus. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec orci lectus, aliquam ut, faucibus non, euismod id,
+        nulla. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Vestibulum fringilla pede sit amet augue. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas. Maecenas egestas arcu quis ligula mattis placerat. Phasellus gravida semper nisi.</p>
+      <p>In hac habitasse platea dictumst. Maecenas nec odio et ante tincidunt tempus. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec orci lectus, aliquam ut, faucibus non, euismod id,
+        nulla. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Vestibulum fringilla pede sit amet augue. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas. Maecenas egestas arcu quis ligula mattis placerat. Phasellus gravida semper nisi.</p>
+      <p>In hac habitasse platea dictumst. Maecenas nec odio et ante tincidunt tempus. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec orci lectus, aliquam ut, faucibus non, euismod id,
+        nulla. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Vestibulum fringilla pede sit amet augue. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas. Maecenas egestas arcu quis ligula mattis placerat. Phasellus gravida semper nisi.</p>
+    </div>
+
+  <!-- end tab 2 -->
+
+  <!-- tab 3 -->
+
+  <div id="test3" class="col s12">
+      <h1 class="center light">Tab 3 header</h1>
+      <p>In hac habitasse platea dictumst. Maecenas nec odio et ante tincidunt tempus. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec orci lectus, aliquam ut, faucibus non, euismod id,
+        nulla. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Vestibulum fringilla pede sit amet augue. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas. Maecenas egestas arcu quis ligula mattis placerat. Phasellus gravida semper nisi.</p>
+      <p>In hac habitasse platea dictumst. Maecenas nec odio et ante tincidunt tempus. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec orci lectus, aliquam ut, faucibus non, euismod id,
+        nulla. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Vestibulum fringilla pede sit amet augue. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas. Maecenas egestas arcu quis ligula mattis placerat. Phasellus gravida semper nisi.</p>
+      <p>In hac habitasse platea dictumst. Maecenas nec odio et ante tincidunt tempus. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec orci lectus, aliquam ut, faucibus non, euismod id,
+        nulla. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Vestibulum fringilla pede sit amet augue. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas. Maecenas egestas arcu quis ligula mattis placerat. Phasellus gravida semper nisi.</p>
+    </div>
+  <!-- end tab 3 -->
+
+
+  <!-- tab 4 -->
+    <div id="test4" class="col s12">
+      <h1 class="center light">Tab 4 header</h1>
+      <p>In hac habitasse platea dictumst. Maecenas nec odio et ante tincidunt tempus. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec orci lectus, aliquam ut, faucibus non, euismod id,
+        nulla. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Vestibulum fringilla pede sit amet augue. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas. Maecenas egestas arcu quis ligula mattis placerat. Phasellus gravida semper nisi.</p>
+      <p>In hac habitasse platea dictumst. Maecenas nec odio et ante tincidunt tempus. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec orci lectus, aliquam ut, faucibus non, euismod id,
+        nulla. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Vestibulum fringilla pede sit amet augue. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas. Maecenas egestas arcu quis ligula mattis placerat. Phasellus gravida semper nisi.</p>
+      <p>In hac habitasse platea dictumst. Maecenas nec odio et ante tincidunt tempus. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec orci lectus, aliquam ut, faucibus non, euismod id,
+        nulla. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Vestibulum fringilla pede sit amet augue. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas. Maecenas egestas arcu quis ligula mattis placerat. Phasellus gravida semper nisi.</p>
+    </div>
+
+  <!-- end tab 4 -->
 </div>
-  <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js'></script>
-<script src='https://cdn.rawgit.com/rstaib/jquery-steps/master/build/jquery.steps.min.js'></script>
+</div>
+<script src="../../js/jquery-3.1.1.min.js"></script>
+  <script src='../../js/init.js'></script>
+<script src="../../js/materialize.js"></script>
+<script src='../../js/materialize.min.js'></script>
+
+<script src='../../js/jquery.steps.min.js'></script>
 
   
 
-    <script  src="js/index.js"></script>
+    <!-- <script  src="js/index.js"></script> -->
 
 
 
