@@ -1,19 +1,10 @@
-/*custom font*/
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
-}
+
 /*basic reset*/
-* {
-  margin: 0;
-  padding: 0;
-}
+
 html {
   height: 100%;
-  background: white;
-  overflow-y: scroll;
+  
+ 
 }
 body {
   font-family: "Open Sans", arial, verdana;
@@ -22,26 +13,29 @@ body {
 }
 /*form styles*/
 #msform {
-  width: 60%;
-  margin: 20px auto;
+  width: 82%;
+  margin: 80px auto;
   text-align: center;
   position: relative;
 }
 #msform fieldset {
-  background: transparent;
+  /*background: transparent;
   border: 0 none;
-  padding: 20px 30px;
-  box-sizing: border-box;
-  width: 80%;
-  margin: 0 10%;
+  */
+  padding: 22px;
+  
+  /*width: 80%;
+  margin: 0 10%;*/
   /*stacking fieldsets above each other*/
-  position: absolute;
+  /*position: absolute;*/
   margin-top:-8%;
 }
 /*Hide all except first fieldset*/
 #msform fieldset:not(:first-of-type) {
   display: none;
 }
+
+
 .down {
   width: 100%;
   position: fixed;
