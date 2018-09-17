@@ -12,16 +12,23 @@
       <link rel="stylesheet" href="../css/progress.css">
 
       <style>
+
+      body{
+        color: #800000;
+        font-style: Monserate;
+      }
  
-.tabs .tab .progress {
+.tabs .tab span {
     color: #800000;  
 }
 
-.tabs .tab .progress:hover {
+.tabs .tab span:hover {
+
     color: #800000;  
 }
 
-.tabs .indicator .progress {
+.tabs .indicator  {
+    padding-bottom: 25px;
     background-color: #800000;
 }
 
@@ -43,7 +50,36 @@
     }
 }
 
+  
+    .centereds {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    }
+
+    .centered1 {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    }
+
+    .centered2 {
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    }
+
+
     </style>
+
+    <script type="text/javascript">
+  $(document).ready(function() {
+  $('ul.tabs').tabs();
+  $("#btnContinue").click(function() {
+    $('ul.tabs').tabs('select_tab', 'contact');
+  });
+});
+</script>
 
   
 </head>
@@ -68,14 +104,14 @@
           
           <ul class="right hide-on-med-and-down red-text">
               
-             <li>
-                <ul class="tabs ">
-                    <li class="tab col s3"><a class="active waves-effect waves-light" href="#welcome"><span class="progress"></span></a></li>
-                    <li class="tab col s3"><a href="#contact" class="waves-effect waves-light"><span class="progress"></span></a></li>
-                    <li class="tab col s3"><a href="#dateselect" class="waves-effect waves-light"><span class="progress"></span></a></li>
-                    <li class="tab col s3"><a href="#categories" class="waves-effect waves-light"><span class="progress"></span></a></li>
-                    <li class="tab col s3"><a href="#submits" class="waves-effect waves-light"><span class="progress"></span></a></li>
-                  </ul>
+       <li>
+          <ul class="tabs ">
+          <li class="tab col s3"><a class="active waves-effect waves-light" href="#welcome"><span class="progress"></span></a></li>
+          <li class="tab col s3"><a href="#contact" class="waves-effect waves-light"><span class="progress"></span></a></li>
+          <li class="tab col s3"><a href="#dateselect" class="waves-effect waves-light"><span class="progress"></span></a></li>
+          <li class="tab col s3"><a href="#categories" class="waves-effect waves-light"><span class="progress"></span></a></li>
+          <li class="tab col s3"><a href="#submits" class="waves-effect waves-light"><span class="progress"></span></a></li>
+            </ul>
               
                 <!-- <div class="progressbar">
                     
@@ -94,7 +130,7 @@
             <h3></h3>
           </li>
              <li class="hoverable"><a href="../../index.html"><span class="red-text text-darken-4">Home page</span></a></li>
-    <li class="hoverable"><a href="../login/index.html"><span class="red-text text-darken-4">Sign Up
+    <li class="hoverable"><a href="../login/index.html"><span class="red-text text-darken-4">Login
            
           </ul>
 
@@ -106,8 +142,9 @@
 
   <ul class="sidenav" id="mobile-demo">
     <li><a class="brand-logo" href="#">WABBIT</a></li>
+
     <li class="hoverable"><a href="../../index.html"><span class="red-text text-darken-4">Home page</span></a></li>
-    <li class="hoverable"><a href="../../login/index.html"><span class="red-text text-darken-4">Sign Up
+    <li class="hoverable"><a href="../login/index.html"><span class="red-text text-darken-4">Sign Up
     </span></a>
     </li>
       
@@ -121,18 +158,20 @@
     <div class="row">
 
     <div class="container center" id="tabs">
-    <div id="welcome" class="col s8">
+    <div id="welcome" class="col s10 offset-s1">
       <h3 class="center light">Welcome to Wabbit Sign Up page</h3>
       
 
+      <div class="col s2">
+      </div>
       <div class="card">
       <div class="container">
     <div class="row">
       <div class="input-field col s12">
           <input  id="first_name" type="text" class="validate" required>
-          <label for="first_name">Company Name</label>
+          <label for="first_name" maxlength="number">Company Name</label>
         </div>
-    <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add company</div>
+    <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Company Name</div>
       </div>
     <div class="row">
       <div class="input-field col s12 ">
@@ -143,7 +182,7 @@
 
         <div class="input-field col s12" required>
         <select>
-          <option value="" disabled selected>Select your Province</option>
+          <option value="" disabled selected>Select Province</option>
           <option value="1">Lusaka</option>
           <option value="2">Central</option>
           <option value="3">Copperbelt</option>
@@ -155,37 +194,41 @@
 
 
 
-      <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">You can select Province</div> </div>
+      <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Province</div> </div>
 
        <div class="row">
          <div class="input-field col s12">
              <input  id="postal_address" type="text" class="validate" required="">
-             <label for="postal_address">Postal Address</label>
+             <label for="postal_address">Postal Address (Optional)</label>
            </div>
 
-      <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add postal address</div>
+      <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Postal Address</div>
       <div class="input-field col s12">
         <input  id="webiste_address" type="text" class="validate" required="">
         <label for="webiste_address">Website (Optional)</label>
       </div>
-      <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add website</div>
+      <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Website</div>
 
       <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">
        
-        <p class="red-text">NOTE: Each text box on the left with an ASTERISK () above it is MANDATORILY required to be filled in while text boxes without an ASTERISK () are OPTIONAL.</p>
+        <p class="red-text" style="font-weight: bold;">NOTE: Each text box on the left with an ASTERISK () above it is MANDATORILY required to be filled in while text boxes without an ASTERISK () are OPTIONAL.</p>
 
-       <p class="red-text">For example on this section, Company Name, Physical Address and Selecting a province are MANDATORY while the P.O BOX and Website text boxes are OPTIONAL.</p>
+       <p class="red-text" style="font-weight: bold;">For example on this section, Company Name, Physical Address and Selecting a province are MANDATORY while the P.O BOX and Website text boxes are OPTIONAL.</p>
      </div>
        </div>
     
 
      </div>
+
     </div>
-
-
+    
+    <!-- <input type="button" name="next" class="next action-button" value="Next" required /> -->
+  
+    </ul>
       <!-- next  -->
     </div>
-   <!--  <input type="button" name="next" class="btn next action-button" value="Next" required /> -->
+
+    <!-- <input type="button" id="" class="btn next action-button" value="Next" required /> -->
   </div>
 
   <!-- end of tab 1 -->
@@ -200,15 +243,15 @@
 
  <div class="row">
    <div class="input-field col s12">
-       <input  id="phone_number" type="text" class="validate">
-       <label for="phone_number">Phone number (0211010101 or 0922010101)</label>
+       <input  id="phone_number" type="number" class="validate">
+       <label for="phone_number">Phone Number (0211010101 or 0922010101)</label>
      </div>
- <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Company Phone number</div>
+ <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Your most reliable comapny Phone</div>
    </div>
  <div class="row">
    <div class="input-field col s12">
-       <input  id="phone_number_2" type="text" class="validate">
-       <label for="phone_number_2">Phone number (0211010101 or 0922010101)</label>
+       <input  id="phone_number_2" type="number" class="validate">
+       <label for="phone_number_2">Phone number (0211010101) Your most reliable comapny Phone
      </div>
 
 
@@ -219,7 +262,7 @@
 
 
 
-   <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add email address</div> </div>
+   <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add mail address</div> </div>
 
     <div class="row">
       <div class="input-field ">
@@ -227,7 +270,7 @@
           <label for="email_2">Email Address (Optional)</label>
         </div>
 
-   <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Second email address</div> </div>
+   <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Alternative An Email Address</div> </div>
  <div class="keywords">
 
 
@@ -239,6 +282,7 @@
       
       <label for="password">Password</label>
       <input class="password" required name="login[password]" type="password" />
+      <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Password</div> </div>
       <div class="hide-show">
         <span>Show</span>
       </div>
@@ -256,6 +300,8 @@
 
   </div>
    </div>
+   <a class="btn" href="#welcome">Previous</a>
+   <a class="active btn" href="#dateselect">Next</a>
       </div>
       
     </div>
@@ -272,8 +318,8 @@
         <thead>
           <tr>
               <th>Day of the week</th>
-              <th>Opening time</th>
-              <th>Closing time</th>
+              <th>Opening Time</th>
+              <th>Closing Time</th>
           </tr>
         </thead>
 
@@ -394,6 +440,7 @@
               <label for="test8">Brown</label>
             </p>
           </div>
+          <a href = "#">close</a>
           </div>
         </div>
 </div>
@@ -533,9 +580,11 @@ These terms and conditions (the "Terms of Service") govern your access to and us
 
 <script src='../../js/jquery.steps.min.js'></script>
 
+
+
   
 
-    <!-- <script  src="js/index.js"></script> -->
+ <!--    <script  src="js/index.js"></script> -->
 
 
 
