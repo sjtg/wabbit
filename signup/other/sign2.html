@@ -406,7 +406,18 @@ div.keywords > div > div.row > div > label.active {
       <div class="input-field col s12">
       
       <label for="password">Password</label>
-      <input class="password" required name="login[password]" type="password" class="input_text" />
+      <input class="input_text" type="password"   id="myInput"/>
+      <br>
+      <div>
+        <label>
+        <button class="btn" onclick="myFunction()">Show password</button>
+        
+        </label>
+      </div>
+
+      
+
+      <br>
       <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Password</div> 
 
 
@@ -761,13 +772,7 @@ These terms and conditions (the "Terms of Service") govern your access to and us
 
       </div>
 
-      <div class="keywords">
-
-
-
-
-
- </div>
+      
 
 
     </div>
@@ -778,6 +783,16 @@ These terms and conditions (the "Terms of Service") govern your access to and us
   <!-- end tab 3 -->
 </div>
 </div>
+<script>
+function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+</script>
 <script src="../../js/jquery-3.1.1.min.js"></script>
   <script src='../../js/init.js'></script>
 <script src="../../js/materialize.js"></script>
