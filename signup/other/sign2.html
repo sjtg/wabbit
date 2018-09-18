@@ -15,7 +15,7 @@
 
       body{
         color: #800000;
-        font-style: Monserate;
+        font-family:Montserrat;
       }
  
 .tabs .tab span {
@@ -70,21 +70,67 @@
     }
 
 
+    .keywords {
+  background-color: #2196F3;
+  padding: 0 5%;
+  width: 109%;
+  margin-left: -4.4%;
+}
+.keywords .rowKey:first-child {
+  border: none;
+}
+/* label color */
+.rowKey .input-field label {
+  color: white;
+}
+/* label focus color */
+.rowKey .input-field input[type=text]:focus + label {
+  color: white;
+}
+/* label underline focus color */
+.rowKey .input-field input[type=text]:focus {
+  border-bottom: 1px solid white;
+  box-shadow: 0 1px 0 0 white;
+}
+.rowKey .input-field input[type=number]:focus {
+  border-bottom: 1px solid white;
+  box-shadow: 0 1px 0 0 white;
+}
+/* valid color */
+.rowKey .input-field input[type=text].valid {
+  border-bottom: 1px solid white;
+  box-shadow: 0 1px 0 0 white;
+}
+.rowKey .input-field input[type=number].valid {
+  border-bottom: 1px solid white;
+  box-shadow: 0 1px 0 0 white;
+}
+/* invalid color */
+.rowKey .input-field input[type=text].invalid {
+  border-bottom: 1px solid white;
+  box-shadow: 0 1px 0 0 white;
+}
+/* icon prefix focus color */
+.rowKey .input-field .prefix.active {
+  color: white;
+}
+div.keywords > div > div.row > div > label.active {
+  color: white;
+}
+.rowKey {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #E2E2E2;
+  color: white;
+  padding-top: 10px;
+}
+
+
     </style>
-
-    <script type="text/javascript">
-  $(document).ready(function() {
-  $('ul.tabs').tabs();
-  $("#btnContinue").click(function() {
-    $('ul.tabs').tabs('select_tab', 'contact');
-  });
-});
-</script>
-
   
 </head>
 
-<body>
+<body style="font-family: Montserrat;">
 
   <!-- navbar  -->
   <div class="navbar-fixed">
@@ -111,7 +157,8 @@
           <li class="tab col s3"><a href="#dateselect" class="waves-effect waves-light"><span class="progress"></span></a></li>
           <li class="tab col s3"><a href="#categories" class="waves-effect waves-light"><span class="progress"></span></a></li>
           <li class="tab col s3"><a href="#submits" class="waves-effect waves-light"><span class="progress"></span></a></li>
-            </ul>
+
+        </ul>
               
                 <!-- <div class="progressbar">
                     
@@ -142,44 +189,57 @@
 
   <ul class="sidenav" id="mobile-demo">
     <li><a class="brand-logo" href="#">WABBIT</a></li>
-
+    <li>
+          <ul class="tabs">
+          <li class="tab col s3"><a class="active waves-effect waves-light" href="#welcome"><span class="progress"></span></a></li>
+          <li class="tab col s3"><a href="#contact" class="waves-effect waves-light"><span class="progress"></span></a></li>
+          <li class="tab col s3"><a href="#dateselect" class="waves-effect waves-light"><span class="progress"></span></a></li>
+          <li class="tab col s3"><a href="#categories" class="waves-effect waves-light"><span class="progress"></span></a></li>
+          <li class="tab col s3"><a href="#submits" class="waves-effect waves-light"><span class="progress"></span></a></li>
+    </ul>
     <li class="hoverable"><a href="../../index.html"><span class="red-text text-darken-4">Home page</span></a></li>
     <li class="hoverable"><a href="../login/index.html"><span class="red-text text-darken-4">Sign Up
     </span></a>
+
     </li>
       
   </ul>
   <!-- end of navbar -->
 
-
+<!-- offset-s1 -->
 
   <!-- content  -->
    <div class="container">
     <div class="row">
 
     <div class="container center" id="tabs">
-    <div id="welcome" class="col s10 offset-s1">
-      <h3 class="center light">Welcome to Wabbit Sign Up page</h3>
+    
+    <div id="welcome" >
       
 
-      <div class="col s2">
-      </div>
+    <h3 class="center light">Welcome to Wabbit Sign Up page</h3>
+    <div class="col s8">
+
+    
+      
       <div class="card">
       <div class="container">
     <div class="row">
       <div class="input-field col s12">
-          <input  id="first_name" type="text" class="validate" required>
+          <input class="character-counter"  id="first_name" type="text" class="validate" required>
           <label for="first_name" maxlength="number">Company Name</label>
         </div>
     <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Company Name</div>
       </div>
     <div class="row">
-      <div class="input-field col s12 ">
-          <input  id="first_name2" type="text" class="validate" required>
-          <label for="first_name2">Physical Address</label>
-           <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Physical Address</div>
+      <div class="input-field col s12">
+      <input  id="first_name2" type="text" class="validate" required>
+      <label for="first_name2">Physical Address</label>
+       <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Physical Address</div>
         </div>
+    </div>
 
+      <div class="row">
         <div class="input-field col s12" required>
         <select>
           <option value="" disabled selected>Select Province</option>
@@ -189,6 +249,11 @@
           <option value="4">Eastern</option>
           <option value="5">Southern</option>
           <option value="6">Northern</option>
+          <option value="7">Luapula</option>
+          <option value="8">Muchinga</option>
+          <option value="9">North-Western</option>
+          <option value="10">Western</option>
+          <!-- <option value="11">Northern</option> -->
         </select>
       </div>
 
@@ -224,20 +289,67 @@
     
     <!-- <input type="button" name="next" class="next action-button" value="Next" required /> -->
   
-    </ul>
       <!-- next  -->
+    
     </div>
+
+    <!-- second container -->
+
+    <div class="col s4">
+        <div class="">
+         </div>
+      <div class="card">
+      <div class="container">
+
+    <div class="row">
+      <div class="input-field col s12">
+       <div class="row col s12" style="font-weight: bold;color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">
+       
+        <p class="red-text" style="font-weight: bold;">NOTE: Each text box on the left with an ASTERISK () above it is MANDATORILY required to be filled in while text boxes without an ASTERISK () are OPTIONAL.</p>
+
+       <p class="red-text" style="font-weight: bold;">For example on this Section, 
+          <li class="red-text">Company Name, Physical Address and Selecting a province are MANDATORY </li>
+          <li class="red-text">while the P.O BOX and Website text boxes are OPTIONAL.</li>
+        </p>
+     </div>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+    
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+
+
+
+
+    <!-- end of ID -->
+    </div>
+
+    
 
     <!-- <input type="button" id="" class="btn next action-button" value="Next" required /> -->
   </div>
 
+
+
+  
+</div>
+</div>
+
   <!-- end of tab 1 -->
 
   <!-- tab 2 -->
-<div id="contact" class="col s12">
-
+<div class="container">
+  <div class="row">
+<div id="contact" >
+<div class="container">
       <h3 class="center light">Contact details</h3>
-      <div class="container">
+      
+        <div class="col s8">
         <div class="card">
         <div class="container">
 
@@ -247,47 +359,82 @@
        <label for="phone_number">Phone Number (0211010101 or 0922010101)</label>
      </div>
  <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Your most reliable comapny Phone</div>
+
+
    </div>
+
+
  <div class="row">
    <div class="input-field col s12">
        <input  id="phone_number_2" type="number" class="validate">
-       <label for="phone_number_2">Phone number (0211010101) Your most reliable comapny Phone
+       <label for="phone_number_2">Phone number (0211010101 or 0922010101)   (Optional)</label>
+       <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Alternative Number</div>
      </div>
 
 
      <div class="input-field col s12">
+       <input  id="phone_number_3" type="number" class="validate">
+       <label for="phone_number_3">Phone number (0211010101 or 0922010101) Optional</label>
+       <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Alternative Number</div>
+     </div>
+
+     <div class="input-field col s12">
+       <input  id="phone_number_3" type="number" class="validate">
+       <label for="phone_number_3">Phone number (0211010101 or 0922010101) Optional</label>
+     <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Alternative Number</div>
+     </div>
+
+
+</div>
+
+    <div class="row">
+     <div class="input-field col s12">
          <input  id="email" type="email" class="validate">
          <label for="email">Email Address</label>
        </div>
+   <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add mail address</div> 
 
-
-
-   <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add mail address</div> </div>
-
-    <div class="row">
-      <div class="input-field ">
+   <div class="input-field col s12">
           <input  id="email_2" type="email" class="validate">
           <label for="email_2">Email Address (Optional)</label>
         </div>
 
-   <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Alternative An Email Address</div> </div>
- <div class="keywords">
-
-
-
-
-
+   <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Alternative An Email Address</div> 
  </div>
- <div class="input-field ">
+
+    <div class="row">
+      <div class="input-field col s12">
       
       <label for="password">Password</label>
       <input class="password" required name="login[password]" type="password" />
-      <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Password</div> </div>
-      <div class="hide-show">
-        <span>Show</span>
-      </div>
+      <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Password</div> 
+
+
+    </div>
   </div>
-    <div class="row" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">
+
+  <div class="row">
+     <a class="btn" href="#welcome">Previous</a>
+   <a class="active btn" href="#dateselect">Next</a>
+  </div>
+     
+  </div>
+
+  </div>
+
+
+   
+
+   </div>
+<!-- end of first contanier -->
+
+
+
+<div class="col s4">
+      <div class="card">
+      <div class="container">
+
+     <div class="row" style=" font-weight: bold; color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">
     <ul class="red-text">
     NOTE: Please Note that your password should be :
     <li >1. 8 Characters in length</li>
@@ -298,12 +445,23 @@
     </ul>
     </div>
 
-  </div>
-   </div>
-   <a class="btn" href="#welcome">Previous</a>
-   <a class="active btn" href="#dateselect">Next</a>
+
+
       </div>
+    </div>
+    </div>
+
+<!-- end of second container -->
+
+
+
+  
       
+
+      </div>
+      </div>
+      </div>
+    </div>
     </div>
 
   <!-- end tab 2 -->
@@ -311,58 +469,97 @@
   <!-- tab 3 -->
 
   <div class="container">
-  <div id="dateselect" class="col s10">
+  <div id="dateselect" >
     <h3 class="center light">YOUR BUSINESS HOURS</h3>
+
+    <div class="container">
+      <div class="row">
+
+
+        <div class="s5">
+      <div class="card">
+      <div class="container">
 
       <table>
         <thead>
           <tr>
-              <th>Day of the week</th>
-              <th>Opening Time</th>
-              <th>Closing Time</th>
+              <th >Day of the week</th>
+              <th >Opening Time</th>
+              <th >Closing Time</th>
           </tr>
         </thead>
 
         <tbody>
           <tr>
             <td>Monday</td>
-            <td><input type="time" /></td>
-            <td><input type="time"   /></td>
+            <td ><input class="col s4" type="time" required/></td>
+            <td ><input class="col s4" type="time" required/></td>
           </tr>
           <tr>
             <td>Tuesday</td>
-           <td><input type="time" /></td>
-            <td><input type="time"   /></td>
+            <td ><input class="col s4" type="time" required/></td>
+            <td ><input class="col s4" type="time" required/></td>
           </tr>
           <tr>
             <td>Wednesday</td>
-             <td><input type="time" /></td>
-            <td><input type="time"   /></td>
+            <td ><input class="col s4" type="time" required/></td>
+            <td ><input class="col s4" type="time" required/></td>
           </tr>
           <tr>
             <td>Thursday</td>
-             <td><input type="time" /></td>
-            <td><input type="time"   /></td>
+             <td ><input class="col s4" type="time" required/></td>
+            <td ><input class="col s4" type="time" required/></td>
           </tr>
           <tr>
             <td>Friday</td>
-            <td><input type="time" /></td>
-            <td><input type="time"   /></td>
+            <td ><input class="col s4" type="time" required/></td>
+            <td ><input class="col s4" type="time" required/></td>
           </tr>
           <tr>
             <td>Saturday</td>
-              <td><input type="time" /></td>
-            <td><input type="time"   /></td>
+              <td ><input class="col s4" type="time" required/></td>
+            <td ><input class="col s4" type="time" required/></td>
           </tr>
           <tr>
             <td>Sunday</td>
-              <td><input type="time" /></td>
-            <td><input type="time"   /></td>
+              <td ><input class="col s4" type="time" required/></td>
+            <td ><input class="col s4" type="time" required/></td>
           </tr>
         </tbody>
       </table>
-            
+         
+        </div> 
+        </div>  
+      </div>
 
+      <div class="col s4">
+        <div class="">
+         </div>
+      <div class="card">
+      <div class="container">
+
+     <div class="row" style=" font-weight: bold;color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">
+    <ul class="red-text">
+    NOTE: Please Note that your password should be :
+    <li >1. 8 Characters in length</li>
+    <li>2. Must contain 6 numbers with 2 letters at the end (one uppercase and one lowercase letter).</li>
+
+    <li>NOTE: The arrangement of the password could either be 012345aX or 012345Xa for example</li>
+
+    </ul>
+    </div>
+
+
+
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+
+
+
+    
     </div>
   </div>
   <!-- end tab 3 -->
@@ -564,6 +761,14 @@ These terms and conditions (the "Terms of Service") govern your access to and us
 
       </div>
 
+      <div class="keywords">
+
+
+
+
+
+ </div>
+
 
     </div>
     </div>
@@ -584,7 +789,7 @@ These terms and conditions (the "Terms of Service") govern your access to and us
 
   
 
- <!--    <script  src="js/index.js"></script> -->
+    <script  src="js/index.js"></script>
 
 
 

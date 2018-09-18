@@ -8,6 +8,14 @@
 //
 //   }); // end of document ready
 // })(jQuery); // end of jQuery name space
+$(document).ready(function()
+{
+    $('ul.tabs').tabs();
+    $("#btnContinue").click(function (){
+        $('ul.tabs').tabs('select_tab', 'contact');
+    });
+});
+
 (function($){
   $(function(){
     $('.dropdown-trigger').dropdown();
@@ -28,6 +36,7 @@ function autoplay() {
   $('.carousel').carousel('next');
   setTimeout(autoplay, 7500);
    }
+
 
 
 // $('.select').material_select();
