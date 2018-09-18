@@ -27,6 +27,7 @@ $(document).ready(function()
     $('.modal').modal();
     $('.slider').slider();
     $('ul.tabs').tabs();
+    $('input.input_text, textarea#textarea2').characterCounter();
     $('.tooltipped').tooltip();
     $('html, body').animate({
       scrollTop: $(".intro").offset().top
@@ -36,6 +37,8 @@ function autoplay() {
   $('.carousel').carousel('next');
   setTimeout(autoplay, 7500);
    }
+
+
 
 
 
