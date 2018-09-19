@@ -17,8 +17,15 @@
         color: #800000;
         font-family:Montserrat;
       }
+
+
+    .tab {
+      height: 58px;
+      margin-bottom: : -30px;
+    }
  
-.tabs .tab span {
+.tabs .tab  {
+    margin-bottom: : -30px;
     color: #800000;  
 }
 
@@ -27,7 +34,7 @@
     color: #800000;  
 }
 
-.tabs .indicator  {
+.tabs  .indicator   {
     padding-bottom: 25px;
     background-color: #800000;
 }
@@ -70,61 +77,6 @@
     }
 
 
-    .keywords {
-  background-color: #2196F3;
-  padding: 0 5%;
-  width: 109%;
-  margin-left: -4.4%;
-}
-.keywords .rowKey:first-child {
-  border: none;
-}
-/* label color */
-.rowKey .input-field label {
-  color: white;
-}
-/* label focus color */
-.rowKey .input-field input[type=text]:focus + label {
-  color: white;
-}
-/* label underline focus color */
-.rowKey .input-field input[type=text]:focus {
-  border-bottom: 1px solid white;
-  box-shadow: 0 1px 0 0 white;
-}
-.rowKey .input-field input[type=number]:focus {
-  border-bottom: 1px solid white;
-  box-shadow: 0 1px 0 0 white;
-}
-/* valid color */
-.rowKey .input-field input[type=text].valid {
-  border-bottom: 1px solid white;
-  box-shadow: 0 1px 0 0 white;
-}
-.rowKey .input-field input[type=number].valid {
-  border-bottom: 1px solid white;
-  box-shadow: 0 1px 0 0 white;
-}
-/* invalid color */
-.rowKey .input-field input[type=text].invalid {
-  border-bottom: 1px solid white;
-  box-shadow: 0 1px 0 0 white;
-}
-/* icon prefix focus color */
-.rowKey .input-field .prefix.active {
-  color: white;
-}
-div.keywords > div > div.row > div > label.active {
-  color: white;
-}
-.rowKey {
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #E2E2E2;
-  color: white;
-  padding-top: 10px;
-}
-
 
     </style>
   
@@ -149,10 +101,17 @@ div.keywords > div > div.row > div > label.active {
 
           
           <ul class="right hide-on-med-and-down red-text">
+
+          <!-- <li>
+            <div class="block">
+              <div class="hovicon effect-3 sub-a">1</div>
+            </div>
+          </li> -->
               
        <li>
+        
           <ul class="tabs ">
-          <li class="tab col s3"><a class="active waves-effect waves-light" href="#welcome"><span class="progress"></span></a></li>
+          <li class="tab col s3"><a  href="#welcome" class="waves-effect waves-light"><span class="progress" class="hovicon effect-3 sub-a"></span></a></li>
           <li class="tab col s3"><a href="#contact" class="waves-effect waves-light"><span class="progress"></span></a></li>
           <li class="tab col s3"><a href="#dateselect" class="waves-effect waves-light"><span class="progress"></span></a></li>
           <li class="tab col s3"><a href="#categories" class="waves-effect waves-light"><span class="progress"></span></a></li>
@@ -229,12 +188,13 @@ div.keywords > div > div.row > div > label.active {
           <input   id="first_name" type="text" class="input_text"   required>
           <label for="first_name" maxlength="number">Company Name</label>
         </div>
-    <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Company Name</div>
+    <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -5px;margin-left: 0px">Add Company Name</div>
       </div>
     <div class="row">
       <div class="input-field col s12">
       <input  id="first_name2" type="text" class="input_text" required>
       <label for="first_name2">Physical Address</label>
+
        <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Physical Address</div>
         </div>
     </div>
@@ -274,18 +234,18 @@ div.keywords > div > div.row > div > label.active {
       </div>
       <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Website</div>
 
-      <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">
-       
-        <p class="red-text" style="font-weight: bold;">NOTE: Each text box on the left with an ASTERISK () above it is MANDATORILY required to be filled in while text boxes without an ASTERISK () are OPTIONAL.</p>
-
-       <p class="red-text" style="font-weight: bold;">For example on this section, Company Name, Physical Address and Selecting a province are MANDATORY while the P.O BOX and Website text boxes are OPTIONAL.</p>
-     </div>
+     
        </div>
     
 
      </div>
 
     </div>
+
+    <a class="tabs">
+          <li class="tab col s3"><a  href="#dateselect" class="waves-effect waves-light">Next</a></li>
+    </a>
+
     
     <!-- <input type="button" name="next" class="next action-button" value="Next" required /> -->
   
@@ -318,10 +278,6 @@ div.keywords > div > div.row > div > label.active {
 </div>
 </div>
 
-
-    
-      <input type="button" name="previous" class="previous action-button" value="Previous" />
-    <input type="button" name="next" class="next action-button" value="Next" />
 
 
 
@@ -358,7 +314,7 @@ div.keywords > div > div.row > div > label.active {
        <input  id="phone_number" type="number" class="input_text">
        <label for="phone_number">Phone Number (0211010101 or 0922010101)</label>
      </div>
- <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Your most reliable comapny Phone</div>
+ <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Your most reliable Comapny Phone</div>
 
 
    </div>
@@ -367,20 +323,20 @@ div.keywords > div > div.row > div > label.active {
  <div class="row">
    <div class="input-field col s12">
        <input  id="phone_number_2" type="number" class="input_text">
-       <label for="phone_number_2">Phone number (0211010101 or 0922010101)   (Optional)</label>
+       <label for="phone_number_2">Phone Number (0211010101 or 0922010101)   (Optional)</label>
        <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Alternative Number</div>
      </div>
 
 
      <div class="input-field col s12">
        <input  id="phone_number_3" type="number" class="input_text">
-       <label for="phone_number_3">Phone number (0211010101 or 0922010101) Optional</label>
+       <label for="phone_number_3">Phone Number (0211010101 or 0922010101) Optional</label>
        <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Alternative Number</div>
      </div>
 
      <div class="input-field col s12">
        <input  id="phone_number_3" type="number" class="input_text">
-       <label for="phone_number_3">Phone number (0211010101 or 0922010101) Optional</label>
+       <label for="phone_number_3">Phone Number (0211010101 or 0922010101) Optional</label>
      <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Alternative Number</div>
      </div>
 
@@ -392,14 +348,14 @@ div.keywords > div > div.row > div > label.active {
          <input  id="email" type="email" class="input_text">
          <label for="email">Email Address</label>
        </div>
-   <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add mail address</div> 
+   <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Email address</div> 
 
    <div class="input-field col s12">
           <input  id="email_2" type="email" class="input_text">
-          <label for="email_2">Email Address (Optional)</label>
+          <label for="email_2">Add Email Address (Optional)</label>
         </div>
 
-   <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Alternative An Email Address</div> 
+   <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add  an alternative Email Address</div> 
  </div>
 
     <div class="row">
@@ -437,6 +393,7 @@ div.keywords > div > div.row > div > label.active {
    
 
    </div>
+ </div>
 <!-- end of first contanier -->
 
 
@@ -472,8 +429,8 @@ div.keywords > div > div.row > div > label.active {
       </div>
       </div>
       </div>
-    </div>
-    </div>
+    
+  
 
   <!-- end tab 2 -->
 
@@ -487,11 +444,11 @@ div.keywords > div > div.row > div > label.active {
       <div class="row">
 
 
-        <div class="s5">
+        <div class="col s8 offset-s2">
       <div class="card">
       <div class="container">
 
-      <table>
+      <table class="">
         <thead>
           <tr>
               <th >Day of the week</th>
@@ -542,29 +499,6 @@ div.keywords > div > div.row > div > label.active {
         </div> 
         </div>  
       </div>
-
-      <div class="col s4">
-        <div class="">
-         </div>
-      <div class="card">
-      <div class="container">
-
-     <div class="row" style=" font-weight: bold;color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">
-    <ul class="red-text">
-    NOTE: Please Note that your password should be :
-    <li >1. 8 Characters in length</li>
-    <li>2. Must contain 6 numbers with 2 letters at the end (one uppercase and one lowercase letter).</li>
-
-    <li>NOTE: The arrangement of the password could either be 012345aX or 012345Xa for example</li>
-
-    </ul>
-    </div>
-
-
-
-      </div>
-    </div>
-    </div>
     </div>
   </div>
 
