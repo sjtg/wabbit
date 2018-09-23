@@ -1,0 +1,147 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Wabbit</title>
+    <link rel='stylesheet' href='../../../css/materialize.css'>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="../../css/progress.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <style>
+    /*Moved to main.css*/
+  </style>
+  </head>
+  <body style="font-family: Montserrat;">
+    <!-- navbar  -->
+    <div class="navbar-fixed">
+      <nav class="white">
+        <div class="nav-wrapper container ">
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li>
+              <img class="brand-logo" src="../../../img/logo.png" width="5%">
+            </li>
+          </ul>
+          <ul class="right hide-on-med-and-down red-text">
+            <!-- <li>
+              <div class="block">
+                <div class="hovicon effect-3 sub-a">1</div>
+              </div>
+            </li> -->
+
+            <!-- progress bar -->
+           <!--  <li>
+                <div class="progressbar">
+                <span class="StepActive progress"></span>
+                <span class="progress"></span>
+                <span class="progress"></span>
+                <span class="progress"></span>
+                <span class="progress"></span>
+                </div>
+            </li> -->
+            <!-- progressbar -->
+
+            <li>
+               <ul>
+                <li class="tab col s3"><a href="../sign2.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tab2.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tab3.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tab4.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tab5.html"><span class="StepActive progress"></span></a>
+                </li>
+
+              </ul>
+            </li>
+
+            <li class="hoverable"><a href="../../../index.html"><span class="red-text text-darken-4">Home page</span></a></li>
+            <li class="hoverable"><a href="../../login/index.html"><span class="red-text text-darken-4">Login
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a class="brand-logo" href="#">WABBIT</a></li>
+        <li>
+              <ul>
+                <li class="tab col s3"><a href="../sign2.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tab2.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tab3.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tab4.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tab5.html"><span class="StepActive progress"></span></a>
+                </li>
+
+              </ul>
+            </li>
+          <li class="hoverable"><a href="../../index.html"><span class="red-text text-darken-4">Home page</span></a></li>
+          <li class="hoverable"><a href="../login/index.html"><span class="red-text text-darken-4">Sign Up
+          </span></a>
+        </li>
+      </ul>
+
+ <!-- tab 3 -->
+      <div class="container">
+       <div id="submits" class="col s4">
+        <div class="row">
+           <h3 >Submit</h3>
+          <div class="card">
+            <div class="container">
+             
+              <div class="row">
+                <div class="input-field col s12">
+                  <p>Click the Submit Button below to complete and view your Wabbit Profile
+                    <b>(Please note that any changes, modifications or corrections you would like to make on any of the
+                    previous sections, can STILL be made on your Wabbit Profile once you proceed with clicking the Submit
+                    button below.)</b>
+                  I accpet the terms of service written below</p>
+                </div>
+                <label>
+                  <input type="checkbox" />
+                  <span>I agree</span>
+                </label>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="submit" class="btn red waves-effect waves-light" value="Submit">
+                </div>
+                <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">TERMS
+                  OF SERVICE
+                  The terms and conditions below are effective immediately for those using this website or registering
+                  accounts after the date above i.e 12th August 2018. You are advised to read them carefully in order to
+                  fully grasp the agreement you are entering with us.
+                  These terms and conditions (the "Terms of Service") govern your access to and use of Wabbit Directory Ltd
+                  Website. By accessing or using this website, you are agreeing to these Terms of Service and concluding a
+                legally binding contract with Wabbit Directory Ltd. Use of this Website is absolutely optional.</div>
+              </div>
+            </div>
+          </div>
+            <div class="center">
+               <a class ="btn red" href="tab4.html">Previous</a>
+               <a class ="btn red" href="#">Submit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end tab 3 -->
+
+
+<!-- Modals -->
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+</script>
+<script src="../../../js/jquery-3.1.1.min.js"></script>
+<script src='../../js/../init.js'></script>
+<script src="../../../js/materialize.js"></script>
+<script src='../../../js/materialize.min.js'></script>
+<script src='../../../js/jquery.steps.min.js'></script>
+<!--<script  src="js/index.js"></script> -->
+
+</body>
+</html>

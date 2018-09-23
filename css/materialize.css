@@ -6825,9 +6825,8 @@ textarea.materialize-textarea {
   pointer-events: none;
 }
 
-[type="checkbox"] {
+/* [type="checkbox"] {
   /* checkbox aspect */
-}
 
 [type="checkbox"] + span:not(.lever) {
   position: relative;

@@ -1,748 +1,200 @@
 <!DOCTYPE html>
-<html lang="en" >
-
-<head>
-  <meta charset="UTF-8">
-  <title>Wabbit</title>
-  
-  
-  <link rel='stylesheet' href='../../css/materialize.min.css'>
-
-      <!-- <link rel="stylesheet" href="css/style.css"> -->
-      <link rel="stylesheet" href="../css/progress.css">
-
-      <style>
-
-      body{
-        color: #800000;
-        font-family:Montserrat;
-      }
-
-
-    .tab {
-      height: 58px;
-      margin-bottom: : -30px;
-    }
- 
-.tabs .tab  {
-    margin-bottom: : -30px;
-    color: #800000;  
-}
-
-.tabs .tab span:hover {
-
-    color: #800000;  
-}
-
-.tabs  .indicator   {
-    padding-bottom: 25px;
-    background-color: #800000;
-}
-
-@media only screen and (min-width: 993px) {
-    .container {
-        width: 90%;
-    }
-}
-
-@media only screen and (min-width: 601px) {
-    .container {
-        width: 90%;
-    }
-}
-
-@media only screen and (min-width: 302px) {
-    .container {
-        width: 90%;
-    }
-}
-
-  
-    .centereds {
-    position: absolute;
-    top: 25%;
-    left: 10%;
-    }
-
-    .centered1 {
-    position: absolute;
-    top: 25%;
-    left: 40%;
-    }
-
-    .centered2 {
-    position: absolute;
-    top: 25%;
-    left: 70%;
-    }
-
-
-
-    </style>
-  
-</head>
-
-<body style="font-family: Montserrat;">
-
-  <!-- navbar  -->
-  <div class="navbar-fixed">
-    <nav  class="white">
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Wabbit</title>
+    <link rel='stylesheet' href='../../css/materialize.css'>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="../css/progress.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+    /*Moved to main.css*/
+  </style>
+  </head>
+  <body style="font-family: Montserrat;">
+    <!-- navbar  -->
+    <div class="navbar-fixed">
+      <nav class="white">
         <div class="nav-wrapper container ">
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="left hide-on-med-and-down">
-          <li>
-            
-           <img class="brand-logo" src="../../img/logo.png" width="5%">
-           
-          </li>
-
+            <li>
+              <img class="brand-logo" src="../../img/logo.png" width="5%">
+            </li>
           </ul>
-
-          
           <ul class="right hide-on-med-and-down red-text">
+            <!-- <li>
+              <div class="block">
+                <div class="hovicon effect-3 sub-a">1</div>
+              </div>
+            </li> -->
 
-          <!-- <li>
-            <div class="block">
-              <div class="hovicon effect-3 sub-a">1</div>
-            </div>
-          </li> -->
-              
-       <li>
-        
-          <ul class="tabs ">
-          <li class="tab col s3"><a  href="#welcome" class="waves-effect waves-light"><span class="progress" class="hovicon effect-3 sub-a"></span></a></li>
-          <li class="tab col s3"><a href="#contact" class="waves-effect waves-light"><span class="progress"></span></a></li>
-          <li class="tab col s3"><a href="#dateselect" class="waves-effect waves-light"><span class="progress"></span></a></li>
-          <li class="tab col s3"><a href="#categories" class="waves-effect waves-light"><span class="progress"></span></a></li>
-          <li class="tab col s3"><a href="#submits" class="waves-effect waves-light"><span class="progress"></span></a></li>
+            <!-- progress bar -->
+            <li>
+                <ul>
+                <li class="tab col s3"><a href="../sign2.html"><span class="StepActive progress"></span></a></li>
+                <li class="tab col s3"><a href="tabs/tab2.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tabs/tab3.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tabs/tab4.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tabs/tab5.html"><span class="progress"></span></a>
+                </li>
+              </ul>
 
-        </ul>
-              
-                <!-- <div class="progressbar">
-                    
-                    <span class="progress tabs"></span>
-                    <span class="progress"></span>
-                    <span class="progress"></span>
-                    <span class="progress"></span>
-                    <span class="progress"></span>
-      
-      
-                </div> -->
+            </li>
+            <!-- progressbar -->
 
-          </li>
-          <li>
+            <li class="hoverable"><a href="../../index.html"><span class="red-text text-darken-4">Home page</span></a></li>
+            <li class="hoverable"><a href="../login/index.html"><span class="red-text text-darken-4">Login
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a class="brand-logo" href="#">WABBIT</a></li>
+        <li>
+                <ul>
+                <li class="tab col s3"><a href="../sign2.html"><span class="StepActive progress"></span></a></li>
+                <li class="tab col s3"><a href="tabs/tab2.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tabs/tab3.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tabs/tab4.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tabs/tab5.html"><span class="progress"></span></a>
+                </li>
+              </ul>
 
-            <h3></h3>
-          </li>
-             <li class="hoverable"><a href="../../index.html"><span class="red-text text-darken-4">Home page</span></a></li>
-    <li class="hoverable"><a href="../login/index.html"><span class="red-text text-darken-4">Login
-           
-          </ul>
+            </li>
+          <li class="hoverable"><a href="../../index.html"><span class="red-text text-darken-4">Home page</span></a></li>
+          <li class="hoverable"><a href="../login/index.html"><span class="red-text text-darken-4">Sign Up
+          </span></a>
+        </li>
+      </ul>
+      <!-- end of navbar -->
 
-        </div>
 
-      </nav>
-    
-  </div>
 
-  <ul class="sidenav" id="mobile-demo">
-    <li><a class="brand-logo" href="#">WABBIT</a></li>
-    <li>
-          <ul class="tabs">
-          <li class="tab col s3"><a class="active waves-effect waves-light" href="#welcome"><span class="progress"></span></a></li>
-          <li class="tab col s3"><a href="#contact" class="waves-effect waves-light"><span class="progress"></span></a></li>
-          <li class="tab col s3"><a href="#dateselect" class="waves-effect waves-light"><span class="progress"></span></a></li>
-          <li class="tab col s3"><a href="#categories" class="waves-effect waves-light"><span class="progress"></span></a></li>
-          <li class="tab col s3"><a href="#submits" class="waves-effect waves-light"><span class="progress"></span></a></li>
-    </ul>
-    <li class="hoverable"><a href="../../index.html"><span class="red-text text-darken-4">Home page</span></a></li>
-    <li class="hoverable"><a href="../login/index.html"><span class="red-text text-darken-4">Sign Up
-    </span></a>
-
-    </li>
-      
-  </ul>
-  <!-- end of navbar -->
-
-<!-- offset-s1 -->
-
-  <!-- content  -->
-   <div class="container">
-    <div class="row">
-
-    <div class="container center" id="tabs">
-    
-    <div id="welcome" >
-      
-
-    <h3 class="center light">Welcome to Wabbit Sign Up page</h3>
-    <div class="col s8">
-
-    
-      
-      <div class="card">
+      <!-- content  -->
       <div class="container">
-    <div class="row">
-      <div class="input-field col s12">
-          <input   id="first_name" type="text" class="input_text"   required>
-          <label for="first_name" maxlength="number">Company Name</label>
-        </div>
-    <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -5px;margin-left: 0px">Add Company Name</div>
-      </div>
-    <div class="row">
-      <div class="input-field col s12">
-      <input  id="first_name2" type="text" class="input_text" required>
-      <label for="first_name2">Physical Address</label>
-
-       <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Physical Address</div>
-        </div>
-    </div>
-
-      <div class="row">
-        <div class="input-field col s12" required>
-        <select>
-          <option value="" disabled selected>Select Province</option>
-          <option value="1">Lusaka</option>
-          <option value="2">Central</option>
-          <option value="3">Copperbelt</option>
-          <option value="4">Eastern</option>
-          <option value="5">Southern</option>
-          <option value="6">Northern</option>
-          <option value="7">Luapula</option>
-          <option value="8">Muchinga</option>
-          <option value="9">North-Western</option>
-          <option value="10">Western</option>
-          <!-- <option value="11">Northern</option> -->
-        </select>
-      </div>
-
-
-
-      <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Province</div> </div>
-
-       <div class="row">
-         <div class="input-field col s12">
-             <input  id="postal_address" type="text" class="input_text" required="">
-             <label for="postal_address">Postal Address (Optional)</label>
-           </div>
-
-      <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Postal Address</div>
-      <div class="input-field col s12">
-        <input  id="webiste_address" type="text" class="input_text" required="">
-        <label for="webiste_address">Website (Optional)</label>
-      </div>
-      <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Website</div>
-
-     
-       </div>
-    
-
-     </div>
-
-    </div>
-
-    <a class="tabs">
-          <li class="tab col s3"><a  href="#dateselect" class="waves-effect waves-light">Next</a></li>
-    </a>
-
-    
-    <!-- <input type="button" name="next" class="next action-button" value="Next" required /> -->
-  
-      <!-- next  -->
-    
-    </div>
-
-    <!-- second container -->
-
-    <div class="col s4">
-        <div class="">
-         </div>
-      <div class="card">
-      <div class="container">
-
-    <div class="row">
-      <div class="input-field col s12">
-       <div class="row col s12" style="font-weight: bold;color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">
-       
-        <p class="red-text" style="font-weight: bold;">NOTE: Each text box on the left with an ASTERISK () above it is MANDATORILY required to be filled in while text boxes without an ASTERISK () are OPTIONAL.</p>
-
-       <p class="red-text" style="font-weight: bold;">For example on this Section, 
-          <li class="red-text">Company Name, Physical Address and Selecting a province are MANDATORY </li>
-          <li class="red-text">while the P.O BOX and Website text boxes are OPTIONAL.</li>
-        </p>
-     </div>
-    </div>
-    </div>
-  </div>
-</div>
-</div>
-
-
-
-
-
-    <!-- end of ID -->
-    </div>
-
-    
-
-    <!-- <input type="button" id="" class="btn next action-button" value="Next" required /> -->
-  </div>
-
-
-
-  
-</div>
-</div>
-
-  <!-- end of tab 1 -->
-
-  <!-- tab 2 -->
-<div class="container">
-  <div class="row">
-<div id="contact" >
-<div class="container">
-      <h3 class="center light">Contact details</h3>
-      
-        <div class="col s8">
-        <div class="card">
-        <div class="container">
-
- <div class="row">
-   <div class="input-field col s12">
-       <input  id="phone_number" type="number" class="input_text">
-       <label for="phone_number">Phone Number (0211010101 or 0922010101)</label>
-     </div>
- <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Your most reliable Comapny Phone</div>
-
-
-   </div>
-
-
- <div class="row">
-   <div class="input-field col s12">
-       <input  id="phone_number_2" type="number" class="input_text">
-       <label for="phone_number_2">Phone Number (0211010101 or 0922010101)   (Optional)</label>
-       <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Alternative Number</div>
-     </div>
-
-
-     <div class="input-field col s12">
-       <input  id="phone_number_3" type="number" class="input_text">
-       <label for="phone_number_3">Phone Number (0211010101 or 0922010101) Optional</label>
-       <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Alternative Number</div>
-     </div>
-
-     <div class="input-field col s12">
-       <input  id="phone_number_3" type="number" class="input_text">
-       <label for="phone_number_3">Phone Number (0211010101 or 0922010101) Optional</label>
-     <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Alternative Number</div>
-     </div>
-
-
-</div>
-
-    <div class="row">
-     <div class="input-field col s12">
-         <input  id="email" type="email" class="input_text">
-         <label for="email">Email Address</label>
-       </div>
-   <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Email address</div> 
-
-   <div class="input-field col s12">
-          <input  id="email_2" type="email" class="input_text">
-          <label for="email_2">Add Email Address (Optional)</label>
-        </div>
-
-   <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add  an alternative Email Address</div> 
- </div>
-
-    <div class="row">
-      <div class="input-field col s12">
-      
-      <label for="password">Password</label>
-      <input class="input_text" type="password"   id="myInput"/>
-      <br>
-      <div>
-        <label>
-        <button class="btn" onclick="myFunction()">Show password</button>
-        
-        </label>
-      </div>
-
-      
-
-      <br>
-      <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add Password</div> 
-
-
-    </div>
-  </div>
-
-  <div class="row">
-     <a class="btn" href="#welcome">Previous</a>
-   <a class="active btn" href="#dateselect">Next</a>
-  </div>
-     
-  </div>
-
-  </div>
-
-
-   
-
-   </div>
- </div>
-<!-- end of first contanier -->
-
-
-
-<div class="col s4">
-      <div class="card">
-      <div class="container">
-
-     <div class="row" style=" font-weight: bold; color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">
-    <ul class="red-text">
-    NOTE: Please Note that your password should be :
-    <li >1. 8 Characters in length</li>
-    <li>2. Must contain 6 numbers with 2 letters at the end (one uppercase and one lowercase letter).</li>
-
-    <li>NOTE: The arrangement of the password could either be 012345aX or 012345Xa for example</li>
-
-    </ul>
-    </div>
-
-
-
-      </div>
-    </div>
-    </div>
-
-<!-- end of second container -->
-
-
-
-  
-      
-
-      </div>
-      </div>
-      </div>
-    
-  
-
-  <!-- end tab 2 -->
-
-  <!-- tab 3 -->
-
-  <div class="container">
-  <div id="dateselect" >
-    <h3 class="center light">YOUR BUSINESS HOURS</h3>
-
-    <div class="container">
-      <div class="row">
-
-
-        <div class="col s8 offset-s2">
-      <div class="card">
-      <div class="container">
-
-      <table class="">
-        <thead>
-          <tr>
-              <th >Day of the week</th>
-              <th >Opening Time</th>
-              <th >Closing Time</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>Monday</td>
-            <td ><input class="col s4" type="time" required/></td>
-            <td ><input class="col s4" type="time" required/></td>
-          </tr>
-          <tr>
-            <td>Tuesday</td>
-            <td ><input class="col s4" type="time" required/></td>
-            <td ><input class="col s4" type="time" required/></td>
-          </tr>
-          <tr>
-            <td>Wednesday</td>
-            <td ><input class="col s4" type="time" required/></td>
-            <td ><input class="col s4" type="time" required/></td>
-          </tr>
-          <tr>
-            <td>Thursday</td>
-             <td ><input class="col s4" type="time" required/></td>
-            <td ><input class="col s4" type="time" required/></td>
-          </tr>
-          <tr>
-            <td>Friday</td>
-            <td ><input class="col s4" type="time" required/></td>
-            <td ><input class="col s4" type="time" required/></td>
-          </tr>
-          <tr>
-            <td>Saturday</td>
-              <td ><input class="col s4" type="time" required/></td>
-            <td ><input class="col s4" type="time" required/></td>
-          </tr>
-          <tr>
-            <td>Sunday</td>
-              <td ><input class="col s4" type="time" required/></td>
-            <td ><input class="col s4" type="time" required/></td>
-          </tr>
-        </tbody>
-      </table>
+        <div class="row">
          
-        </div> 
-        </div>  
-      </div>
-    </div>
-  </div>
-
-
-
-    
-    </div>
-  </div>
-  <!-- end tab 3 -->
-
-
-  <!-- tab 4 -->
-    <div id="categories" class="col s12">
-      <h3 class="center light">Select Category</h3>
-   
-
- <div class="row">
-
-<div class="col s12 m4">
-   <img src="../../img/1.jpg" width="100%">
-
-
-          <div class="centereds">
-            
-            <p>
-              <input type="checkbox" id="1" />
-              <span for="1">Accommodation</span>
-            </p>
-                        
-            <p>
-              <input type="checkbox" id="2" checked="checked" />
-              <span for="2">Lodge</span>
-            </p>
-            
-            <p>
-              <input type="checkbox" id="3" checked="checked" />
-              <span for="3">Hotel</span>
-            </p>
-
-            <p>
-              <input type="checkbox" id="4" checked="checked"/>
-             <span for="4">Camp Site</span>
-            </p>
-
-           <!--  <p>
-              <input type="checkbox" id="5" />
-              <span for="5">Apartment</span>
-            </p> -->
-
-            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Select</a>
-                       
-         </div>
-
-         <div id="modal1" class="modal">
-            <div class="modal-content">
-              <h4>Food & Drink</h4>
-              <hr>
-              <p class="white" style="background-color: red;">A bunch of text</p>
-              <hr>
-
-            
-               <div class="col s3">
-            <p>
-              <input type="checkbox" id="test5" />
-              <label for="test5">Red</label>
-            </p>
-            <p>
-              <input type="checkbox" id="test6" checked="checked" />
-              <label for="test6">Yellow</label>
-            </p>
-            <p>
-              <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-              <label for="filled-in-box">Filled in</label>
-            </p>
-            <p>
-              <input type="checkbox" id="test7" checked="checked" disabled="disabled" />
-              <label for="test7">Green</label>
-            </p>
-            <p>
-              <input type="checkbox" id="test8" disabled="disabled" />
-              <label for="test8">Brown</label>
-            </p>
-          </div>
-          <a href = "#">close</a>
-          </div>
-        </div>
-</div>
-
-<!-- end  -->
-
-<div class="col s12 m4">
-   <img src="../../img/1.jpg" width="100%">
-   
-    <div class="centered1">
-            
-            <p>
-              <input type="checkbox" id="1" />
-              <span for="1">Acc</span>
-            </p>
-                        
-            <p>
-              <input type="checkbox" id="2" checked="checked" />
-              <span for="2">Lodge</span>
-            </p>
-            
-            <p>
-              <input type="checkbox" id="3" checked="checked" />
-              <span for="3">Hotel</span>
-            </p>
-
-            <p>
-              <input type="checkbox" id="4" checked="checked"/>
-             <span for="4">Camp Site</span>
-            </p>
-
-           <!--  <p>
-              <input type="checkbox" id="5" />
-              <span for="5">Apartment</span>
-            </p> -->
-
-            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Select</a>
-                       
-         </div>
-</div>
-
-<!-- end 3 -->
-
-<div class="col s12 m4">
-   <img src="../../img/1.jpg" width="100%">
- <div class="centered2">
-            
-            <p>
-              <input type="checkbox" id="1" />
-              <span for="1">Acc</span>
-            </p>
-                        
-            <p>
-              <input type="checkbox" id="2" checked="checked" />
-              <span for="2">Lodge</span>
-            </p>
-            
-            <p>
-              <input type="checkbox" id="3" checked="checked" />
-              <span for="3">Hotel</span>
-            </p>
-
-            <p>
-              <input type="checkbox" id="4" checked="checked"/>
-             <span for="4">Camp Site</span>
-            </p>
-
-           <!--  <p>
-              <input type="checkbox" id="5" />
-              <span for="5">Apartment</span>
-            </p> -->
-
-            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Select</a>
-                       
-         </div>
-</div>
-
-
+          <div class="container center" id="tabs">
+            <div id="welcome" class="previous">
+              <h3 class="center light">Welcome to Wabbit Sign Up page</h3>
+              <div class="col s8">
+                <div class="card">
+                  <div class="container">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input id="first_name" type="text" class="input_text" required>
+                        <label for="first_name" maxlength="number">Company Name</label>
+                         <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -5px;margin-left: 0px">Add
+                      Company Name</div>
+                      </div>
+                     
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input id="first_name2" type="text" class="input_text" required>
+                        <label for="first_name2">Physical Address</label>
+                        <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add
+                        Physical Address</div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12" required>
+                        <select>
+                          <option value="" disabled selected>Select Province</option>
+                          <option value="1">Lusaka</option>
+                          <option value="2">Central</option>
+                          <option value="3">Copperbelt</option>
+                          <option value="4">Eastern</option>
+                          <option value="5">Southern</option>
+                          <option value="6">Northern</option>
+                          <option value="7">Luapula</option>
+                          <option value="8">Muchinga</option>
+                          <option value="9">North-Western</option>
+                          <option value="10">Western</option>
+                          <!-- <option value="11">Northern</option> -->
+                        </select>
+                        <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add
+                      Province</div>
+                      </div>
                       
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input id="postal_address" type="text" class="input_text" required="">
+                        <label for="postal_address">Postal Address (Optional)</label>
+                         <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add
+                      Postal Address</div>
+                      </div>
+                     
+                      <div class="input-field col s12">
+                        <input id="webiste_address" type="text" class="input_text" required="">
+                        <label for="webiste_address">Website (Optional)</label>
+                         <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add
+                      Website</div>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
+               
+               <!--  <input type="button" name="next" class="nexts btn action-button" value="Next" required />
+ -->
+              <a class ="btn red" href="tabs/tab2.html">Next</a>
 
+                <!-- <input type="button" name="next" class="next action-button" value="Next" required /> -->
+                <!-- next  -->
+              </div>
+              <!-- second container -->
+              <div class="col s4">
+                <div class="">
+                </div>
+                <div class="card">
+                  <div class="container">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <div class="row col s12" style="font-weight: bold;color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">
+                          <p class="red-text" style="font-weight: bold;">NOTE: Each text box on the left with an ASTERISK
+                            () above it is MANDATORILY required to be filled in while text boxes without an ASTERISK () are
+                          OPTIONAL.</p>
+                          <p class="red-text" style="font-weight: bold;">For example on this Section,
+                            <li class="red-text">Company Name, Physical Address and Selecting a province are MANDATORY </li>
+                            <li class="red-text">while the P.O BOX and Website text boxes are OPTIONAL.</li>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of ID -->
+            </div>
+            
           </div>
-    </div>
-
-  <!-- end tab 4 -->
-
-  <div class="container">
-  <div id="submits" class="col s8">
-
-      <div class="card">
-      <div class="container">
-    <h3 class="">Submit</h3>
-<div class="row">
-      <div class="input-field col s12">
-          <p>Click the Submit Button below to complete and view your Wabbit Profile
-<b>(Please note that any changes, modifications or corrections you would like to make on any of the previous sections, can STILL be made on your Wabbit Profile once you proceed with clicking the Submit button below.)</b>
-I accpet the terms of service written below</p>
-
-    
-
+         
         </div>
-
-        <label>
-        <input type="checkbox" />
-        <span>I agree</span>
-      </label>
-
       </div>
-    
+      <!-- end of tab 1 -->
 
-       <div class="row">
-      <div class="input-field col s12">
-          <input type="submit" class="btn red waves-effect waves-light" value="Submit">
-        </div>
+ 
 
-      <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">TERMS OF SERVICE
-
-The terms and conditions below are effective immediately for those using this website or registering accounts after the date above i.e 12th August 2018. You are advised to read them carefully in order to fully grasp the agreement you are entering with us.
-
-These terms and conditions (the "Terms of Service") govern your access to and use of Wabbit Directory Ltd Website. By accessing or using this website, you are agreeing to these Terms of Service and concluding a legally binding contract with Wabbit Directory Ltd. Use of this Website is absolutely optional.</div> </div>
-
-
-      </div>
-
-      
-
-
-    </div>
-    </div>
-
-    </div>
-  </div>
-  <!-- end tab 3 -->
-</div>
-</div>
 <script>
-function myFunction() {
+  function myFunction() {
     var x = document.getElementById("myInput");
     if (x.type === "password") {
-        x.type = "text";
+      x.type = "text";
     } else {
-        x.type = "password";
+      x.type = "password";
     }
-}
+  }
 </script>
 <script src="../../js/jquery-3.1.1.min.js"></script>
-  <script src='../../js/init.js'></script>
+<script src='../../js/init.js'></script>
 <script src="../../js/materialize.js"></script>
 <script src='../../js/materialize.min.js'></script>
-
 <script src='../../js/jquery.steps.min.js'></script>
-
-
-
-  
-<!-- 
-    <script  src="js/index.js"></script> -->
-
-
-
+<!--<script  src="js/index.js"></script> -->
 
 </body>
-
 </html>
+  
