@@ -2,24 +2,7 @@ body{
   color: #800000;
   font-family:Montserrat;
 }
-.tab {
 
-  height: 58px;
-  margin-bottom: -30px;
-  border-radius: 30px;
-}
-.tabs .tab  {
-  /*margin-bottom: -30px;*/
-  color: #800000;
-}
-.tabs .tab span:hover {
-  
-  color: #800000;
-}
-.tabs .indicator   {
-  padding-bottom: 25px;
-  background-color: #800000;
-}
 @media only screen and (min-width: 993px) {
   .container {
     width: 90%;

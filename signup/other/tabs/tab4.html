@@ -10,9 +10,16 @@
     <style>
     /*Moved to main.css*/
 
+
+     span {
+      margin-top: -10px;
+      color: #800000;
+
+     }
+
   </style>
   </head>
-  <body style="font-family: Montserrat;" >
+  <body style="font-family: Montserrat; color: #800000;" >
     <!-- navbar  -->
     <div class="navbar-fixed">
       <nav class="white">
@@ -70,7 +77,7 @@
         <!-- First set -->
         <div class="row">
           <div class="col s12 m4">
-            <div class="centered2"  >
+            <div class="centered2">
               <p >
                 <label >
                 <input type="checkbox" id="1" class="filled-in" checked="checked"/>
@@ -79,20 +86,20 @@
               </p>
               <p>
                 <label>
-                  <input type="checkbox" id="2" class="filled-in"  />
-                  <span>Lodge</span>
+                  <input type="checkbox" id="2" class="filled-in"/>
+                  <span><a class="modal-trigger" href="#modal">Lodge</a></span>
                 </label>
               </p>
               <p>
                 <label>
-                  <input type="checkbox" id="3" class="filled-in"  />
-                  <span >Hotel</span>
+                  <input type="checkbox" id="3" class="filled-in"/>
+                  <span ><a class="modal-trigger" href="#modal">Hotel</a></span>
                 </label>
               </p>
               <p>
                 <label>
                   <input type="checkbox" id="4" class="filled-in"  />
-                  <span>Camp Site</span>
+                  <span><a class="modal-trigger" href="#modal">Camp Site</a></span>
                 </label>
               </p>
               <p>
@@ -101,176 +108,512 @@
                   <span>Apartment</span>
                 </label>
               </p>
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Select</a>
+              <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal">Select</a> -->
             </div>
-
-            <!-- Modal -->
-            <div id="modal1" class="modal">
-              <div class="modal-content">
-                <h4>Accommodation</h4>
-                <hr style="background-color: #800000;">
-                  <p class="white-text" style="background-color: #800000;">General Amenities Offered</p>
-                <hr style="background-color: #800000;">
-                <div class="col s3">
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Booking Service</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Bar</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Free Wi-Fi</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>24 Hour check-in</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Door-Man</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Conference Room</span>
-                    </label>
-                  </p>
-                </div>
-                <div class="col s3">
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Bar</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Gym</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Garage</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Elevator</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Events Venue</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>POS Available</span>
-                    </label>
-                  </p>
-                </div>
-                <div class="col s3">
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Booking Service</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Bar</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Free Wi-Fi</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>24 Hour check-in</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Door-Man</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Conference Room</span>
-                    </label>
-                  </p>
-                </div>
-                <div class="col s3">
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Booking Service</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Bar</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Free Wi-Fi</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>24 Hour check-in</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Door-Man</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Conference Room</span>
-                    </label>
-                  </p>
-                </div>
-                <a href="#">Close</a>
               </div>
-
-            </div>
             <!-- end of model -->
 
+            <!-- Accommodation model -->
+    <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <hr style="background-color: #800000;">
+        <p class="white-text" style="background-color: #800000;">General Amenities Offered</p>
 
-          </div>
+
+                  <ul class="tabs">
+                  <li class="tab col s3"><a class="active" href="#test1">Tab 1</a></li>
+                  <li class="tab col s3"><a href="#test2">Tab 2</a></li>
+                  <li class="tab col s3"><a href="#test3">Tab 3</a></li>
+                  <li class="tab col s3"><a href="#test4">Tab 4</a></li>
+                  <li class="tab col s3"><a href="#test4">Tab 5</a></li>
+                  </ul>
+
+        <div  id="test1" class="col s12">
+           
+          <table>
+ 
+           <tr>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Booking"><span class="text">Booking Service</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Bar"><span class="text">Bar</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Restaurant"><span class="text">Restaurant</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Swimming Pool"><span class="text">Swimming Pool</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Jacuzzi"><span class="text">Jacuzzi</span></label></td>
+
+          </tr>
+
+          <tr>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Free Wifi"><span class="text">Free Wifi</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Gym"><span class="text">Gym</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Spa"><span class="text">Spa</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Sauna"><span class="text">Sauna</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Laundry Service"><span class="text">Laundry Service</span></label></td>
+
+          </tr>
+
+          <tr>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="24 Hour Check In"><span class="text">24 Hour check-in</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Elevator"><span class="text">Elevator</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Free Parking"><span class="text">Free Parking</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Security"><span class="text">Security</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Safety Deposit Box"><span class="text">Safety Deposit Box</span></label></td>
+
+          </tr>
+
+          <tr>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Door Man"><span class="text">Door-Man</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Garage"><span class="text">Garage</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Wall Fence"><span class="text">Wall Fence</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Electric Fence"><span class="text">Electric Fence</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Remote Gate"><span class="text">Remote Gate</span></label></td>
+
+          </tr>
+
+          <tr>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Conference Room"><span class="text">Conference Room</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Events Venue"><span class="text">Events Venue</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Shuttle Service"><span class="text">Shuttle Service</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Generator"><span class="text">Generator</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Inverter"><span class="text">Inverter</span></label></td>
+          </tr>
+
+
+          <tr>
+
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Water Tank"><span class="text">Water Tank</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="POS Available"><span class="text">POS Available</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Visa ATM on Premises"><span class="text">ATM on Premises</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Beach"><span class="text">Beach</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Available Phone Reception"><span class="text">Available Phone Reception</span></label></td>
+          </tr>
+
+          <tr>
+
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Ground Floor Shopping"><span class="text">Ground Floor Shopping</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Kiddy Pool"><span class="text">Kiddy Pool</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Kids Playground"><span class="text">Kids Playground</span></label></td>
+
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Tennis Court"><span class="text">Tennis Court</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Basket Ball Court"><span class="text">Basket Ball court</span></label></td>
+          </tr>
+
+          <tr>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Golf Course"><span class="text">Golf Course</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Luggage Trolley"><span class="text">Luggage Trolley</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Self Catering"><span class="text">Self-Catering</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Luggage Trolley"><span class="text">Luggage Trolley</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Lake"><span class="text">Lake</span></label></td>
+
+
+          </tr>
+
+          <tr>
+              <td><label><input type="checkbox" name="generalAmenities[]" value="Wheel Chair Friendly"><span class="text">Wheel Chair Friendly</span></label></td>
+              
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Volley ball Area"><span class="text">Volley ball Area</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Squash Court"><span class="text">Squash Court</span></label></td>
+              
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Fire Place"><span class="text">Fire Place</span></label></td>
+          </tr>
+</table>
+
+
+<!-- <div class="skip">NEXT</div> -->
+
+</div>
+
+
+  <div  id="test2" class="col s12">
+  <p class="step">ACCOMMODATION</p>
+  <div class="icons">
+  <i class="fa fa-bed fa-2x"></i>  <i class="fa fa-suitcase fa-2x"></i> <i class="fa fa-home fa-2x"></i>
+  </div>
+      <p class="help">NOTE: All the information below will be displayed explicitly on your profile and the Accommodation Category EXCEPT the rates you charge. The rates you indicate will be stored in the database SECURELY and will only be used to help users to find rooms you offer that are in their budget on the Budget Feature which is found on the Accommodation Category. Irrespective of that, your rates will not be shown explicitly or shared.</p>
+  <p class="stages8">ABOUT ROOMS OFFERED (OPTIONAL)</p> 
+  
+
+
+<table>
+
+<tr>
+
+<th>TYPES OF ROOMS</th>
+<th>No. OF ROOMS</th>
+<th>RATE/NIGHT(ZMK)</th>
+<th>MAX No. OF GUESTS</th>
+
+
+
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+<td><input type="text" name="roomType" placeholder="e.g suite, presidential suite"></td>
+<td><input type="number" name="roomNo" placeholder="e.g 10"></td>
+<td><input type="number" name="roomRate" placeholder="e.g 3000"></td>
+<td><input type="number" name="roomLimit" placeholder="e.g 4"></td>
+
+
+
+</tr>
+
+<tr>
+
+
+<td><input type="text" name="roomType1"></td>
+<td><input type="number" name="roomNo1"></td>
+<td><input type="number" name="roomRate1"></td>
+<td><input type="number" name="roomLimit1"></td>
+
+
+</tr>
+
+<tr>
+
+
+<td><input type="text" name="roomType2"></td>
+<td><input type="number" name="roomNo2"></td>
+<td><input type="number" name="roomRate2"></td>
+<td><input type="number" name="roomLimit2"></td>
+
+</tr>
+
+
+
+<tr>
+
+
+<td><input type="text" name="roomType3"></td>
+<td><input type="number" name="roomNo3"></td>
+<td><input type="number" name="roomRate3"></td>
+<td><input type="number" name="roomLimit3"></td>
+
+
+</tr>
+
+
+
+
+<tr>
+
+
+<td><input type="text" name="roomType4"></td>
+<td><input type="number" name="roomNo4"></td>
+<td><input type="number" name="roomRate4"></td>
+<td><input type="number" name="roomLimit4"></td>
+
+</tr>
+
+
+
+
+<tr>
+
+
+<td><input type="text" name="roomType5"></td>
+<td><input type="number" name="roomNo5"></td>
+<td><input type="number" name="roomRate5"></td>
+<td><input type="number" name="roomLimit5"></td>
+
+</tr>
+
+
+<tr>
+
+
+<td><input type="text" name="roomType6"></td>
+<td><input type="number" name="roomNo6"></td>
+<td><input type="number" name="roomRate6"></td>
+<td><input type="number" name="roomLimit6"></td>
+
+
+</tr>
+
+
+<tr>
+
+
+<td><input type="text" name="roomType7"></td>
+<td><input type="number" name="roomNo7"></td>
+<td><input type="number" name="roomRate7"></td>
+<td><input type="number" name="roomLimit7"></td>
+
+
+</tr>
+
+
+<tr>
+
+
+<td><input type="text" name="roomType8"></td>
+<td><input type="number" name="roomNo8"></td>
+<td><input type="number" name="roomRate8"></td>
+<td><input type="number" name="roomLimit8"></td>
+
+</tr>
+
+</table>
+<!-- <div class="skip">NEXT</div>
+<div class="backwards">PREVIOUS</div> -->
+
+
+</div>
+
+
+<div id="test3" class="col s12">
+  <p class="step">ACCOMMODATION</p>
+  <div class="icons">
+  <i class="fa fa-bed fa-2x"></i>  <i class="fa fa-suitcase fa-2x"></i> <i class="fa fa-home fa-2x"></i>
+  </div>
+  <p class="stages9">ROOM AMENITIES OFFERED (OPTIONAL)</p> 
+  
+<table>
+
+<tr>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Mini Bar"><span class="text">Mini-Bar</span></label><br /></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="AirConditioner"><span class="text">Air Conditioner</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Bath Tub"><span class="text">Bath Tub</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Shower"><span class="text">Shower</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Jacuzzi"><span class="text">Jacuzzi</span></label></td>
+ </tr>
+ 
+ <tr>
+  <td><label><input type="checkbox" name="roomAmenities[]" value="Gyser"><span class="text">Gyser</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Shower Soap"><span class="text">Shower Soap</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Towels"><span class="text">Towels</span></label></td>
+  <td><label><input type="checkbox" name="roomAmenities[]" value="Bubble Bath"><span class="text">Bubble Bath</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Bathroom Candles"><span class="text">Bathroom Candles</span></label></td>
+ </tr>
+ 
+ <tr>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Hair Dryer"><span class="text">Hair Dryer</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Mirror"><span class="text">Mirror</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Toilet Paper"><span class="text">Toilet Paper</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Desk Work Space"><span class="text">Desk Workspace</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Lamp Shade"><span class="text">Lampshade</span></label></td>
+ 
+ </tr>
+ 
+ <tr>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Dressing Table"><span class="text">Dressing Table</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Head Board"><span class="text">Head Board</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Closet"><span class="text">Closet</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Drawers"><span class="text">Drawers</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Hangers"><span class="text">Hangers</span></label></td>
+ 
+ </tr>
+ 
+ <tr>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Pressing iron"><span class="text">Pressing Iron</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Mosquito Net"><span class="text">Mosquito Net</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Mosquito repelant"><span class="text">Mosquito Repelant</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Dust bin"><span class="text">Dust Bin</span></label></td>
+<td><label><input type="checkbox" name="roomAmenities[]" value="Kitchen Unit"><span class="text">Kitchen Unit</span></label><br /></td>
+ 
+ </tr>
+ 
+ <tr>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Dining Table"><span class="text">Dining Table</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Kitchen"><span class="text">Kitchen</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Fridge"><span class="text">Fridge</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Money Safe"><span class="text">Money Safe</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Clothes Basket"><span class="text">Clothes Basket</span></label></td>
+ 
+ </tr>
+ 
+ <tr>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Balcony"><span class="text">Balcony</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Seating Room"><span class="text">Seating Room</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Couch"><span class="text">Couch</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Room Furniture"><span class="text">Seating Room Furniture</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Room Service"><span class="text">Room Service</span></label></td>
+</tr>
+ 
+ <tr>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="LandLine Phone"><span class="text">Landline Phone</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Floor Carpet"><span class="text">Floor Carpet</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Fire Place"><span class="text">Fire Place</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="DSTV With Remote"><span class="text">DSTV with remote</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Gotv With Remote"><span class="text">Gotv with remote</span></label></td>
+  </tr>
+  
+  <tr>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="DSTV"><span class="text">DSTV</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Gotv"><span class="text">Gotv</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Flat Screen Tv"><span class="text">Flat Screen Tv</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Free Electricity"><span class="text">Free Electricity</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Ash Tray"><span class="text">Ash Tray</span></label><br /></td>
+ </tr>
+ 
+ <tr>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Refreshments"><span class="text">Refreshments</span></label><br /></td>
+   <td><label><input type="checkbox" name="roomAmenities[]" value="Ceiling Fan"><span class="text">Ceiling Fan</span></label><br /></td>
+<td><label><input type="checkbox" name="roomAmenities[]" value="Microwave"><span class="text">Microwave</span></label><br /></td>
+   
+ </tr>
+ 
+ </table>
+<!-- <div class="skip">NEXT</div>
+<div class="backwards">PREVIOUS</div> -->
+
+
+</div>
+
+
+    <div id="test4" class="col s12">
+
+
+  <p class="step">ACCOMMODATION</p>
+  
+  <p class="stages7">SAFETY AND SECURITY FEATURES OFFERED (OPTIONAL)</p> 
+  
+<table>
+
+
+<tr>
+<td><label><input type="checkbox" name="roomSafety[]" value="Smoke Detector"><span class="text">Smoke Detector</span></label></td>
+<td><label><input type="checkbox" name="roomSafety[]" value="Fire Extinguisher"><span class="text">Fire Extinguisher</span></label></td>
+<td><label><input type="checkbox" name="roomSafety[]" value="First Aid Kit"><span class="text">First Aid Kit</span></label></td>
+<td><label><input type="checkbox" name="roomSafety[]" value="Emergency Exit"><span class="text">Emergency Exit</span></label></td>
+<td><label><input type="checkbox" name="roomSafety[]" value="Fire Alarm"><span class="text">Fire Alarm</span></label></td>
+</tr>
+
+
+<tr>
+
+<td><label><input type="checkbox" name="roomSafety[]" value="Key Card Locks"><span class="text">Key Card locks</span></label></td>
+<td><label><input type="checkbox" name="roomSafety[]" value="Security Cameras"><span class="text">Security Cameras</span></label></td>
+<td><label><input type="checkbox" name="roomSafety[]" value="Adequate Outdoor Lighting"><span class="text">Adequate Outdoor Lighting</span></label></td>
+<td><label><input type="checkbox" name="roomSafety[]" value="Security Guards"><span class="text">Security Guards</span></label></td>
+<td><label><input type="checkbox" name="roomSafety[]" value="Emergency Manual"><span class="text">Emergency Manual</span></label></td>
+</tr>
+
+<tr>
+
+<td><label><input type="checkbox" name="roomSafety[]" value="Employee ID"><span class="text">Employee ID</span></label></td>
+<td><label><input type="checkbox" name="roomSafety[]" value="Employee Photo ID"><span class="text">Employee Photo ID</span></label></td>
+<td><label><input type="checkbox" name="roomSafety[]" value="Defibrillation Units"><span class="text">Defibrillation Units</span></label></td>
+<td><label><input type="checkbox" name="roomSafety[]" value="Metal Detector"><span class="text">Metal Detector</span></label></td>
+<td><label><input type="checkbox" name="roomSafety[]" value="Emergency Transport"><span class="text">Emergency Transport</span></label></td>
+</tr>
+
+<tr>
+
+
+<td><label><input type="checkbox" name="roomSafety[]" value="Adequate Indoor Lighting"><span class="text">Adequate Indoor Lighting</span></label></td>
+</tr>
+</table>
+
+
+
+
+
+<p class="stages">YOUR PREMISE RULES (OPTIONAL)</p> 
+  
+<table>
+<tr>
+<td><label><input type="checkbox" name="roomRules[]" value="No Smoking"><span class="text">No Smoking</span></label></td>
+<td><label><input type="checkbox" name="roomRules[]" value="No Pets"><span class="text">No Pets</span></label></td>
+<td><label><input type="checkbox" name="roomRules[]" value="No Parties"><span class="text">No Parties</span></label></td>
+<td><label><input type="checkbox" name="roomRules[]" value="No Outside Visitors"><span class="text">No Outside Visitors</span></label></td>
+<td><label><input type="checkbox" name="roomRules[]" value="No Excessive Noise"><span class="text">No Excessive Noise</span></label></td>
+</tr>
+    
+    <tr>
+<td><label><input type="checkbox" name="roomRules[]" value="No Outside Heat Appliances"><span class="text">No Outside Heat &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAppliances</span></label></td>
+<td><label><input type="checkbox" name="roomRules[]" value="Lights Out Period"><span class="text">Lights Out &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPeriod</span></label></td>
+<td><label><input type="checkbox" name="roomRules[]" value="Property Damage Liability"><span class="text">Property Damage &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLiability</span></label></td>
+<td><label><input type="checkbox" name="roomRules[]" value="No Thirdparty Room Transfer"><span class="text">No Thirdparty Room &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTransfer</span></label></td>
+
+</tr>
+</table>
+
+
+ <!-- <div class="skip">NEXT</div>
+ <div class="backwards">PREVIOUS</div> -->
+
+</div>
+
+ 
+ 
+
+<div id="test5" class="col s12">
+  <p class="step">ACCOMMODATION</p>
+  <p class="stages9">FUN ACTIVITIES OFFERED(OPTIONAL)</p>
+ 
+ <table>
+ 
+             <tr>
+             <td><label><input type="checkbox" name="funActivities[]" value="Jet Ski"><span class="text">Jet Ski</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Boat Cruise"><span class="text">Boat Cruise</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Fishing"><span class="text">Fishing</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Hunting"><span class="text">Hunting</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Game Drive"><span class="text">Game Drive</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Game Walk"><span class="text">Game Walk</span></label></td>
+             </tr>
+             
+             <tr>
+             <td><label><input type="checkbox" name="funActivities[]" value="Go Cart"><span class="text">Go Cart Rides</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Quad Bikes"><span class="text">Quad Bikes</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Paint Ball"><span class="text">Paint Ball</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Horse Ride"><span class="text">HorseRide</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Animal Zoo"><span class="text">Animal Zoo</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Scuba Diving"><span class="text">Scuba Diving</span></label></td>
+             </tr>
+             
+             <tr>
+             <td><label><input type="checkbox" name="funActivities[]" value="Elephant Back Ride"><span class="text">Elephant Back Ride</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Lion Walk"><span class="text">Lion Walk</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Cheetah Walk"><span class="text">Cheetah Walk</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Helicopter Flight"><span class="text">Helicopter Flight</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Gorge Swing"><span class="text">Gorge Swing</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Abseiling"><span class="text">Abseiling</span></label></td>
+             </tr>
+             
+             <tr>
+             <td><label><input type="checkbox" name="funActivities[]" value="High Wiring"><span class="text">High Wiring</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Whoopie Slide"><span class="text">Whoopie Slide</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Tandem Jumps"><span class="text">Tandem Jumps</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Rap Jumping"><span class="text">Rap Jumping</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Bird Watching"><span class="text">Bird Watching</span></label></td>
+            <td><label><input type="checkbox" name="funActivities[]" value="Hiking"><span class="text">Hiking</span></label></td>
+             </tr>
+
+            <tr>
+             <td><label><input type="checkbox" name="funActivities[]" value="Pool Table"><span class="text">Pool Table</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Cycling"><span class="text">Cycling</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Kayaks"><span class="text">Kayaks</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Sailing"><span class="text">Sailing</span></label></td>
+            <td><label><input type="checkbox" name="funActivities[]" value="Swimming"><span class="text">Swimming</span></label></td>
+            </tr>
+
+            <tr>
+             <td><label><input type="checkbox" name="funActivities[]" value="Live Band"><span class="text">Live Band</span></label></td>
+             
+              <td><label><input type="checkbox" name="funActivities[]" value="Basket Ball"><span class="text">Basket Ball</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Golf"><span class="text">Golf</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Volleyball"><span class="text">Volleyball</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Tennis"><span class="text">Tennis</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Squash"><span class="text">Squash</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Soccer"><span class="text">Soccer</span></label></td>
+    <td><label><input type="checkbox" name="funActivities[]" value="Arts and Crafts Tour"><span class="text">Arts and Crafts Tour</span></label></td>
+            </tr>   
+ </table>
+
+
+    </div>
+
+
+  </div>
+</div>
+
+        
 
           <!-- end  -->
           <div class="col s12 m4">
@@ -284,7 +627,7 @@
               <p>
                 <label>
                   <input type="checkbox" class="filled-in" />
-                  <span>Dining Restaurant</span>
+                  <span><a class="modal-trigger" href="#modal2">Dining Restaurant</a></span>
                 </label>
               </p>
               <p>
@@ -324,8 +667,248 @@
                 </label>
               </p>
             </div>
+
+               <!-- MODEL -->
+              <div id="modal2" class="modal">
+              <div class="modal-content">
+
+
+
+<div class="drinksFieldset1 popDown naked">
+
+  <p class="step">FOOD & DRINK</p>
+  <div class="icons">
+  <i class="fas fa-wine-glass fa-2x" id="glass2"></i>  <i class="fas fa-utensils fa-2x"></i> <i class="fas fa-beer fa-2x"></i> <i class="fas fa-music fa-2x"></i>
+  </div>
+    <p class="help">NOTE: Click the NEXT BUTTON on the bottom right if this section does not apply.</p>
+ <p class="stages7">TYPES OF FOOD YOU SERVE (OPTIONAL)</p>
+                  <ul class="tabs">
+                  <li class="tab col s3"><a class="active" href="#test6">Tab 1</a></li>
+                  <li class="tab col s3"><a href="#test7">Tab 2</a></li>
+                  <li class="tab col s3"><a href="#test8">Tab 3</a></li>
+                  </ul>
+
+
+
+<div id="test6">
+<table class="drinkstable">
+<tr>
+<td><label><input type="checkbox" name="dishes[]" value="Indian"><span class="text">Indian</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Chinese"><span class="text">Chinese</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Italian"><span class="text">Italian</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Thai"><span class="text">Thai</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Portugese"><span class="text">Portugese</span></label></td>
+
+</tr>
+
+
+<tr>
+<td><label><input type="checkbox" name="dishes[]" value="Matebeto"><span class="text">Matebeto</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Steak"><span class="text">Steak</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Chicken"><span class="text">Chicken</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Sea Food"><span class="text">Sea Food</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Pizza"><span class="text">Pizza</span></label></td>
+
+</tr>
+
+
+<tr>
+<td><label><input type="checkbox" name="dishes[]" value="Greek"><span class="text">Greek</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Muchopo"><span class="text">Muchopo</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Mediterranean"><span class="text">Mediterranean</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Mexican"><span class="text">Mexican</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="English"><span class="text">English</span></label></td>
+
+</tr>
+
+<tr>
+
+<td><label><input type="checkbox" name="dishes[]" value="lamb"><span class="text">Lamb</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Goat"><span class="text">Goat</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Lebanese"><span class="text">Lebanese</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="French"><span class="text">French</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Pastries"><span class="text">Pastries</span></label></td>
+</tr>
+</table>
+
+
+
+<p class="stages">MEALS YOU SERVE (OPTIONAL)</p>
+
+<table>
+<tr>
+<td><label class="meal"><input type="checkbox" name="mealType[]" value="Breakfast"><span class="text">Breakfast</span></label></td>
+<td><label class="meal"><input type="checkbox" name="mealType[]" value="Brunch"><span class="text">Brunch</span></label></td>
+<td><label class="meal"><input type="checkbox" name="mealType[]" value="Lunch"><span class="text">Lunch</span></label></td>
+</tr>
+<tr>
+<td><label class="meal"><input type="checkbox" name="mealType[]" value="LateLunch"><span class="text">Late Lunch</span></label></td>
+<td><label class="meal"><input type="checkbox" name="mealType[]" value="Dinner"><span class="text">Dinner</span></label></td>
+<td><label class="meal"><input type="checkbox" name="mealType[]" value="Afterhours"><span class="text">After hours</span></label></td>
+</tr>
+</table>
+
+<div class="move">NEXT</div>
+</div>
+ 
+</div>
+
+
+
+<div id="test7">
+<div class="drinksFieldset2 popDown">
+  <p class="step">FOOD & DRINK</p>
+  <div class="icons">
+  <i class="fas fa-wine-glass fa-2x" id="glass2"></i>  <i class="fas fa-utensils fa-2x"></i> <i class="fas fa-beer fa-2x"></i> <i class="fas fa-music fa-2x"></i>
+  </div>
+ <p class="stages8">WHAT YOU OFFER (OPTIONAL)</p>
+ 
+
+<table>
+
+<tr>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Walk In"><span class="text">Walk-In</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Live Band"><span class="text">Live Band</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Takes Bookings"><span class="text">Takes Bookings</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Table Service"><span class="text">Table Service</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Out Door Seating"><span class="text">OutDoor Seating</span></label></td>
+
+</tr>
+
+<tr>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Delivery Service"><span class="text">Delivery Service</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Take Away"><span class="text">Take-Away</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Doggy Bag"><span class="text">Doggy-Bag</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Airconditioner"><span class="text">Airconditioner</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Outdoor Heaters"><span class="text">Outdoor Heaters</span></label></td>
+
+</tr>
+
+
+<tr>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Suitable For Groups"><span class="text">Suitable For Groups</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Kids Events"><span class="text">Suitable For Kids Events</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Events Venue"><span class="text">Venue For Adult Events</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Kids Playground"><span class="text">Kids Play Ground</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Bar Available"><span class="text">Bar Available</span></label></td>
+
+</tr>
+<tr>
+
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Restaurant Available"><span class="text">Restaurant Available</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Draft Beer"><span class="text">Draft Beer Available</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Sheesha"><span class="text">Sheesha</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Indoor Smoking"><span class="text">Indoor Smoking</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Strictly By Reservation"><span class="text">Strictly By Reservation</span></label></td>
+
+
+
+</tr>
+
+
+<tr>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Urban Music"><span class="text">Urban Music</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Oldies Music"><span class="text">Oldies Music</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="House Music"><span class="text">House Music</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Chinese Music"><span class="text">Chinese Music</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Pool Table"><span class="text">Pool Table</span></label></td>
+
+</tr>
+<tr>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Open Vip Lounge"><span class="text">Open Vip Lounge</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Free Wifi"><span class="text">Free Wifi</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Entrance Fee"><span class="text">Entrance Fee</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Happy Hour"><span class="text">Happy Hour</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Pool Bar"><span class="text">Pool Bar</span></label></td>
+
+</tr>
+<tr>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Swimming Pool"><span class="text">Swimming Pool</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Generator"><span class="text">Generator</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Indian Music"><span class="text">Indian Music</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Dance Floor"><span class="text">Dance Floor</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Karaoke"><span class="text">Karaoke</span></label></td>
+
+</tr>
+
+<tr>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Televise Sports Games"><span class="text">Televise Sports Games</span></label></td>
+
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Closed Vip Lounge"><span class="text">Closed Vip Lounge</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Special Membership"><span class="text">Special Membership Available</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Smokers Section"><span class="text">Smokers Section</span></label></td>
+
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Halal Certification"><span class="text">Halal Certification</span></label></td>
+
+
+</tr>
+
+</table>
+<div class="move">NEXT</div>
+<div class="back">PREVIOUS</div>
+</div> 
+</div>
+
+
+
+<div id ="test8">
+  <p class="step">FOOD & DRINK</p>
+  <div class="icons">
+  <i class="fas fa-wine-glass fa-2x" id="glass2"></i>  <i class="fas fa-utensils fa-2x"></i> <i class="fas fa-beer fa-2x"></i> <i class="fas fa-music fa-2x"></i>
+  </div>
+ <p class="stages9">PREMISE RULES (OPTIONAL)</p>
+ 
+
+
+
+
+<table class="drinkTable">
+
+
+<tr>
+
+<td><label><input type="checkbox" name="Rules[]" value="No Smoking"><span class="text">No Smoking</span></label></td>
+<td><label><input type="checkbox" name="Rules[]" value="No Fighting"><span class="text">No Fighting</span></label></td>
+<td><label><input type="checkbox" name="Rules[]" value="No Dresses Above Knees"><span class="text">No Dresses Above Knees</span></label></td>
+<td><label><input type="checkbox" name="Rules[]" value="No shorts"><span class="text">No Shorts</span></label></td>
+<td><label><input type="checkbox" name="Rules[]" value="No Open Shoes"><span class="text">No Open Shoes</span></label></td>
+
+</tr>
+
+<tr>
+<td><label><input type="checkbox" name="Rules[]" value="No Hats"><span class="text">No Hats</span></label></td>
+<td><label><input type="checkbox" name="Rules[]" value="No Pets"><span class="text">No Pets</span></label></td>
+<td><label><input type="checkbox" name="Rules[]" value="No Weapons"><span class="text">No Weapons</span></label></td>
+<td><label><input type="checkbox" name="Rules[]" value="No Excessive Noise"><span class="text">No Excessive Noise</span></label></td>
+<td><label><input type="checkbox" name="Rules[]" value="Swimming For Room Guests Only"><span class="text">Swimming For Room Guests Only</span></label></td>
+
+</tr>
+
+
+<tr>
+<td><label><input type="checkbox" name="Rules[]" value="18 years And Above"><span class="text">18 years and Above</span></label></td>
+<td><label><input type="checkbox" name="Rules[]" value="21 years And Above"><span class="text">21 years and Above</span></label></td>
+<td><label><input type="checkbox" name="Rules[]" value="25 years And Above"><span class="text">25 years and Above</span></label></td>
+
+</tr>
+</table>
+
+<!-- <div class="asos1">NEXT</div><br />
+<div class="back">PREVIOUS</div> -->
+ 
+</div>
+
+
+              </div>
+
+ 
+            <!-- END OF MODEL  -->
           </div>
 
+
+          </div>
+
+         
 
           <!-- end 3 -->
           <div class="col s12 m4">
@@ -340,17 +923,178 @@
               <p>
                 <label>
                   <input type="checkbox" />
-                  <span>Playground</span>
+                  <span><a class="modal-trigger" href="#modal3">Playground</a></span>
                 </label>
               </p>
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Select</a>
+              
             </div>
+            <!-- Model -->
+
+            <div id="modal3" class="modal">
+              <div class="modal-content">
+          <!-- MODEL  -->
+          <!--kids section-->
+
+
+ <div class="kids">
+ <i class="fas fa-times close fa-2x" id="closeKids"></i>
+
+ 
+ <div class="kiddy popup spot">
+
+  <p class="step">CHILD'S PLAY</p>
+  <div class="icons">
+  <i class="fas fa-child fa-2x"></i>  <i class="fas fa-birthday-cake fa-2x"></i> <i class="fas fa-gamepad fa-2x"></i>  
+  </div>
+ <p class="stages">WHAT YOU OFFER (OPTIONAL)</p>
+ 
+ 
+ 
+<table>
+
+<tr>
+<td><label><input type="checkbox" name="play[]" value="Kiddies Pool"><span class="text">Kiddies Pool</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Water Guns"><span class="text">Water Guns</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Water Ballons"><span class="text">Water Ballons</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Ballons"><span class="text">Ballons</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Water Slides"><span class="text">Water Slides</span></label></td>
+</tr>
+
+
+
+<tr>
+<td><label><input type="checkbox" name="play[]" value="Jumping Castle"><span class="text">Jumping Castle</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Video Games"><span class="text">Video Games</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Face Painting"><span class="text">Face Painting</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Go Carts"><span class="text">Go Carts</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Kids Karaoke"><span class="text">Kids Karaoke</span></label></td>
+
+
+
+
+</tr>
+
+<tr>
+<td><label><input type="checkbox" name="play[]" value="Pinata"><span class="text">Pinata</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Removable Tatoos"><span class="text">Removable Tatoos</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Costumes"><span class="text">Costumes</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Playing Tunnel"><span class="text">Playing Tunnel</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Trampoline"><span class="text">Trampoline</span></label></td>
+
+</tr>
+<tr>
+<td><label><input type="checkbox" name="play[]" value="Climbers"><span class="text">Climbers</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="TreeHouse"><span class="text">Tree House</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Merry Go Round"><span class="text">Merry-Go-Round</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Swingset"><span class="text">Swing-set</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Sandbox"><span class="text">Sand-box</span></label></td>
+
+
+</tr>
+<tr>
+<td><label><input type="checkbox" name="play[]" value="Maze Box"><span class="text">Maze-Box</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Seasaw"><span class="text">Seasaw</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Trapeze Ring"><span class="text">Trapeze Ring</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Board Games"><span class="text">Board Games</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Jungle Gym"><span class="text">Jungle Gym</span></label></td>
+
+
+
+</tr>
+
+
+
+
+
+<tr>
+<td><label><input type="checkbox" name="play[]" value="Play House"><span class="text">Play House</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Slides"><span class="text">Slides</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Bikes"><span class="text">Bikes</span></label></td>
+
+<td><label><input type="checkbox" name="play[]" value="Scooters"><span class="text">Scooters</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="RideOns"><span class="text">RideOns</span></label></td>
+
+
+
+
+
+
+</tr>
+
+
+
+
+
+<tr>
+<td><label><input type="checkbox" name="play[]" value="Sand Toys"><span class="text">Sand Toys</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Nets"><span class="text">Nets</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Crawl Tubes"><span class="text">CrawlTubes</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Candy Floss"><span class="text">CandyFloss</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Pop Corn"><span class="text">PopCorn</span></label></td>
+
+
+
+
+</tr>
+
+<tr>
+
+<td><label><input type="checkbox" name="play[]" value="Ice Cream"><span class="text">IceCream</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Kids Events Venue"><span class="text">Kids Events Venue</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Indoor Playground"><span class="text">Indoor Playground</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Outdoor Playground"><span class="text">Outdoor Playground</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Play Ground Supervisors"><span class="text">Playground Supervisors</span></label></td>
+
+</tr>
+
+
+</table>
+
+<div class="jumpTo">NEXT</div>
+
+</div>
+
+
+
+
+<div class="kiddy2 popup">
+
+  <p class="step">CHILD'S PLAY</p>
+  <div class="icons">
+  <i class="fas fa-child fa-2x"></i>  <i class="fas fa-birthday-cake fa-2x"></i> <i class="fas fa-gamepad fa-2x"></i>
+  </div>
+ <p class="stages7">ADULT SECTION OFFERS (OPTIONAL)</p>
+ 
+ 
+<table>
+
+<tr>
+<td><label><input type="checkbox" name="childsPlayAdults[]" value="Restaurant"><span class="text">Restaurant</span></label></td>
+<td><label><input type="checkbox" name="childsPlayAdults[]" value="Cash Bar"><span class="text">Cash bar</span></label></td>
+<td><label><input type="checkbox" name="childsPlayAdults[]" value="FreeWifi"><span class="text">Free wifi</span></label></td>
+</tr>
+<tr>
+<td><label><input type="checkbox" name="childsPlayAdults[]" value="Live Sports Games"><span class="text">Live Sports Games</span></label></td>
+
+</tr>
+</table>
+
+<!-- <div class="asos2">NEXT</div>
+<div class="jumpBack go">PREVIOUS</div> -->
+</div>
+</div>
+  </div>
+</div>
+            <!-- end of child plaly model -->
           </div>
 
 
-        </div>
-    
+  
 
+
+
+
+      
         <!-- end -->
 
 
@@ -402,7 +1146,7 @@
                   <span>Event Hire</span>
                 </label>
               </p>
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Select</a>
+              
             </div>
             <!-- Modal -->
             <div id="modal1" class="modal">
@@ -412,156 +1156,125 @@
                   <p class="white" style="background-color: red;">General Amenities Offered</p>
                 <hr>
                 <div class="col s3">
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Booking Service</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Bar</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Free Wi-Fi</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>24 Hour check-in</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Door-Man</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Conference Room</span>
-                    </label>
-                  </p>
-                </div>
-                <div class="col s3">
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Bar</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Gym</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Garage</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Elevator</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Events Venue</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>POS Available</span>
-                    </label>
-                  </p>
-                </div>
-                <div class="col s3">
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Booking Service</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Bar</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Free Wi-Fi</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>24 Hour check-in</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Door-Man</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Conference Room</span>
-                    </label>
-                  </p>
-                </div>
-                <div class="col s3">
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Booking Service</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Bar</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Free Wi-Fi</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>24 Hour check-in</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Door-Man</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input type="checkbox" id="5" class="filled-in" />
-                      <span>Conference Room</span>
-                    </label>
-                  </p>
+                  <!-- MODEL  -->
+
+
+<!--wedding section-->
+
+<div class="wedddingSection">
+ <i class="fas fa-times close fa-2x" id="closeWedding"></i>
+
+ 
+ <div class="wedds popDown nude">
+
+  <p class="step">WEDDING</p>
+  <div class="icons">
+  <i class="far fa-gem fa-2x"></i>  <i class="fas fa-male fa-2x"></i> <i class="fas fa-female fa-2x"></i> <i class="fas fa-wine-glass glass2 fa-2x"></i> 
+  </div>
+ <p class="stages">WHAT YOU OFFER (OPTIONAL)</p>
+ 
+ 
+<table>
+  
+  <tr>
+  
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Out Door Venue"><span class="text">Outdoor Venue</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Indoor Venue"><span class="text">Indoor Venue</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Grass Lawn"><span class="text">Grass Lawn</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Grass Lawn with trees"><span class="text">Grass Lawn with trees</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Garden"><span class="text">Garden</span></label></td>
+  
+  </tr>
+  
+  
+  <tr>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Fish Pond"><span class="text">Fish Pond</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Fountain"><span class="text">Fountain</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Swimming Pool"><span class="text">Swimming Pool</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Secure Car Park"><span class="text">Secure Car Park</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Security"><span class="text">Security</span></label></td>
+  
+  </tr>
+  
+  <tr>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Waiters"><span class="text">Waiters</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Catering"><span class="text">Catering</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Tailor Made Food Menu"><span class="text">Tailor Made Food Menu</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Red Carpet"><span class="text">Red Carpet</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Music System"><span class="text">Music System</span></label></td>
+  
+  </tr>
+  
+  
+  
+  <tr>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Dj Booth"><span class="text">Dj Booth</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Tables"><span class="text">Tables</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Chairs"><span class="text">Chairs</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Changing Room"><span class="text">Changing Room</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Cash Bar"><span class="text">Cash Bar</span></label></td>
+  
+  </tr>
+  
+  
+  <tr>
+  
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Restaurant"><span class="text">Restaurant</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Chapel"><span class="text">Chapel</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Dance Floor"><span class="text">Dance Floor</span></label></td>
+  
+  
+  </tr>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  </table>
+  
+  <div class="moveTo">NEXT</div>
+  </div>
+  
+  <div class="wedds2 popDown">
+
+  <p class="step">WEDDING</p>
+  <div class="icons">
+  <i class="far fa-gem fa-2x"></i>  <i class="fas fa-male fa-2x"></i> <i class="fas fa-female fa-2x"></i> <i class="fas fa-wine-glass fa-2x"></i>
+  </div>
+ <p class="stages9">SAFETY AND SECURITY FEATURES OFFERED (OPTIONAL)</p>
+ 
+ 
+  <table>
+  <tr>
+<td><label><input type="checkbox" name="venueSafety[]" value="Smoke Detecter"><span class="text">Smoke Detecter</label></td>
+<td><label><input type="checkbox" name="venueSafety[]" value="Fire Extinguisher"><span class="text">Fire Extinguisher</label></td>
+      <td><label><input type="checkbox" name="venueSafety[]" value="First Aid Kit"><span class="text">First Aid Kit</label></td>
+<td><label><input type="checkbox" name="venueSafety[]" value="Emergency Exit"><span class="text">Emergency Exit</label></td>
+</tr>
+
+<tr>
+<td><label><input type="checkbox" name="venueSafety[]" value="Fire Alarm"><span class="text">Fire Alarm</label></td>
+<td><label><input type="checkbox" name="venueSafety[]" value="Adequate Outdoor Lighting"><span class="text">Adequate Outdoor Lighting</label></td>
+    <td><label><input type="checkbox" name="venueSafety[]" value="Security Guards"><span class="text">Security Guards</label></td>
+<td><label><input type="checkbox" name="venueSafety[]" value="Security Cameras"><span class="text">Security Cameras</label></td>
+</tr>
+<tr>
+<td><label><input type="checkbox" name="venueSafety[]" value="Employee ID"><span class="text">Employee ID</label></td>
+<td><label><input type="checkbox" name="venueSafety[]" value="Employee Photo ID"><span class="text">Employee Photo ID</label></td>
+      </tr>
+</table>
+  <div class="asos4">NEXT</div>
+<div class="backTo">PREVIOUS</div>
+
+  </div>
+  </div>
+
+
+                  <!-- END OF MODEL -->
                 </div>
                 <a href="#">Close</a>
               </div>
@@ -612,6 +1325,230 @@
                 </label>
               </p>
             </div>
+
+            <!-- MODEL  -->
+
+
+<div id="modal1" class="modal">
+              <div class="modal-content">
+                <h4>FITNESS &amp; BEAUTY</h4>
+                <hr>
+                  <p class="white" style="background-color: red;">General Amenities Offered</p>
+                <hr>
+                <div class="">
+                  <div class="sparSection">
+ <i class="fas fa-times close fa-2x" id="closeBeauty"></i>
+
+ 
+ <div class="spar">
+
+  <p class="steps">FITNESS & BEAUTY</p>
+  <div class="icons">
+  <i class="fas fa-male fa-2x" id="male"></i>  <i class="fas fa-heartbeat fa-2x"></i> <i class="fas fa-female fa-2x"></i> 
+  </div>
+ <p class="stages">WHAT YOU OFFER (OPTIONAL)</p>
+
+<table>
+<tr>
+<td><label><input type="checkbox" name="spar[]" value="Manicure"><span class="text">Manicure</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Pedicure"><span class="text">Pedicure</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Massage"><span class="text">Massage</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Deep Tissue Massage"><span class="text">Deep Tissue Massage</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Waxing"><span class="text">Waxing</span></label></td>
+
+</tr>
+
+<tr>
+<td><label><input type="checkbox" name="spar[]" value="Body Scrub"><span class="text">Body Scrub</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Mud Wrap"><span class="text">Mud-Wrap</label></td>
+<td><label><input type="checkbox" name="spar[]" value="Complementary Refreshments"><span class="text">Complementary Refreshments</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Jacuzzi"><span class="text">Jacuzzi</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Salon"><span class="text">Salon</span></label></td>
+
+</tr>
+
+
+<tr>
+<td><label><input type="checkbox" name="spar[]" value="Locker Room"><span class="text">Locker Room</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Shower"><span class="text">Shower</span></label></td>
+
+<td><label><input type="checkbox" name="spar[]" value="Reflexology Massage"><span class="text">Reflexology Massage</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Booking Allowed"><span class="text">Booking Allowed</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Barbershop"><span class="text">Barbershop</span></label></td>
+
+
+</tr>
+
+
+<tr>
+
+
+
+<td><label><input type="checkbox" name="spar[]" value="Free Gown"><span class="text">Free Gown</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Free Slippers"><span class="text">Free Slippers</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Free Towels"><span class="text">Free Towels</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Little Girl Salon"><span class="text">Little Girl Salon</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Make Up Artistry"><span class="text">Make Up Artistry</span></label></td>
+</tr>
+
+<tr>
+<td><label><input type="checkbox" name="spar[]" value="Bridal Make Up"><span class="text">Bridal Make Up</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Steam Room"><span class="text">Steam Room</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Swimming Pool"><span class="text">Swimming Pool</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Ear Candling"><span class="text">Ear Candling</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Hot Tub"><span class="text">Hot Tub</span></label></td>
+</tr>
+
+<tr>
+<td><label><input type="checkbox" name="spar[]" value="Moxibustion Therapy"><span class="text">Moxibustion Therapy</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Gua Sha"><span class="text">Gua Sha</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Swedish Massage"><span class="text">Swedish Massage</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Aromatherapy Massage"><span class="text">Aromatherapy Massage</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="HotStone Massage"><span class="text">HotStone Massage</span></label></td>
+</tr>
+
+<tr>
+
+<td><label><input type="checkbox" name="spar[]" value="Shiastsu Massage"><span class="text">Shiastsu Massage</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Soap"><span class="text">Soap</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Thai Massage"><span class="text">Thai Massage</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Pregnancy Massage"><span class="text">Pregnancy Massage</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Sauna"><span class="text">Sauna</span></label></td>
+
+</tr>
+
+<tr>
+<td><label><input type="checkbox" name="spar[]" value="Sports Massage"><span class="text">Sports Massage</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Complementary Wine"><span class="text">Complementary Wine</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Facial"><span class="text">Facial</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Special Membership"><span class="text">Special Membership</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Membership Cards"><span class="text">Membership Cards</span></label></td>
+</tr>
+
+
+
+</table>
+<div class="asos6">NEXT</div>
+</div>
+</div>
+
+<!--gym features-->
+<div class="gymSection">
+ <i class="fas fa-times close fa-2x" id="closeGym"></i>
+
+ 
+ <div class="gymgym">
+
+  <p class="steps">FITNESS & BEAUTY</p>
+  <div class="icons">
+  <i class="fas fa-male fa-2x" id="male"></i>  <i class="fas fa-heartbeat fa-2x"></i> <i class="fas fa-female fa-2x"></i>  
+  </div>
+ <p class="stages">WHAT YOU OFFER</p>
+ <table>
+  
+  
+  <label></label><span></span>
+   <tr>
+       <td><label><input type="checkbox" name="gymAmenities[]" value="Step Class" ><span class="text">Step Class</span></label></td>
+  
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Swimming Pool" ><span class="text">Swimming Pool</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Locker Room" ><span class="text">Locker Room</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Free Towels" ><span class="text">Free Towels</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Fee Paying Towels" ><span class="text">Fee Paying Towels</span></label></td>
+  
+  </tr>
+  
+  <tr>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Shower" ><span class="text">Shower</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Soap" ><span class="text">Soap</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Aerobics Class"><span class="text">Aerobics Class</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Spin Class"><span class="text">Spin Class</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Spin Bike" ><span class="text">Spin Bike</span></label></td>
+  
+  
+  </tr>
+  
+  
+  <tr>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Standing Steps" ><span class="text">Standing Steps</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Kettle Bells" ><span class="text">Kettle Bells</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Upright Bike" ><span class="text">Upright Bike</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Stability Balls" ><span class="text">Stability Balls</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="leg Press" ><span class="text">Leg Press</span></label></td>
+  
+  
+  </tr>
+  
+  <tr>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Punching Bag" ><span class="text">Punching Bag</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Boxing Cloves" ><span class="text">Boxing Cloves</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Weight Lifting Cloves" ><span class="text">Weight Lifting Cloves</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Tread Mill" ><span class="text">Tread Mill</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Bench Press" ><span class="text">Bench Press</span></label></td>
+  
+  </tr>
+  
+ 
+  
+  <tr>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Sit Up Bench" ><span class="text">Sit Up Bench</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Elliptical Machine" ><span class="text">Elliptical Machine</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Cardio Endurance Machine" ><span class="text">Cardio And Endurance &nbsp&nbsp&nbsp&nbsp&nbsp&nbspMachine</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Smith Machine" ><span class="text">Smith Machine</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="IsoLateral Machine" ><span class="text">IsoLateral Machine</span></label></td>
+  
+  </tr>
+  
+  <tr>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Adjustable BenchPress" ><span class="text">Adjustable Bench &nbsp&nbsp&nbsp&nbsp&nbsp&nbspPress</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Olympic Weight Set" ><span class="text">Olympic Weight Set</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Multi Station Weight Machine" ><span class="text">Multi Station Weight Machine</span></label></td>
+    <td><label><input type="checkbox" name="gymAmenities[]" value="Arm Preacher Curl" ><span class="text">Arm Preacher Curl</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Push Up Bars" ><span class="text">Push Up Bars</span></label></td>
+  
+  
+  
+  
+  </tr>
+  
+  <tr>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Sell Energy Drinks" ><span class="text">Sell Energy Drinks</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Sell Water" ><span class="text">Sell Water &nbsp&nbsp&nbsp&nbsp&nbsp&nbspRefreshments</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Steam Bath" ><span class="text">Steam Bath</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Spa" ><span class="text">Spa and Massage</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Jacuzzi" ><span class="text">Jacuzzi</span></label></td>
+  </tr>
+  
+  <tr>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Aerobics Floor Mats" ><span class="text">Aerobics Floor Mats</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Air Conditioner" ><span class="text">Air Conditioner</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Sauna" ><span class="text">Sauna</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Tyre Based Exercise" ><span class="text">Tyre Based &nbsp&nbsp&nbsp&nbsp&nbsp&nbspExercise</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Heated Swimming Pool" ><span class="text">Heated Swimming &nbsp&nbsp&nbsp&nbsp&nbsp&nbspPool</span></label></td>
+  </tr>
+  
+  <tr>
+      <td><label><input type="checkbox" name="gymAmenities[]" value="Student Subscription"><span class="text">Student Subscription</span></label></td>
+  
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Personal Trainer" ><span class="text">Personal Trainer</span></label></td>
+<td><label><input type="checkbox" name="gymAmenities[]" value="Multi Shower" ><span class="text">Multi Shower</span></label></td>
+<td><label><input type="checkbox" name="gymAmenities[]" value="Yoga" ><span class="text">Yoga</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Pilates Class"><span class="text">Pilates Class</span></label></td>
+  </tr>
+  
+  </table>
+   <div class="asos7 done go">NEXT</div>
+</div>
+
+</div>
+                </div>
+
+                <a href="#">Close</a>
+              </div>
+
+            </div>
+
+            <!-- END OF MODEL  -->
           </div>
 
 
@@ -643,7 +1580,7 @@
                   <span>Hair Salon</span>
                 </label>
               </p>
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Select</a>
+              
             </div>
           </div>
 
@@ -685,7 +1622,7 @@
                   <span>Membership Club</span>
                 </label>
               </p>
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Select</a>
+              
             </div>
             <!-- Modal -->
             <div id="modal1" class="modal">
@@ -944,7 +1881,7 @@
                   <span>Electronics Store</span>
                 </label>
               </p>
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Select</a>
+              
             </div>
           </div>
 
@@ -1009,10 +1946,10 @@
               <p>
                 <label>
                   <input type="checkbox" id="5" class="filled-in"  />
-                  <span>Security Service<</span>
+                  <span>Security Service</span>
                 </label>
               </p>
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Select</a>
+              
             </div>
             <!-- Modal -->
             <div id="modal1" class="modal">
@@ -1231,7 +2168,7 @@
               <p>
                 <label>
                   <input type="checkbox" class="filled-in" />
-                  <span>Radio Station</span>
+                  <span>checkbox Station</span>
                 </label>
               </p>
               <p>
@@ -1272,7 +2209,7 @@
                   <span>Bureau</span>
                 </label>
               </p>
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Select</a>
+              
             </div>
           </div>
 
@@ -1319,7 +2256,7 @@
                   <span>Basketball Academy</span>
                 </label>
               </p>
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Select</a>
+              
             </div>
             <!-- Modal -->
             <div id="modal1" class="modal">
@@ -1536,7 +2473,7 @@
                   <span>Internet Provider</span>
                 </label>
               </p>
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Select</a>
+              
             </div>
           </div>
 
@@ -1592,7 +2529,7 @@
                   <span>Driving School</span>
                 </label>
               </p>
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Select</a>
+              
             </div>
             <!-- Modal -->
             <div id="modal1" class="modal">
@@ -1833,7 +2770,7 @@
                   <span>Dentist</span>
                 </label>
               </p>
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Select</a>
+              
             </div>
           </div>
 
@@ -1855,7 +2792,7 @@
               <p>
                 <label>
                   <input type="checkbox" id="2" class="filled-in"  />
-                  <span>Bank/span>
+                  <span>Bank</span>
                 </label>
               </p>
               <p>
@@ -1876,7 +2813,7 @@
                   <span>Micro Finance Firm</span>
                 </label>
               </p>
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Select</a>
+              
             </div>
             <!-- Modal -->
             <div id="modal1" class="modal">
@@ -2118,7 +3055,7 @@
                 </label>
               </p>
              
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Select</a>
+              
             </div>
           </div>
 
@@ -2179,7 +3116,7 @@
                   <span>Farm Equipment Store</span>
                 </label>
               </p>
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Select</a>
+              
             </div>
             <!-- Modal -->
             <div id="modal1" class="modal">
@@ -2355,7 +3292,7 @@
               <p>
                 <label>
                   <input type="checkbox" class="filled-in" checked="checked" />
-                  <span>ANIMAL/span>
+                  <span>ANIMAL</span>
                 </label>
               </p>
               <p>
@@ -2421,7 +3358,7 @@
                 </label>
               </p>
              
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Select</a>
+              
             </div>
           </div>
 
@@ -2455,11 +3392,11 @@
               <p>
                 <label>
                   <input type="checkbox" id="4" class="filled-in"  />
-                  <span>Engineering Company/span>
+                  <span>Engineering Company</span>
                 </label>
               </p>
               
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Select</a>
+              
             </div>
             <!-- Modal -->
             <div id="modal1" class="modal">
@@ -2651,6 +3588,24 @@
 
       <!-- end tab 3 -->
 
+      <!-- model -->
+
+
+
+
+
+  
+ 
+ 
+ </div>
+ 
+ 
+ 
+ 
+ <br /><br />
+ 
+ 
+
 
 <!-- Modals -->
 
@@ -2663,6 +3618,2225 @@
       x.type = "password";
     }
   }
+
+
+</script>
+<script >
+      
+ $(document).ready(function(){
+     
+    function nameCheck(companyName){
+        
+        
+     $.ajax({
+        
+        url: "nameAssessment.php",
+        type: "post",
+        data: { companyName: companyName },
+        async: true,
+         cache: false,
+       
+        beforeSend: function (){
+           
+           $('.companyError2').html("<i class='fas fa-spinner fa-2x'></i><br />checking if the proposed comapany name already exists in the database");  
+            
+         },
+      
+        success: function (data) {
+            
+               var feed= data;
+            
+           if($.trim(feed) == ""){
+               
+              $('.companyError2').text('');
+              $('.companyError').text('');
+               $('.button').show();
+           
+               
+           }else{
+               
+               
+              $('.companyError2').text(feed);
+               $('.companyError').text('');
+               $('.button').hide();
+               
+               
+           }
+        
+        
+            
+           
+        },
+          complete: function (data) {  
+            
+            
+            
+        }
+         
+       
+           
+    });   
+           
+    }   
+    
+    
+    
+    
+     $("#companyName").on("keyup", function(){
+          //var companyName = $(this).val();
+         $('.button').hide();
+          
+    
+         
+         
+         
+     });  
+     
+     
+     
+        
+      
+     
+      $("#companyName").on("focusout", function(){
+          var companyName = $(this).val();
+         //$('.button').hide();
+         
+         
+          if(companyName.length >= 5 && companyName.length < 50){ 
+            //errors = false;
+            nameCheck(companyName);
+          
+            //alert(company);
+        }
+        
+        
+       if(companyName.length < 5){ //if the length of characters
+            
+            //errors = true;
+            //$('input[name=companyName]').focus();
+           
+            $('.companyError').text('company name should have 5 characters or more');
+            
+             $('.companyError2').text('');
+            
+        }
+        
+         if(companyName.length > 50){ //if the length of characters
+            
+            //errors = true;
+            //$('input[name=companyName]').focus();
+            
+            $('.companyError').text('company name should have less than 50 characters');
+            
+             $('.companyError2').text('');
+            
+        }
+        
+         if(companyName.length == ""){
+            
+           // errors = true;
+            //$('input[name=companyName]').focus();
+            
+            $('.companyError').text('please indicate your company name');
+            
+             $('.companyError2').text('');
+            
+        } 
+        
+    
+         
+         
+         
+     });  
+     
+     
+     
+ });   
+    
+    
+    
+</script>
+
+<script>
+
+
+$(document).ready(function(){
+   
+   
+    
+       
+        
+    
+    
+    $(".button").on("click", function(){
+     
+        
+     var errors = false;
+       $('.companyError').html('');
+        $('.addressError').html('');
+        $('.postalError').html('');
+        $('.websiteError').html('');
+        
+      
+        
+        
+        
+        
+       //values of inputs stored in variables
+        
+     var company = $('input[name=companyName]').val(); 
+     var physicalAddress = $('textarea[name=physicalAddress]').val();
+     var postalAddress = $('input[name=postalAddress]').val();
+     var website = $('input[name= website]').val();
+     
+     var businessHours=$("input[name=businessHours]").val();
+ 
+          
+         
+        
+        
+        function isWebsite(website) {
+        
+        //var reg = /((?:https?\:\/\/|www\.)(?:[-a-z0-9]+\.)*[-a-z0-9]+.*)/i;
+                                                                                 
+        //return reg.test(website); 
+        
+        return url.match(/(http|ftp|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])?/);
+        
+        
+                                }
+        
+      
+   
+        //company name conditions
+                                                       
+        if(company.length < 5){ //if the length of characters
+            
+            errors = true;
+            $('input[name=companyName]').focus();
+            
+            $('.companyError').html('company name should have 5 characters or more');
+            
+        }
+        
+         if(company.length > 50){ //if the length of characters
+            
+            errors = true;
+            $('input[name=companyName]').focus();
+            
+            $('.companyError').html('company name should have less than 50 characters');
+            
+        }
+        
+         if(company.length == ""){
+            
+            errors = true;
+            $('input[name=companyName]').focus();
+            
+            $('.companyError').html('please indicate your company name');
+            
+        }
+        
+        //physical address
+        
+         if(physicalAddress.length < 35){
+            
+            errors = true;
+            $('textarea[name=physicalAddress]').focus();
+            
+            $('.addressError').html('a valid physical address should have 35 characters or more');
+            
+        }
+        
+         if(physicalAddress.length == ""){
+            
+            errors = true;
+            $('textarea[name=physicalAddress]').focus();
+            
+            $('.addressError').html('please indicate your physical address');
+            
+        }
+        
+         if(physicalAddress.length > 220){
+            
+            errors = true;
+            $('textarea[name=physicalAddress]').focus();
+            
+            $('.addressError').html('please indicate a physical address with less than 220 characters');
+            
+        }
+        
+        
+        
+        
+         if((postalAddress.length < 10) && (postalAddress.length != "")){
+            
+            errors = true;
+            //$('input[name=postalAddress]').focus();
+            
+            $('.postalError').html('a valid postal address should have 10 characters or more');
+            
+        }
+        
+        if((postalAddress.length > 40) && (postalAddress.length != "")){
+            
+            errors = true;
+            //$('input[name=postalAddress]').focus();
+            
+            $('.postalError').html('a valid postal address should have not more than 40 characters');
+            
+        }
+        
+        
+        //return url.match(/(http|ftp|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])?/);
+         //website
+         
+         ///^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/gm
+         
+        //var pattern = /(http|ftp|www|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])+(.[a-z])?/;
+        
+        
+        //var pattern= /(http|ftp|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])+(.[a-z])?/;
+        //var pattern= /^(http:\/\/www\.|https:\/\/www\.|ftp:\/\/www\.|www\.){1}[0-9A-Za-z\.\-]*\.[0-9A-Za-z\.\-]*$/;
+        
+        //var pattern = /^(http|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])+(.[a-z])?/;
+        
+        //var pattern = /(http|ftp|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])?/;
+         // var regex = new RegExp(pattern);
+          // url of the website
+          
+          
+          
+          
+          var pattern= /^(http:\/\/www\.|https:\/\/www\.|ftp:\/\/www\.|www\.){1}[0-9A-Za-z\.\-]*\.[0-9A-Za-z\.\-]*$/;
+          
+          var regex = new RegExp(pattern);
+          
+          
+          if (!(website.match(regex)) && (website != "")) {
+            errors = true;
+              //$('input[name= website]').focus();
+            $('.websiteError').html('please enter a valid website address');
+           } 
+           
+          
+          /*
+         if (!(website.match(regex))) {
+            errors = true;
+              //$('input[name= website]').focus();
+            $('.websiteError').html('please enter a valid website address');
+           } 
+           
+           
+          
+         if(!isWebsite(website) && (website != "")) {
+           
+           errors = true;
+              //$('input[name= website]').focus();
+            $('.websiteError').html('please enter a valid website address');
+           
+       }
+        */
+        
+        
+        if(errors != true) {
+            
+          //alert("yes");
+    $("div .showing").removeClass("reverse").addClass("animateOut"); //adding animate-out class to the div with class of showing
+    
+    
+    
+    setTimeout(function(){
+        
+     $("div .showing").removeClass("showing animateOut").next("div").addClass("showing");
+     
+  $(".progressbar").find("span.StepActive").removeClass("StepActive").next("span").addClass("StepActive"); 
+   
+   $(window).scrollTop(0);
+    },1300); 
+       
+            
+            
+            
+            
+            
+            
+        }else{
+            
+          return false;  
+            
+            
+        }
+                            
+                        
+       
+            
+            
+            
+        
+        
+    });
+        
+ 
+    
+    
+    
+});
+
+
+
+
+</script>
+
+<script>
+
+$(document).ready(function(){
+  
+   function isEmail(email){
+       
+           var regex = /^([0-9a-zA-Z]([-_\\.]*[0-9a-zA-Z]+)*)@([0-9a-zA-Z]([-_\\.]*[0-9a-zA-Z]+)*)[\\.]([a-zA-Z]{2,9})$/;
+           return regex.test(email);          
+                 }
+                 
+                 
+ function emailCheck(email){
+        
+        
+     $.ajax({
+        
+        url: "nameAssessment.php",
+        type: "post",
+        data: { email: email },
+        async: true,
+         cache: false,
+       
+        beforeSend: function (){
+           
+            $('.emailError20').html("<i class='fas fa-spinner fa-2x'></i><br />checking if the proposed email update already exists in the database"); 
+            $('.emailError').html('');
+        
+         },
+      
+        success: function (data) {
+            
+               var feed= data;
+            
+        
+        
+           if($.trim(feed) != ""){
+               
+               
+                $('.emailError20').html(feed);
+              $('.emailError').html('');
+               $('.buttonTwo').hide();
+             
+           
+               
+           }else{
+               
+               
+             
+               
+               
+               
+                $('.emailError20').html('');
+              $('.emailError').html('');
+               $('.buttonTwo').show();
+               
+               
+           }
+     
+                
+           
+        },
+          complete: function (data) {  
+            
+            
+            
+        }
+         
+       
+           
+    });   
+           
+    }   
+    
+   
+   
+   
+                 
+ function emailCheckTwo(email2){
+        
+        
+     $.ajax({
+        
+        url: "nameAssessment.php",
+        type: "post",
+        data: { email2: email2 },
+        async: true,
+         cache: false,
+       
+        beforeSend: function (){
+           
+            $('.emailError10').html("<i class='fas fa-spinner fa-2x'></i><br />checking if the proposed email update already exists in the database"); 
+            $('.emailError2').html('');
+        
+         },
+      
+        success: function (data) {
+            
+               var feed= data;
+            
+        
+        
+           if($.trim(feed) != ""){
+               
+               
+                $('.emailError10').html(feed);
+              $('.emailError2').html('');
+               $('.buttonTwo').hide();
+             
+           
+               
+           }else{
+               
+               
+             
+               
+               
+               
+                $('.emailError10').html('');
+              $('.emailError2').html('');
+               $('.buttonTwo').show();
+               
+               
+           }
+     
+                
+           
+        },
+          complete: function (data) {  
+            
+            
+            
+        }
+         
+       
+           
+    });   
+           
+    }   
+    
+   
+    /*
+     
+     //var company = $('input[name=companyName]');
+      $("input[name=emailAddress]").on("keyup", function(){
+         
+          //var email = $(this).val();  
+         $('.buttonTwo').hide();
+     
+      //$('.emailError20').html("<i class='fas fa-spinner fa-2x'></i><br />checking if the proposed email update already exists in the database"); 
+         
+         
+         
+     });  
+     
+     
+      $("input[name=emailAddress2]").on("keyup", function(){
+         
+          //var email = $(this).val();  
+         $('.buttonTwo').hide();
+     
+      //$('.emailError20').html("<i class='fas fa-spinner fa-2x'></i><br />checking if the proposed email update already exists in the database"); 
+         
+         
+         
+     });  
+     
+     
+      */
+     
+     
+    
+   //$('.button').hide();
+    
+      $("input[name=emailAddress]").on("focusout", function(){
+          var email = $(this).val();
+        
+          //if((isEmail(email)) && (email != "")){
+           
+          // emailCheck(email);
+           //alert(email);
+           
+           // }
+            
+            
+           if((!isEmail(email)) && (email != "")) {
+           
+           incorrect = true;
+            $('.emailError').html('please enter a valid email address');
+           
+       }
+        
+        if(email.length == "") {
+           
+           incorrect = true;
+            $('.emailError').html('please indicate an email address');
+           
+       }
+        
+        
+        //email 2
+     
+        
+       
+       if((email == emailTwo) && (email != "")){
+           
+           incorrect = true;
+           
+         $('.emailError').html('email address for the two separate slots should be distinct');
+             
+        $('.emailError2').html('email address for the two separate slots should be distinct');
+              
+           
+       }
+   
+         
+          
+      });
+    
+
+  
+  
+   $("input[name=emailAddress2]").on("focusout", function(){
+          var email2 = $(this).val();
+        
+          //if((isEmail(email2)) && (email2 != "")){
+           
+          // emailCheckTwo(email2);
+           //alert(email);
+           
+           // }
+            
+            
+           if((!isEmail(email2)) && (email2 != "")) {
+           
+           incorrect = true;
+            $('.emailError2').html('please enter a valid email address');
+           
+       }
+        
+        if(email2.length == "") {
+           
+           incorrect = true;
+            $('.emailError2').html('please indicate an email address');
+           
+       }
+        
+        
+        //email 2
+                                                               
+     
+        
+       
+       if((email == email2) && (email2 != "")){
+           
+           incorrect = true;
+           
+         $('.emailError').html('email address for the two separate slots should be distinct');
+             
+        $('.emailError2').html('email address for the two separate slots should be distinct');
+              
+           
+       }
+   
+         
+          
+      });
+    
+
+  
+  
+  
+  
+    
+ $('.buttonTwo').attr('disabled', false);
+    
+    
+    
+    
+    
+    
+    $(".buttonTwo").on("click", function(){
+        
+      
+
+        
+      var incorrect = false;  
+    $('.telError').text('');
+    $('.telError2').text('');  
+    $('.celError').text('');
+    $('.celError2').text('');
+    $('.emailError').text('');
+    $('.emailError2').text('');  
+    $('.passwordError').text('');  
+        
+     var phone = $('input[name=telephone]').val(); 
+     var phoneTwo = $('input[name=telephone2]').val(); 
+     var cell = $('input[name=cell]').val(); 
+     var cellTwo = $('input[name=cell2]').val();
+     var email = $('input[name=emailAddress]').val();
+     var emailTwo = $('input[name=emailAddress2]').val(); 
+       var passWord = $('input[name=password]').val();   
+        
+       if(phone.length < 10){
+           
+          incorrect = true; 
+           
+           $('.telError').text('a valid phone number should have 10 digits e.g 0211010101 or 0922010101'); 
+           
+       } 
+        
+        if(phone.length > 10){
+            
+           incorrect = true; 
+           
+           $('.telError').text('a valid phone number should have 10 digits e.g 0211010101 or 0922010101');   
+            
+        }
+        
+        
+        if(phone.length == ""){
+            
+          incorrect = true; 
+           
+           $('.telError').text('please indicate your phone number e.g 0211010101 or 0922010101');   
+               
+            
+            
+        }
+        
+        if(phone < 0){
+            
+             incorrect = true; 
+           
+           $('.telError').text('a phone number cannot be negative');   
+               
+            
+        }
+        
+        //phone two
+        
+        if((phoneTwo.length < 10) && (phoneTwo.length != "")){
+            
+             incorrect = true; 
+           
+           $('.telError2').text('a valid phone number should have 10 digits e.g 0211010101 or 0922010101');   
+               
+            
+            
+        }
+        
+        if((phoneTwo.length > 10) && (phoneTwo.length != "")){
+            
+            
+           incorrect = true; 
+           
+           $('.telError2').text('a valid phone number should have 10 digits e.g 0211010101 or 0922010101');   
+               
+              
+            
+        }
+        
+          if((phoneTwo < 0) && (phoneTwo.length != "")){
+            
+             incorrect = true; 
+           
+           $('.telError2').text('a phone number cannot be negative');   
+               
+            
+        }
+
+        
+       
+        
+        
+        //cell no 1
+        
+         if((cell.length > 10) && (cell.length != "")){
+            
+            
+           incorrect = true; 
+           
+           $('.celError').text('a valid phone number should have 10 digits e.g 0211010101 or 0922010101');   
+               
+              
+            
+        }
+
+         if((cell.length < 10) && (cell.length != "")){
+            
+            
+           incorrect = true; 
+           
+           $('.celError').text('a valid phone number should have 10 digits e.g 0211010101 or 0922010101');   
+               
+              
+            
+        }
+        
+        
+        if((cell < 0) && (cell.length != "")){
+            
+             incorrect = true; 
+           
+           $('.celError').text('a telephone number cannot be negative');   
+               
+            
+        }
+
+        
+        
+        //cell no2
+        
+         if((cellTwo.length > 10) && (cellTwo.length != "")){
+            
+            
+           incorrect = true; 
+           
+           $('.celError2').text('a valid phone number should have 10 digits e.g 0211010101 or 0922010101');   
+               
+              
+            
+        }
+
+         if((cellTwo.length < 10) && (cellTwo.length != "")){
+            
+            
+           incorrect = true; 
+           
+           $('.celError2').text('a valid phone number should have 10 digits e.g 0211010101 or 0922010101');   
+               
+              
+            
+        }
+        
+        
+        if((cellTwo < 0) && (cellTwo.length != "")){
+            
+             incorrect = true; 
+           
+           $('.celError2').text('a telephone number cannot be negative');   
+               
+            
+        }
+
+        
+
+       
+        
+        
+        
+       
+       
+       
+       //passowrd validation
+        
+       /* if(passWord.length !== "" && passWord.length !== 8) {
+            
+            
+        incorrect = true;
+           
+         $('.passwordError').text('please indicate a password e.g 01a23X45');
+                 
+          $('.passwordError').text('please indicate a password of 8 characters: 6 numbers, 1 uppercase and 1 lowercase letter in any order e.g 01a23X45');
+          
+           
+            
+        }*/
+        
+        
+        
+         function isEmail(email){
+       
+           var regex = /^([0-9a-zA-Z]([-_\\.]*[0-9a-zA-Z]+)*)@([0-9a-zA-Z]([-_\\.]*[0-9a-zA-Z]+)*)[\\.]([a-zA-Z]{2,9})$/;
+           return regex.test(email);          
+                 }
+        
+        //email 1
+        
+         if((!isEmail(email)) && (email != "")) {
+           
+           incorrect = true;
+            $('.emailError').text('please enter a valid email address');
+           
+       }
+        
+        if(email.length == "") {
+           
+           incorrect = true;
+            $('.emailError').text('please indicate an email address');
+           
+       }
+        
+        
+        //email 2
+                                                               
+      if((!isEmail(emailTwo)) && (emailTwo != "")) {
+           
+           incorrect = true;
+            $('.emailError2').text('please enter a valid email address');
+           
+       }
+        
+       
+       if((email == emailTwo) && (email != "")){
+           
+           incorrect = true;
+           
+         $('.emailError').text('email address for the two separate slots should be distinct');
+             
+        $('.emailError2').text('email address for the two separate slots should be distinct');
+              
+           
+       }
+        
+        
+        //passowrd validation
+        
+        if(passWord.length == "") {
+            
+            
+        incorrect = true;
+           
+         $('.passwordError').text('please indicate a password and make sure your password follows the pattern given on the instruction box on the top right');
+                 
+            
+            
+        }else{
+        
+        if(passWord.length !== 8) {
+            
+            
+        incorrect = true;
+           
+         $('.passwordError').text('please indicate a password of 8 characters');
+                 
+            
+            
+        }
+        
+        
+        if (!passWord.match(/[a-z]{1}/) ) {
+         //$('#letter').removeClass('invalid').addClass('valid');
+            incorrect = true;
+         $('.passwordError').text('please include one lowercase letter in your password');
+            // $('.passwordError').text('please include a lowercase letter in your password');
+           }
+        
+        if (!passWord.match(/[A-Z]{1}/) ) {
+         //$('#letter').removeClass('invalid').addClass('valid');
+            incorrect = true;
+         $('.passwordError').text('please include one uppercase letter in your password');
+            // $('.passwordError').text('please include a lowercase letter in your password');
+           } 
+            
+            
+            /*
+             if (!passWord.match(/[a-zA-Z]{2}\d{6}/)) {
+         //$('#letter').removeClass('invalid').addClass('valid');
+            incorrect = true;
+         $('.passwordError').text('make sure your password follows the pattern given on the instruction box on the top right');
+            // $('.passwordError').text('please include a lowercase letter in your password');
+           }
+            //[0-9]{6}[a-zA-Z]{2}
+            
+        */
+        
+        
+              if (!passWord.match(/\d{6}[a-zA-Z]{2}/)) {
+         //$('#letter').removeClass('invalid').addClass('valid');
+            incorrect = true;
+         $('.passwordError').text('make sure your password follows the pattern given on the instruction box on the top right');
+            // $('.passwordError').text('please include a lowercase letter in your password');
+           }
+            //[0-9]{6}[a-zA-Z]{2}
+            
+        
+        
+        
+        }
+         
+        
+        
+        
+        
+        //passowrd validation
+        /*
+        if(passWord.length == "") {
+            
+            
+        incorrect = true;
+           
+         $('.passwordError').html('please indicate a password');
+                 
+            
+            
+        }*/
+        
+        
+        //validation to prevent entering the same numbers
+        
+        if((phone == phoneTwo) && (phone != "")){
+           
+            incorrect = true;
+           
+         $('.telError').text('telephone numbers for the two separate slots should be distinct');
+             
+        $('.telError2').text('telephone numbers for the two separate slots should be distinct');
+              
+           
+       }
+                      
+       
+       
+       
+        
+         if((cell == cellTwo) && (cell != "")){
+           
+           incorrect = true;
+           
+         $('.celError').text('cell-phone numbers for the two separate slots should be distinct');
+             
+        $('.celError2').text('cell-phone numbers for the two separate slots should be distinct');
+              
+           
+       }
+       
+       
+       
+       
+       
+       
+       
+       
+       
+        if((phone == cell) && (phone != "")){
+           
+           incorrect = true;
+           
+         $('.telError').text('phone numbers for the two separate slots should be distinct');
+             
+        $('.celError').text('phone numbers for the two separate slots should be distinct');
+              
+           
+       }
+             
+       
+        if((phone == cellTwo) && (phone != "")){
+           
+           incorrect = true;
+           
+         $('.telError').text('phone numbers for the two separate slots should be distinct');
+             
+        $('.celError2').text('phone numbers for the two separate slots should be distinct');
+              
+           
+       }
+                      
+      
+       
+       if((phoneTwo == cell) && (phoneTwo != "")){
+           
+           incorrect = true;
+           
+         $('.telError2').text('phone numbers for the two separate slots should be distinct');
+             
+        $('.celError').text('phone numbers for the two separate slots should be distinct');
+              
+           
+       }
+       
+       if((phoneTwo == cellTwo) && (phoneTwo != "")){
+           
+           incorrect = true;
+           
+         $('.telError2').text('phone numbers for the two separate slots should be distinct');
+             
+        $('.celError2').text('phone numbers for the two separate slots should be distinct');
+              
+           
+       }
+       
+      
+
+       
+         if(incorrect != true) {
+         
+           
+    $("div .showing").removeClass("reverse").addClass("animateOut"); //adding animate-out class to the div with class of showing
+    
+    
+    
+    setTimeout(function(){
+        
+     $("div .showing").removeClass("showing animateOut").next("div").addClass("showing");
+     
+  $(".progressbar").find("span.StepActive").removeClass("StepActive").next("span").addClass("StepActive"); 
+   
+    $(window).scrollTop(0);
+    },1300); 
+                 
+           
+        
+      }else{
+          
+          
+          
+          return false;
+      }
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    });
+    
+    
+    
+    
+    
+    
+});
+
+
+
+
+
+</script>
+
+
+
+
+<script>
+
+
+
+$(document).ready(function(){
+    
+  //open step 5 when clicked
+    
+    $("input[type=checkbox]:not(.windows)").on("click", function(){
+        
+       //alert("yes");
+        //$(window).scrollTop(0);
+        
+       if ($(this).is(":checked")){
+           
+          // 
+           
+        
+           
+         
+          $("div .showing").removeClass("reverse").addClass("animateOut"); //adding animate-out class to the div with class of showing
+    
+    
+       
+       
+        setTimeout(function(){
+        
+     $("div .showing").removeClass("showing animateOut").next("div").addClass("showing");
+     
+  $(".progressbar").find("span.StepActive").removeClass("StepActive").next("span").addClass("StepActive"); 
+    
+     $(window).scrollTop(0);       
+   
+    },1300); 
+       
+           
+       }
+        
+    }); 
+ 
+     $(".buttonThree").on("click", function(){
+    
+    
+
+    
+    
+    $("div .showing").removeClass("reverse").addClass("animateOut"); //adding animate-out class to the div with class of showing
+    
+    
+    
+    setTimeout(function(){
+        
+     $("div .showing").removeClass("showing animateOut").next("div").addClass("showing");
+     
+  $(".progressbar").find("span.StepActive").removeClass("StepActive").next("span").addClass("StepActive"); 
+   
+    $(window).scrollTop(0);
+    },1300); 
+     
+    
+    
+     });
+    
+    
+    
+    
+ $(".button2").on("click", function(){
+     
+      $("div .showing").prev("div").addClass("reverse");
+     
+     
+      setTimeout(function(){
+          
+          
+   $("div .showing").removeClass("showing").prev("div").addClass("showing");   
+   
+     $(".progressbar").find("span.StepActive").removeClass("StepActive").prev("span").addClass("StepActive"); 
+     
+     $(window).scrollTop(0);
+     },1300);
+     
+ });
+    
+    
+    
+    //this is the modal window code
+    
+    
+    
+    
+        
+    
+$(".skip").on("click", function(){
+     
+    $("div .spotlight").removeClass("reverse").addClass("animateOut"); //adding animate-out class to the div with class of showing
+    
+    
+    
+    setTimeout(function(){
+        
+     $("div .spotlight").removeClass("spotlight animateOut").next("div").addClass("spotlight");
+     
+  
+    
+    },1300); 
+     
+    
+    
+     });
+    
+    
+    
+    
+   
+    
+    
+ $(".backwards").on("click", function(){
+     
+      $("div .spotlight").prev("div").addClass("reverse");
+     
+     
+      setTimeout(function(){
+          
+          
+   $("div .spotlight").removeClass("spotlight").prev("div").addClass("spotlight");   
+   
+    
+     },1100);
+     
+ });
+ 
+//the closing of the modal window
+    
+    $(".close").on("click", function(){
+        
+        
+      $("div .subsectionAcc").slideUp(700);  
+        
+        
+        
+    });
+   
+   
+    //the modal window for accommodation
+    
+    
+     //$("input[type=checkbox][name=accommodation]").on("click", function()$("input[type=checkbox]:not(.windows)").on("click", function()
+        
+       $("div .acc").find("input[type=checkbox][name=type]").on("click", function(){
+       if ($(this).is(":checked")){
+           
+           
+           
+         $(".subsectionAcc").slideDown();
+           
+           
+       }
+       
+        
+    });
+    
+    
+    $("div .acc").find("input[type=checkbox][name=type]").change(function(){
+       $("div .acc").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+    
+    //closing of drinks
+    
+    $(".close").on("click", function(){
+        
+        
+      $("div .subsectionDrinks").slideUp(700);  
+        
+        
+        
+    });
+   
+   
+    //drinks window modal
+    
+    
+    
+    $(".move").on("click", function(){
+     
+    $("div .naked").removeClass("reverse").addClass("animateOut"); //adding animate-out class to the div with class of showing
+    
+    
+    
+    setTimeout(function(){
+        
+     $("div .naked").removeClass("naked animateOut").next("div").addClass("naked");
+     
+  
+    
+    },1300); 
+     
+    
+    
+     });
+    
+    
+    $(".back").on("click", function(){
+     
+      $("div .naked").prev("div").addClass("reverse");
+     
+     
+      setTimeout(function(){
+          
+          
+   $("div .naked").removeClass("naked").prev("div").addClass("naked");   
+   
+    
+     },1100);
+     
+ });
+    
+    
+    //opening of drinks modal window when drinks is clicked
+    
+    /* $("input[type=checkbox][name=drinks]").on("click", function(){
+        
+        
+       if ($(this).is(":checked")){
+           
+         $(".subsectionDrinks").slideDown();
+           
+           
+       }
+       
+        
+    });*/
+    
+     $("div #drinks").find("input[type=checkbox][name=type]:not('.bake')").on("click", function(){
+       if ($(this).is(":checked")){
+           
+           
+           
+         $(".subsectionDrinks").slideDown();
+           
+           
+       }
+       
+        
+    });
+    
+    
+    $("div #drinks").find("input[type=checkbox][name=type]").change(function(){
+       $("div #drinks").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+    
+    
+    //
+    
+    $(".jumpTo").on("click", function(){
+     
+    $("div .spot").removeClass("reverse").addClass("animateOut"); //adding animate-out class to the div with class of showing
+    
+    
+    
+    setTimeout(function(){
+        
+     $("div .spot").removeClass("spot animateOut").next("div").addClass("spot");
+     
+  //$(".progressbar").find("span.StepActive").removeClass("StepActive").next("span").addClass("StepActive");
+    },1300); 
+     
+    
+    
+     });
+    
+    
+    
+    
+ $(".jumpBack").on("click", function(){
+     
+      $("div .spot").prev("div").addClass("reverse");
+     
+     
+      setTimeout(function(){
+          
+          
+   $("div .spot").removeClass("spot").prev("div").addClass("spot");   
+   
+    // $(".progressbar").find("span.StepActive").removeClass("StepActive").prev("span").addClass("StepActive"); 
+     
+    
+     },1100);
+     
+ });
+    
+ 
+    //the closing of the modal window
+    
+    $(".close").on("click", function(){
+        
+        
+      $("div .kids").slideUp(700);  
+        
+        
+        
+    });
+    
+    
+    //opening of kids modal window after click of childs play category
+    
+    /* $("input[type=checkbox][name=toys]").on("click", function(){
+        
+        
+       if ($(this).is(":checked")){
+           
+        
+           
+           
+       }
+       
+        
+    });*/
+    
+    
+    $("div .childsplay").find("input[type=checkbox][name=type]").on("click", function(){
+       if ($(this).is(":checked")){
+           
+           
+           
+       $(".kids").slideDown();
+           
+           
+       }
+       
+        
+    });
+    
+    
+    $("div .childsplay").find("input[type=checkbox][name=type]").change(function(){
+        
+        
+       $("div .childsplay").find("input[type=checkbox][name=category]").prop('checked',true);
+        
+        
+   });
+    
+    
+    
+    
+     //wedding modal window
+    
+    $(".moveTo").on("click", function(){
+     
+    $("div .nude").removeClass("reverse").addClass("animateOut"); //adding animate-out class to the div with class of showing
+    
+    
+    
+    setTimeout(function(){
+        
+     $("div .nude").removeClass("nude animateOut").next("div").addClass("nude");
+     
+  //$(".progressbar").find("span.StepActive").removeClass("StepActive").next("span").addClass("StepActive");
+    },1300); 
+     
+    
+    
+     });
+    
+    
+    
+    
+ $(".backTo").on("click", function(){
+     
+      $("div .nude").prev("div").addClass("reverse");
+     
+     
+      setTimeout(function(){
+          
+          
+   $("div .nude").removeClass("nude").prev("div").addClass("nude");   
+   
+    // $(".progressbar").find("span.StepActive").removeClass("StepActive").prev("span").addClass("StepActive"); 
+     
+    
+     },1100);
+     
+ });
+    
+ 
+    //the closing of the wedding modal window
+    
+    $(".close").on("click", function(){
+        
+        
+      $("div .wedddingSection").slideUp(700);  
+        
+        
+        
+    });
+    
+    
+    //opening of kids modal window after click of wedding play category
+    
+    /* $("input[type=checkbox][name=wedding]").on("click", function(){
+        
+        
+       if ($(this).is(":checked")){
+           
+         $(".wedddingSection").slideDown();
+           
+           
+       }
+       
+        
+    });*/
+    
+    
+    
+    
+    
+     $("div .wed").find("input[type=checkbox][name=type]:eq(0)").on("click", function(){
+       if ($(this).is(":checked")){
+           
+           
+         $(".wedddingSection").slideDown();
+           
+           
+       }
+       
+        
+    });
+    
+    
+    $("div .wed").find("input[type=checkbox][name=type]").change(function(){
+       $("div .wed").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+   
+   
+    //open get fit when clicked
+    
+  /*  $("input[type=checkbox][name=getFit]:lt(2)").on("click", function(){
+        
+        
+       if ($(this).is(":checked")){
+           
+         $(".gymSection").slideDown();
+           
+           
+       }
+       
+        
+    });*/
+    
+    
+    
+         $("div .get").find("input[type=checkbox][name=type]:lt(2)").on("click", function(){
+       if ($(this).is(":checked")){
+           
+           
+          $(".gymSection").slideDown();
+           
+           
+       }
+       
+        
+    });
+    
+    
+    $("div .get").find("input[type=checkbox][name=type]").change(function(){
+       $("div .get").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+   
+    
+    //the closing of the gym modal window
+    
+    $(".close").on("click", function(){
+        
+        
+      $("div .gymSection").slideUp(700);  
+        
+        
+        
+    });
+    
+   
+     //open spar when clicked
+    /*
+    
+    $("input[type=checkbox][name=getFit]:eq(3)").on("click", function(){
+        
+        
+       if ($(this).is(":checked")){
+           
+         $(".sparSection").slideDown();
+           
+           
+       }
+       
+        
+    });*/
+    
+    
+     $("div .get").find("input[type=checkbox][name=type]:eq(3)").on("click", function(){
+       if ($(this).is(":checked")){
+           
+           
+         $(".sparSection").slideDown(); 
+           
+           
+       }
+       
+        
+    });
+    
+    //the closing of the spar modal window
+    
+    $(".close").on("click", function(){
+        
+        
+      $("div .sparSection").slideUp(700);  
+        
+        
+        
+    });
+    
+    
+    /*
+    
+    
+   //open step 5 when clicked
+    
+    $("input[type=checkbox]:not(.windows)").on("click", function(){
+        
+       alert("yes");
+        
+      // if ($(this).is(":checked")){
+           
+          // 
+           
+         //$(window).scrollTop(0);
+           
+         
+          $("div .showing").removeClass("reverse").addClass("animateOut"); //adding animate-out class to the div with class of showing
+    
+    
+       
+       
+        setTimeout(function(){
+        
+     $("div .showing").removeClass("showing animateOut").next("div").addClass("showing");
+     
+  $(".progressbar").find("span.StepActive").removeClass("StepActive").next("span").addClass("StepActive"); 
+    
+           
+   
+    },1300); 
+       
+           
+      // }
+        
+    }); 
+    */
+   
+    
+    //opening of drinks modal window when drinks is clicked
+    
+     $(".login").on("click", function(){ 
+           
+         $(".backgroundWindow").slideDown();
+           
+           
+       
+       
+        
+    });
+    
+    
+    $(".hide").on("click", function(){
+        
+        
+      $(".backgroundWindow").slideUp(700);  
+        
+        
+        
+    });
+    
+    
+    $("div .fly").find("input[type=checkbox][name=type]").change(function(){
+       $("div .fly").find("input[type=checkbox][name=category]").prop('checked',true);   //when any of types of businesses in a category is clicked automically click the category
+   });
+     
+    
+    
+    
+    
+    
+    
+    $("div .shop").find("input[type=checkbox][name=type]").change(function(){
+       $("div .shop").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+    
+    
+    
+    
+    
+     $("div .pub").find("input[type=checkbox][name=type]").change(function(){
+       $("div .pub").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+     
+    
+    
+    
+    
+    
+    
+     $("div .auto").find("input[type=checkbox][name=type]").change(function(){
+         
+       $("div .auto").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+     
+    
+    
+    
+    
+    
+    
+     $("div .retail").find("input[type=checkbox][name=type]").change(function(){
+       $("div .retail").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+     
+    
+    
+    
+    
+    
+    
+    
+    
+     $("div .home").find("input[type=checkbox][name=type]").change(function(){
+       $("div .home").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+     
+    
+    
+    
+    
+    
+    
+     $("div .pets").find("input[type=checkbox][name=type]").change(function(){
+       $("div .pets").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+     
+    
+    
+    
+    
+    
+    $("div .travel").find("input[type=checkbox][name=type]").change(function(){
+       $("div .travel").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+     
+    
+    
+    
+    
+    
+     $("div .health").find("input[type=checkbox][name=type]").change(function(){
+       $("div .health").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+     
+    
+    
+    
+     $("div .transport").find("input[type=checkbox][name=type]").change(function(){
+       $("div .transport").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+     
+    
+    
+    
+    
+     $("div .financial").find("input[type=checkbox][name=type]").change(function(){
+       $("div .financial").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+     
+    
+    
+    
+    
+     $("div .legal").find("input[type=checkbox][name=type]").change(function(){
+       $("div .legal").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+     
+    
+    
+    
+    
+     $("div .education").find("input[type=checkbox][name=type]").change(function(){
+       $("div .education").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+     
+    
+    
+    
+     
+    
+    
+     $("div .construction").find("input[type=checkbox][name=type]").change(function(){
+       $("div .construction").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     $("div .agriculture").find("input[type=checkbox][name=type]").change(function(){
+       $("div .agriculture").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+    
+    
+    
+    
+    
+     
+     $("div .fash").find("input[type=checkbox][name=type]").change(function(){
+       $("div .fash").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+    
+    
+    
+    
+    
+     
+     $("div .sport").find("input[type=checkbox][name=type]").change(function(){
+       $("div .sport").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+     
+     
+     
+    
+    
+    
+    
+    
+    
+     $("div .printing").find("input[type=checkbox][name=type]").change(function(){
+       $("div .printing").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+     
+    
+    
+    
+    
+     $("div .it").find("input[type=checkbox][name=type]").change(function(){
+       $("div .it").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+    
+    
+    
+    
+      $("div .news").find("input[type=checkbox][name=type]").change(function(){
+       $("div .news").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+    
+    
+    
+    
+    
+      $("div .manufacturing").find("input[type=checkbox][name=type]").change(function(){
+       $("div .manufacturing").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+    
+    
+    
+    
+    
+      $("div .government").find("input[type=checkbox][name=type]").change(function(){
+       $("div .government").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+    
+    
+    
+    
+    
+      $("div .non").find("input[type=checkbox][name=type]").change(function(){
+       $("div .non").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+    
+    
+    
+    
+      $("div .telecom").find("input[type=checkbox][name=type]").change(function(){
+       $("div .telecom").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+    
+    
+    
+    
+    
+     
+     $("div .international").find("input[type=checkbox][name=type]").change(function(){
+       $("div .international").find("input[type=checkbox][name=category]").prop('checked',true);
+   });
+     
+    
+    
+    
+    
+    
+});
+    
+    
+</script>
+
+<script>
+
+
+
+$(document).ready(function(){
+    
+    $("div.gymgym").find("div.asos7").on("click", function(){
+        
+        
+        
+        //$(this).hide();
+        
+        $("div.gymSection").slideUp();
+        
+        
+         $("div.gymgym").removeClass("reverse").addClass("animateOut"); //adding animate-out class to the div with class of showing
+    
+    
+    
+    setTimeout(function(){
+        
+     $("div.showing").removeClass("showing animateOut").next("div").addClass("showing");
+     
+  $(".progressbar").find("span.StepActive").removeClass("StepActive").next("span").addClass("StepActive"); 
+   
+    $(window).scrollTop(0);
+    },1300); 
+           
+       
+        
+        
+    });
+   
+     
+    
+    
+    
+    
+});
+
+
+
+
+
+
+
+
+</script>
+
+<script>
+
+
+
+$(document).ready(function(){
+    
+    $("div.spar").find("div.asos6").on("click", function(){
+        
+        
+        
+        //$(this).hide();
+        
+        $("div.sparSection").slideUp();
+        
+        
+         $("div.spar").removeClass("reverse").addClass("animateOut"); //adding animate-out class to the div with class of showing
+    
+    
+    
+    setTimeout(function(){
+        
+     $("div.showing").removeClass("showing animateOut").next("div").addClass("showing");
+     
+  $(".progressbar").find("span.StepActive").removeClass("StepActive").next("span").addClass("StepActive"); 
+   
+   $(window).scrollTop(0);
+    },1300); 
+           
+       
+        
+        
+    });
+   
+     
+    
+    
+    
+    
+});
+
+
+
+
+
+
+
+
+</script>
+<script>
+
+
+
+$(document).ready(function(){
+    
+    $("div.wedds2").find("div.asos4").on("click", function(){
+        
+     
+        
+        //$(this).hide();
+        
+        $("div.wedddingSection").slideUp();
+        
+        
+         $("div.nude").removeClass("reverse").addClass("animateOut"); //adding animate-out class to the div with class of showing
+    
+    
+    
+    setTimeout(function(){
+        
+     $("div.showing").removeClass("showing animateOut").next("div").addClass("showing");
+     
+  $(".progressbar").find("span.StepActive").removeClass("StepActive").next("span").addClass("StepActive"); 
+     $(window).scrollTop(0);
+     
+    },1300); 
+           
+       
+       
+        
+    });
+   
+     
+    
+    
+    
+    
+});
+
+
+
+
+
+
+
+
+</script>
+
+
+<script>
+
+
+
+$(document).ready(function(){
+    
+    $("div.accfieldset4").find("div.asos").on("click", function(){
+        
+        
+        
+        //$(this).hide();
+        
+        $("div.subsectionAcc").slideUp();
+        
+        
+         $("div.showing").removeClass("reverse").addClass("animateOut"); //adding animate-out class to the div with class of showing
+    
+    
+    
+    setTimeout(function(){
+        
+     $("div.showing").removeClass("showing animateOut").next("div").addClass("showing");
+     
+  $(".progressbar").find("span.StepActive").removeClass("StepActive").next("span").addClass("StepActive"); 
+   
+    $(window).scrollTop(0);
+    },1300); 
+           
+       
+        
+        
+    });
+   
+     
+    
+    
+    
+    
+});
+
+
+
+
+
+
+
+
+</script>
+
+
+<script>
+
+
+
+$(document).ready(function(){
+    
+    $("div.kiddy2").find("div.asos2").on("click", function(){
+        
+        
+        
+        //$(this).hide();
+        
+        $("div.kids").slideUp();
+        
+        
+         $("div.spot").removeClass("reverse").addClass("animateOut"); //adding animate-out class to the div with class of showing
+    
+    
+    
+    setTimeout(function(){
+        
+     $("div.showing").removeClass("showing animateOut").next("div").addClass("showing");
+     
+  $(".progressbar").find("span.StepActive").removeClass("StepActive").next("span").addClass("StepActive"); 
+   
+   $(window).scrollTop(0);
+         
+    },1300); 
+           
+       
+        
+        
+    });
+   
+     
+    
+    
+    
+    
+});
+
+
+
+
+
+
+
+
+</script>
+
+
+
+<script>
+
+
+
+$(document).ready(function(){
+    
+    $("div.drinksFieldset3").find("div.asos1").on("click", function(){
+        
+        
+        
+        //$(this).hide();
+        
+        $("div.subsectionDrinks").slideUp();
+        
+        
+         $("div.naked").removeClass("reverse").addClass("animateOut"); //adding animate-out class to the div with class of showing
+    
+    
+    
+    setTimeout(function(){
+        
+     $("div.showing").removeClass("showing animateOut").next("div").addClass("showing");
+     
+  $(".progressbar").find("span.StepActive").removeClass("StepActive").next("span").addClass("StepActive"); 
+   
+    $(window).scrollTop(0);
+    },1300); 
+           
+       
+        
+        
+    });
+   
+     
+    
+    
+    
+    
+});
+
+
+
+
+
+
+
+
 </script>
 <script src="../../../js/jquery-3.1.1.min.js"></script>
 <script src='../../../js/init.js'></script>
