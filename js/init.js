@@ -8,14 +8,12 @@
 //
 //   }); // end of document ready
 // })(jQuery); // end of jQuery name space
-$(document).ready(function()
-{
-    $('ul.tabs').tabs();
-    $("#btnContinue").click(function (){
-        $('ul.tabs').tabs('select_tab', 'contact');
-    });
+$(document).ready(function() {
+  $('ul.tabs').tabs();
+  $("#btnContinue").click(function() {
+    $('ul.tabs').tabs('select_tab', 'test2');
+  });
 });
-
 (function($){
   $(function(){
     $('.dropdown-trigger').dropdown();
@@ -27,6 +25,9 @@ $(document).ready(function()
     $('.modal').modal();
     $('.slider').slider();
     $('ul.tabs').tabs();
+    $("#btnContinue").click(function() {
+        $('ul.tabs').tabs('select_tab', 'test2');
+      });
     $('input.input_text, textarea#textarea2').characterCounter();
     $('.tooltipped').tooltip();
     $('html, body').animate({
@@ -38,7 +39,10 @@ function autoplay() {
   setTimeout(autoplay, 7500);
    }
 
-
+ $('ul.tabs').tabs();
+    $("#btnContinue").click(function() {
+        $('ul.tabs').tabs('select_tab', 'test2');
+      });
 // password function
 
  $('.hide-show').show();
