@@ -63,3 +63,10 @@ span.progress{
   border: 2px solid #800000;
   padding: 5px;
 }
+
+.parag-text {
+  background-color: #800000;
+  padding: 0.5em;
+  color: #fff;
+  text-transform: uppercase;
+}
