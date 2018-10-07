@@ -93,23 +93,33 @@
               <div class="col m8">
           
                   <div class="icon">
-                    <i class="fa fa-bullhorn circle deep-red darken-3"></i>
+                    <a class="modal-trigger" href="#modal1">
+                      <i class="fa fa-bullhorn circle deep-red darken-3 fa-3x"></i>
+                    </a>
                   </div>
 
                   <div class="icon">
-                    <i class="fa fa-calendar-check-o circle green darken-1"></i>
+                    <a class="modal-trigger" href="#modal2">
+                      <i class="fa fa-calendar-check-o circle green darken-1 fa-5x"></i>
+                    </a>
                   </div>
 
                   <div class="icon">
-                    <i class="fa fa-plus orange circle"></i>
+                    <a class="modal-trigger" href="#modal3">
+                      <i class="fa fa-plus orange circle"></i>
+                    </a>
                   </div>
 
                   <div class="icon">
-                    <i class="fa fa-star-o circle light-blue lighten-1"></i>
+                    <a class="modal-trigger" href="#modal4">
+                      <i class="fa fa-star circle light-blue lighten-1"></i>
+                    </a>
                   </div>
 
                   <div class="icon">
-                    <i class="fa fa-tasks circle pink darken-4"></i>
+                    <a class="modal-trigger" href="#modal5">
+                      <i class="fa fa-tasks circle pink darken-4"></i>
+                    </a>
                   </div>
 
 
@@ -133,15 +143,15 @@
                <div class="col m8">
           
                   <div class="headers">
-                    <p class="tags"><a class="modal-trigger" href="#modal1">ANNOUNCEMENT PROMOTION</a></p>
+                    <p class="tags"><a class="modal-trigger" href="#modal1">ANNOUNCEMENT</a></p>
                   </div>
 
                    <div class="headers">
-                    <p class="tags"><a class="modal-trigger" href="#modal2">PROMOTE EVENT</a></p>
+                    <p class="tags"><a class="modal-trigger" href="#modal2">PROMOTE</a></p>
                   </div>
 
                   <div class="headers">
-                    <p class="tags"><a class="modal-trigger" href="#modal3">HEADLINE LOG-OUT</a></p>
+                    <p class="tags"><a class="modal-trigger" href="#modal3">HEADLINE</a></p>
                   </div>
 
                    <div class="headers">
@@ -177,7 +187,8 @@
                <!-- model 1 -->
               <div id="modal1" class="modal">
                 <div class="modal-content">
-                    <h4>Let consumers actively looking for promotions know about you</h4>
+                  <h4 class="center">ANNOUNCEMENT PROMOTION</h4>
+                    <h6 class="center">Let consumers actively looking for promotions know about you</h6>
 
                     <div class="row">
                       <div class="col m12">
@@ -187,20 +198,20 @@
                            
                     
                                     
-                                      <div class="row col s12" style="font-weight: bold;color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">
-                                        <p class="red-text" style="font-weight: bold;">
-                                          <p class="center red-text">INSTRUCTION</p>
-                                          <hr>
-                                        </p>
-                                        <p class="center red-text" style="font-weight: bold;">ISAAC MITI</p>
-                                        <ol>
-                                          <li>Upload 3 attractive images</li>
-                                          <li>Write the captions with all details</li>
-                                          <li>Indicate date</li>
-                                          <li>Click on the promotion button</li>
-                                        </ol>
-                                        
-                                      </div>
+                            <div class="row col s12" style="font-weight: bold;color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">
+                              <p class="red-text" style="font-weight: bold;">
+                                <p class="center red-text">INSTRUCTION</p>
+                                <hr>
+                              </p>
+        
+                              <ol class="center red-text">
+                                <li>Upload 3 attractive quality images that highlight the theme of your promotion.</li>
+                                <li>Write the captions with all details you need your target market to know about your promotion</li>
+                                <li>Indicate the precise date and time your promotion will expire</li>
+                                <li>Click on the Upload Promotion button</li>
+                              </ol>
+                              
+                            </div>
                                   
                              
                                
@@ -215,15 +226,40 @@
                           
                       <p>(Your promotion will be attractively display on the WHAT'S NEW & HOT tab on the home page, your Profile and the Category of Business you belong to).</p>
 
-                            <div class="col m6">
-                            <textarea>Write a caption for your promotion here</textarea>
+                          <div class="cameras">
+                               
+                                  <i class="fa fa-bullhorn circle red fa-7x"></i>
+                               
+                          </div>
+
+                            <div class="col m12">
+                           
+                            <div class="row">
+                              <form class="col s12">
+
+                                <div class="row">
+                                  <div class="input-field col s12">
+
+                                    <textarea id="textarea2" class="materialize-textarea" data-length="1000"></textarea>
+                                    <label for="textarea2">Textarea</label>
+                                  </div>
+                                  Upload 3 Images: <input class="btn red" type="file"  value="Upload" name="upload">
+                                </div>
+                              </form>
+
+                              <div class="col m5">
+                                  <input type="date" name="date">
+                                  <input type="time" name="date">
+                              </div>
+
+
+                            </div>
+                            <button class="btn red" type="submit">Submit</button>
+
                             </div>
                       </div>
-                      <div class="row">
-                            <div class="col m2">
-                            <input type="date" name="date">
-                            <input type="time" name="date">
-                          </div>
+                        <div class="row">
+                            
 
                           
                         </div>
@@ -245,21 +281,89 @@
               <!-- model 2 -->
                <div id="modal2" class="modal">
                <div class="modal-content">
-                    <h4>Let consumers actively looking for promotions know about you</h4>
+                  <h4 class="center">PROMOTE EVENT</h>
+                    <h6>Promote your event to people actively looking for events everyday</h6>
+
+
 
                     <div class="row">
                       <div class="col m12">
 
-                        <div class="col 5">
+                        <div class="col m3">
                             <div class="card">
-                                Instruction
+                           
+                    
+                                    
+                            <div class="row col s12" style="font-weight: bold;color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">
+                              <p class="red-text" style="font-weight: bold;">
+                                <p class="center red-text">INSTRUCTION</p>
+                                <hr>
+                              </p>
+        
+                              <ol class="red-text">
+                                <li>Upload 3 attractive quality images that highlight the theme of your promotion.</li>
+                                <li>Write the captions with all details you need your target market to know about your promotion</li>
+                                <li>Indicate the precise date and time your promotion will expire</li>
+                                <li>Click on the Upload Promotion button</li>
+                              </ol>
+                              
+                            </div>
+                                  
+                             
+                               
                             </div>
                         </div>
 
 
-                        <div class="col 7">
+                        <div class="col s8">
+                <div class="card">
+                  <div class="container">
+                    <div class="row">
+                          
+                      <p>(Your promotion will be attractively display on the WHAT'S NEW & HOT tab on the home page, your Profile and the Category of Business you belong to).</p>
 
+                         
+                            <div class="cameras">
+                              <i class="fa fa-calendar-check-o circle  green fa-7x"></i>
+                            </div>
+
+                          </div>
+
+                            <div class="col m12">
+                           
+                            <div class="row">
+                              <form class="col s12">
+
+                                <div class="row">
+                                  <div class="input-field col s12">
+
+                                    <textarea id="textarea2" class="materialize-textarea" data-length="1000"></textarea>
+                                    <label for="textarea2">Textarea</label>
+                                  </div>
+                                  Upload 3 Images: <input class="btn green" type="file"  value="Upload" name="upload">
+                                </div>
+                              </form>
+
+                              <div class="col m5">
+                                  <input type="date" name="date">
+                                  <input type="time" name="date">
+                              </div>
+
+
+                            </div>
+                            <button class="btn green" type="submit">Submit</button>
+
+                            </div>
+                      </div>
+                        <div class="row">
+                            
+
+                          
                         </div>
+                      </div>
+                        </div>
+                      </div>
+                        <!-- end -->
 
                       
 
@@ -272,22 +376,85 @@
 
                <!-- model 3 -->
                <div id="modal3" class="modal">
-                <div class="modal-content">
-                    <h4>Let consumers actively looking for promotions know about you</h4>
+              <div class="modal-content">
+                  <h4 class="center">HEADLINE LOG-OUT</h4>
+                    <h6>Let consumers actively looking for promotions know about you</h6>
 
                     <div class="row">
                       <div class="col m12">
 
-                        <div class="col 5">
+                        <div class="col m3">
                             <div class="card">
-                                Instruction
+                           
+                    
+                                    
+                            <div class="row col s12" style="font-weight: bold;color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">
+                              <p class="red-text" style="font-weight: bold;">
+                                <p class="center red-text">INSTRUCTION</p>
+                                <hr>
+                              </p>
+        
+                              <ol class="red-text">
+                                <li>Write a short catchy caption for your promotion or event.</li>
+                                <li>Indicate the precise date and time, your promotion will expire or your event will be taking place</li>
+                               
+                                <li>Click on the orange button written 'Upload Headline'.</li>
+                              </ol>
+                              
+                            </div>
+                                  
+                             
+                               
                             </div>
                         </div>
 
 
-                        <div class="col 7">
+                        <div class="col s8">
+                <div class="card">
+                  <div class="container">
+                    <div class="row">
+                          
+                      <p>(Your promotion will be attractively display on the WHAT'S NEW & HOT tab on the home page, your Profile and the Category of Business you belong to).</p>
 
+                          <div class="cameras">
+                               <i class="fa fa-plus orange circle fa-7x"></i>
+                          </div>
+
+                            <div class="col m12">
+                           
+                            <div class="row">
+                              <form class="col s12">
+
+                                <div class="row">
+                                  <div class="input-field col s12">
+
+                                    <textarea id="textarea2" class="materialize-textarea" data-length="1000"></textarea>
+                                    <label for="textarea2">Textarea</label>
+                                  </div>
+                                  Upload 3 Images: <input class="btn orange" type="file"  value="Upload" name="upload">
+                                </div>
+                              </form>
+
+                              <div class="col m5">
+                                  <input type="date" name="date">
+                                  <input type="time" name="date">
+                              </div>
+
+
+                            </div>
+                            <button class="btn orange" type="submit">Submit</button>
+
+                            </div>
+                      </div>
+                        <div class="row">
+                            
+
+                          
                         </div>
+                      </div>
+                        </div>
+                      </div>
+                        <!-- end -->
 
                       
 
@@ -302,22 +469,83 @@
 
               <!-- model 4 -->
                 <div id="modal4" class="modal">
-                <div class="modal-content">
-                    <h4>Let consumers actively looking for promotions know about you</h4>
+              <div class="modal-content">
+                  <h4 class="center">SUGGESTION</h4>
+                  <h6>Let consumers looking for companies in your category of business see you as a suggestion</h6>
 
                     <div class="row">
                       <div class="col m12">
 
-                        <div class="col 5">
+                        <div class="col m3">
                             <div class="card">
-                                Instruction
+                           
+                    
+                                    
+                            <div class="row col s12" style="font-weight: bold;color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">
+                              <p class="red-text" style="font-weight: bold;">
+                                <p class="center red-text">INSTRUCTION</p>
+                                <hr>
+                              </p>
+        
+                              <ol class="red-text">
+                                <li>Simple Click the blue button written 'Add yourself as a Suggestion' and you will automatically appear as a suggestion in your respective category</li>
+                               
+                              </ol>
+                              
+                            </div>
+                                  
+                             
+                               
                             </div>
                         </div>
 
 
-                        <div class="col 7">
+                        <div class="col s8">
+                <div class="card">
+                  <div class="container">
+                    <div class="row">
+                          
+                      <p>(Your company will be displayed as a suggestion in your respective category).</p>
 
+                           <div class="cameras">
+                                <i class="fa fa-star circle light-blue lighten-1 fa-7x"></i>
+                          </div>
+
+                            <div class="col m12">
+                           
+                            <div class="row">
+                              <form class="col s12">
+
+                                <div class="row">
+                                  <div class="input-field col s12">
+
+                                    <textarea id="textarea2" class="materialize-textarea" data-length="1000"></textarea>
+                                    <label for="textarea2">Textarea</label>
+                                  </div>
+                                  Upload 3 Images: <input class="btn blue" type="file"  value="Upload" name="upload">
+                                </div>
+                              </form>
+
+                              <div class="col m5">
+                                  <input type="date" name="date">
+                                  <input type="time" name="date">
+                              </div>
+
+
+                            </div>
+                            <button class="btn blue" type="submit">Submit</button>
+
+                            </div>
+                      </div>
+                        <div class="row">
+                            
+
+                          
                         </div>
+                      </div>
+                        </div>
+                      </div>
+                        <!-- end -->
 
                       
 
@@ -330,28 +558,94 @@
 
                <!-- model 5 -->
                 <div id="modal5" class="modal">
-                <div class="modal-content">
-                    <h4>Let consumers actively looking for promotions know about you</h4>
 
+                <div class="modal-content">
+                  <h4 class="center">ACTIVITY WINDOW </h4>
+                    
                     <div class="row">
                       <div class="col m12">
 
-                        <div class="col 5">
+                        <!-- <div class="col m3">
                             <div class="card">
-                                Instruction
+                           
+                    
+                                    
+                            <div class="row col s12" style="font-weight: bold;color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">
+                              <p class="red-text" style="font-weight: bold;">
+                                <p class="center red-text">INSTRUCTION</p>
+                                <hr>
+                              </p>
+        
+                              <ol>
+                                <li>Upload 3 attractive quality images that highlight the theme of your promotion.</li>
+                                <li>Write the captions with all details you need your target market to know about your promotion</li>
+                                <li>Indicate the precise date and time your promotion will expire</li>
+                                <li>Click on the Upload Promotion button</li>
+                              </ol>
+                              
                             </div>
+                                  
+                             
+                               
+                            </div>
+                        </div> -->
+
+
+                        <div class="col s8">
+                <div class="card">
+                  <div class="container">
+                    <div class="row">
+                          
+                      <p>(This window gives you an idea of how consumers are interacting with each of the respective advertisements that you broadcast. Parcticularity, the frequency of clicks that your advertisment attract to your).</p>
+
+                          <div class="center">
+                              <div class="icon">
+                                <i class="fa fa-bullhorn circle red darken-3"></i>
+                              </div>
+                          </div>
+
+                            <div class="col m12">
+                           
+                            <div class="row">
+                              <form class="col s12">
+
+                                <div class="row">
+                                  <div class="input-field col s12">
+
+                                    <textarea id="textarea2" class="materialize-textarea" data-length="1000"></textarea>
+                                    <label for="textarea2">Textarea</label>
+                                  </div>
+                                  Upload 3 Images: <input class="btn red" type="file"  value="Upload" name="upload">
+                                </div>
+                              </form>
+
+                              <div class="col m5">
+                                  <input type="date" name="date">
+                                  <input type="time" name="date">
+                              </div>
+
+
+                            </div>
+                            <button class="btn red" type="submit">Submit</button>
+
+                            </div>
+                      </div>
+                        <div class="row">
+                            
+
+                          
                         </div>
-
-
-                        <div class="col 7">
-
+                      </div>
                         </div>
+                      </div>
+                        <!-- end -->
 
                       
 
                       </div>
                     </div>
                 </div>
+
                 </div>
               <!-- end 5 -->
 
@@ -367,7 +661,7 @@
               <div class="col m3">
 
               <section>
-                  <h6 class="center">OUR PICTURE GALLERY</h6>
+                  <h6 class="center"><i class="fas fa-camera hoverable"></i> OUR PICTURE GALLERY</h6>
                   <div class="col s12">
                     <div class="col s4">
                         <p><i class="fas fa-camera fa-5x"></i></p>
@@ -407,9 +701,21 @@
                     <div class="card-image">
 
                         <div class="col m2">
-                          <p><i class="fas fa-heart fa-3x"></i>compliments</p>
-                          <p><i class="fas fa-star fa-3x"></i>recommendations</p>
-                          <p><i class="fas fa-camera fa-3x"></i>complaints</p>
+                          <p>
+                            <a class="modal-trigger" href="#modal7">
+                              <i class="fas fa-heart fa-3x"></i>compliments
+                            </a>
+                          </p>
+                          <p>
+                            <a class="modal-trigger" href="#modal8">
+                              <i class="fas fa-star fa-3x"></i>recommendations
+                            </a>
+                          </p>
+                          <p>
+                            <a class="modal-trigger" href="#modal9">
+                              <i class="fas fa-camera fa-3x"></i>complaints
+                            </a>
+                          </p>
 
                         </div>
 
@@ -477,10 +783,36 @@
 
                 
 
+               <!-- model  -->
+
+              <div id="modal7" class="modal">
+                <div class="modal-content">
+
+                </div>
+
+              </div>
+
+              <div id="modal8" class="modal">
+                <div class="modal-content">
+
+                </div>
+
+              </div>
+
+
+              <div id="modal9" class="modal">
+                <div class="modal-content">
+
+                </div>
+
+              </div>
+
              
             
 
                </section> 
+
+             
               </div>
 
 
@@ -506,8 +838,20 @@
               </div>
 
 
+  
 
               </div>
+
+              <section style="padding-left: 335px;">
+                 
+                  <ul class="tabs">
+                  <li class="tab col s2"><a  href="#test1" class="active">ABOUT US</a></li>
+                  <li class="tab col s2"><a href="#test2">EVENTS</a></li>
+                  <li class="tab col s2"><a href="#test3">PROMOTIONS</a></li>
+                  <li class="tab col s2"><a href="#test4">STANDARD SPECIALS</a></li>
+                 
+                  </ul>
+               </section>
 
 
 
