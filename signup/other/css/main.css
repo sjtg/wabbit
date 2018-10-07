@@ -31,7 +31,7 @@ body{
   opacity: 0.8;
 }
 
-.card {
+.card .admincards {
   height: 350px;
 }
 
