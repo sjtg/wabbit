@@ -18,6 +18,12 @@ body{
     width: 90%;
   }
 }
+
+.modal  {
+      width: 95%;
+      height : 90%;
+     }
+
 .centereds {
   position: absolute;
   top: 25%;
@@ -57,4 +63,40 @@ body{
 span.progress{ 
     height: 28px;
 
+}
+
+
+.icon i.circle {
+  font-size: 18px;
+  line-height: 42px;
+  color: #fff;
+  background-color: #999;
+  text-align: center;
+}
+.icon .circle {
+  position: relative;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  float: left;
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.card-image {
+  height: 350px;
+}
+
+.cameras{
+  padding-left: 150px; 
+  padding-top: 80px; 
+  padding-bottom: 80px;
+}
+
+.fa-camera{
+  height: 90px;
 }

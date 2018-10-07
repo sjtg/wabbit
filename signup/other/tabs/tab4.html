@@ -23,7 +23,7 @@
 
      .modal  {
       width: 95%;
-      height : 500px;
+      height : 90%;
      }
  
   </style>
@@ -89,13 +89,13 @@
             <div class="centered2">
               <p >
                 <label >
-                <input type="checkbox" id="1" class="filled-in" checked="checked"/>
+                <input class ="radio" type="checkbox" id="1" class="filled-in" checked="checked"/>
                 <span   for="1">ACCOMMODATION</span>
                 </label>
               </p>
               <p>
                 <label>
-                  <input type="checkbox" id="2" class="filled-in"/>
+                  <input class ="radio" type="checkbox" id="2" class="filled-in"/>
                   <span><a class="modal-trigger" href="#modal">Lodge</a></span>
                 </label>
               </p>
@@ -139,20 +139,11 @@
                   </ul>
 
         <div  id="test1" >
-
-          <a id="btnContinue" href="#test2">continue</a>
-
-           <script type="text/javascript">$(document).ready(function() {
-  $('ul.tabs').tabs();
-  $("#btnContinue").click(function() {
-    $('ul.tabs').tabs('select_tab', 'test2');
-  });
-});</script>
            
           <table>
  
            <tr>
-          <td><label><input type="checkbox" name="generalAmenities[]" value="Booking"><span class="text">Booking Service</span></label></td>
+          <td><label><input  type="checkbox" name="generalAmenities[]" value="Booking"><span class="text">Booking Service</span></label></td>
           <td><label><input type="checkbox" name="generalAmenities[]" value="Bar"><span class="text">Bar</span></label></td>
           <td><label><input type="checkbox" name="generalAmenities[]" value="Restaurant"><span class="text">Restaurant</span></label></td>
           <td><label><input type="checkbox" name="generalAmenities[]" value="Swimming Pool"><span class="text">Swimming Pool</span></label></td>
@@ -3637,12 +3628,20 @@
 
 // test
 
-
-$(document).ready(function() {
-  $('ul.tabs').tabs();
-  $("#btnContinue").click(function() {
-    $('ul.tabs').tabs('select_tab', 'test2');
-  });
+$("input:checkbox").on('click', function() {
+  // in the handler, 'this' refers to the box clicked on
+  var $box = $(this);
+  if ($box.is(":checked")) {
+    // the name of the box is retrieved using the .attr() method
+    // as it is assumed and expected to be immutable
+    var group = "input:checkbox[name='" + $box.attr("name") + "']";
+    // the checked state of the group/box on the other hand will change
+    // and the current value is retrieved using .prop() method
+    $(group).prop("checked", false);
+    $box.prop("checked", true);
+  } else {
+    $box.prop("checked", false);
+  }
 });
 
 </script>
