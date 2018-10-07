@@ -31,6 +31,10 @@ body{
   opacity: 0.8;
 }
 
+.card {
+  height: 350px;
+}
+
 .centereds {
   position: absolute;
   top: 25%;
