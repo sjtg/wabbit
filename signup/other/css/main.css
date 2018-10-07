@@ -78,7 +78,7 @@ span.progress{
   margin-right: 16px;
   margin-bottom: 16px;
   float: left;
-  width: 42px;
+  width: 55px;
   height: 42px;
   overflow: hidden;
   left: 15px;
@@ -86,9 +86,32 @@ span.progress{
   vertical-align: middle;
 }
 
+.headers p.tags {
+  font-size: 9px;
+  line-height: 42px;
+  color: #800000;
+  text-align: center;
+}
+.headers .tags {
+  position: relative;
+  margin-top: -20px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  float: left;
+  width: 55px;
+  height: 32px;
+  overflow: hidden;
+  left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.headers a {
+  color : #800000;
+}
 
 .card-image {
-  height: 350px;
+  height: 400px;
 }
 
 .cameras{
@@ -99,4 +122,20 @@ span.progress{
 
 .fa-camera{
   height: 90px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
 }
