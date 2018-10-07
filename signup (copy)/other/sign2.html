@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Wabbit</title>
+    <link rel='stylesheet' href='../../css/materialize.css'>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="../css/progress.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+    /*Moved to main.css*/
+  </style>
+  </head>
+  <body style="font-family: Montserrat;">
+    <!-- navbar  -->
+    <div class="navbar-fixed">
+      <nav class="white">
+        <div class="nav-wrapper container ">
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li>
+              <img class="brand-logo" src="../../img/logo.png" width="5%">
+            </li>
+          </ul>
+          <ul class="right hide-on-med-and-down red-text">
+            <!-- <li>
+              <div class="block">
+                <div class="hovicon effect-3 sub-a">1</div>
+              </div>
+            </li> -->
+
+            <!-- progress bar -->
+            <li>
+                <ul>
+                <li class="tab col s3"><a href="../sign2.html"><span class="StepActive progress"></span></a></li>
+                <li class="tab col s3"><a href="tabs/tab2.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tabs/tab3.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tabs/tab4.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tabs/tab5.html"><span class="progress"></span></a>
+                </li>
+              </ul>
+
+            </li>
+            <!-- progressbar -->
+
+            <li class="hoverable"><a href="../../index.html"><span class="red-text text-darken-4">Home page</span></a></li>
+            <li class="hoverable"><a href="../login/index.html"><span class="red-text text-darken-4">Login
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a class="brand-logo" href="#">WABBIT</a></li>
+        <li>
+                <ul>
+                <li class="tab col s3"><a href="../sign2.html"><span class="StepActive progress"></span></a></li>
+                <li class="tab col s3"><a href="tabs/tab2.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tabs/tab3.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tabs/tab4.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tabs/tab5.html"><span class="progress"></span></a>
+                </li>
+              </ul>
+
+            </li>
+          <li class="hoverable"><a href="../../index.html"><span class="red-text text-darken-4">Home page</span></a></li>
+          <li class="hoverable"><a href="../login/index.html"><span class="red-text text-darken-4">Sign Up
+          </span></a>
+        </li>
+      </ul>
+      <!-- end of navbar -->
+
+
+
+      <!-- content  -->
+      <div class="container">
+        <div class="row">
+         
+          <div class="container center" id="tabs">
+            <div id="welcome" class="previous">
+              <h3 class="center light">Welcome to Wabbit Sign Up page</h3>
+              <div class="col s8">
+                <div class="card">
+                  <div class="container">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input id="first_name" type="text" class="input_text" required>
+                        <label for="first_name" maxlength="number">Company Name</label>
+                         <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -5px;margin-left: 0px">Add
+                      Company Name</div>
+                      </div>
+                     
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input id="first_name2" type="text" class="input_text" required>
+                        <label for="first_name2">Physical Address</label>
+                        <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add
+                        Physical Address</div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12" required>
+                        <select>
+                          <option value="" disabled selected>Select Province</option>
+                          <option value="1">Lusaka</option>
+                          <option value="2">Central</option>
+                          <option value="3">Copperbelt</option>
+                          <option value="4">Eastern</option>
+                          <option value="5">Southern</option>
+                          <option value="6">Northern</option>
+                          <option value="7">Luapula</option>
+                          <option value="8">Muchinga</option>
+                          <option value="9">North-Western</option>
+                          <option value="10">Western</option>
+                          <!-- <option value="11">Northern</option> -->
+                        </select>
+                        <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add
+                      Province</div>
+                      </div>
+                      
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input id="postal_address" type="text" class="input_text" required="">
+                        <label for="postal_address">Postal Address (Optional)</label>
+                         <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add
+                      Postal Address</div>
+                      </div>
+                     
+                      <div class="input-field col s12">
+                        <input id="webiste_address" type="text" class="input_text" required="">
+                        <label for="webiste_address">Website (Optional)</label>
+                         <div class="row col s12" style="color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">Add
+                      Website</div>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
+               
+               <!--  <input type="button" name="next" class="nexts btn action-button" value="Next" required />
+ -->
+              <a class ="btn red" href="tabs/tab2.html">Next</a>
+
+                <!-- <input type="button" name="next" class="next action-button" value="Next" required /> -->
+                <!-- next  -->
+              </div>
+              <!-- second container -->
+              <div class="col s4">
+                <div class="">
+                </div>
+                <div class="card">
+                  <div class="container">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <div class="row col s12" style="font-weight: bold;color:grey;font-size: 10px;text-align: left;margin-top: -10px;margin-left: 0px">
+                          <p class="red-text" style="font-weight: bold;">NOTE: Each text box on the left with an ASTERISK
+                            () above it is MANDATORILY required to be filled in while text boxes without an ASTERISK () are
+                          OPTIONAL.</p>
+                          <p class="red-text" style="font-weight: bold;">For example on this Section,
+                            <li class="red-text">Company Name, Physical Address and Selecting a province are MANDATORY </li>
+                            <li class="red-text">while the P.O BOX and Website text boxes are OPTIONAL.</li>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of ID -->
+            </div>
+            
+          </div>
+         
+        </div>
+      </div>
+      <!-- end of tab 1 -->
+
+ 
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+</script>
+<script src="../../js/jquery-3.1.1.min.js"></script>
+<script src='../../js/init.js'></script>
+<script src="../../js/materialize.js"></script>
+<script src='../../js/materialize.min.js'></script>
+<script src='../../js/jquery.steps.min.js'></script>
+<!--<script  src="js/index.js"></script> -->
+
+</body>
+</html>
+  

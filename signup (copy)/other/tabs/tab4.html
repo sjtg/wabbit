@@ -1,0 +1,3660 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Wabbit</title>
+    <link rel='stylesheet' href='../../../css/materialize.css'>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="../../css/progress.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <style>
+    /*Moved to main.css*/
+
+
+     span {
+      margin-top: -10px;
+      color: #800000;
+
+     }
+
+     a {
+      color: #800000;
+     }
+
+     .modal  {
+      width: 95%;
+      height : 90%;
+     }
+ 
+  </style>
+  </head>
+  <body style="font-family: Montserrat; color: #800000;" >
+    <!-- navbar  -->
+    <div class="navbar-fixed">
+      <nav class="white">
+        <div class="nav-wrapper container ">
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li>
+              <img class="brand-logo" src="../../../img/logo.png" width="5%">
+            </li>
+          </ul>
+          <ul class="right hide-on-med-and-down red-text">
+            <li>
+              <ul class="progressbar">
+                <li class="tab col s3"><a href="../sign2.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tab2.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tab3.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tab4.html"><span class="StepActive progress"></span></a></li>
+                <li class="tab col s3"><a href="tab5.html"><span class="progress"></span></a>
+                </li>
+
+              </ul>
+            </li>
+
+            <li class="hoverable"><a href="../../../index.html"><span class="red-text text-darken-4">Home page</span></a></li>
+            <li class="hoverable"><a href="../../login/index.html"><span class="red-text text-darken-4">Login</span></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a class="brand-logo" href="#">WABBIT</a></li>
+         <li>
+              <ul>
+                <li class="tab col s3"><a href="../sign2.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tab2.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tab3.html"><span class="progress"></span></a></li>
+                <li class="tab col s3"><a href="tab4.html"><span class="StepActive progress"></span></a></li>
+                <li class="tab col s3"><a href="tab5.html"><span class="progress"></span></a>
+                </li>
+
+              </ul>
+            </li>
+          <li class="hoverable"><a href="../../index.html"><span class="red-text text-darken-4">Home page</span></a></li>
+          <li class="hoverable"><a href="../login/index.html"><span class="red-text text-darken-4">Sign Up
+          </span></a>
+        </li>
+      </ul>
+
+ <!-- tab 3 -->
+      <div class="container">
+      <!-- tab 4 -->
+      <div id="categories">
+        <div class="container">
+        <h3 class="center light">Select Category</h3>
+        <!-- First set -->
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="centered2">
+              <p >
+                <label >
+                <input class ="radio" type="checkbox" id="1" class="filled-in" checked="checked"/>
+                <span   for="1">ACCOMMODATION</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input class ="radio" type="checkbox" id="2" class="filled-in"/>
+                  <span><a class="modal-trigger" href="#modal">Lodge</a></span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="3" class="filled-in"/>
+                  <span ><a class="modal-trigger" href="#modal">Hotel</a></span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="4" class="filled-in"  />
+                  <span><a class="modal-trigger" href="#modal">Camp Site</a></span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="5" class="filled-in"  />
+                  <span>Apartment</span>
+                </label>
+              </p>
+              <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal">Select</a> -->
+            </div>
+              </div>
+            <!-- end of model -->
+
+            <!-- Accommodation model -->
+    <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <hr style="background-color: #800000;">
+        <p class="white-text" style="background-color: #800000;">General Amenities Offered</p>
+
+
+                  <ul class="tabs">
+                  <li class="tab col s2"><a  href="#test1" class="active">Tab 1</a></li>
+                  <li class="tab col s2"><a href="#test2">Tab 2</a></li>
+                  <li class="tab col s2"><a href="#test3">Tab 3</a></li>
+                  <li class="tab col s2"><a href="#test4">Tab 4</a></li>
+                  <li class="tab col s2"><a href="#test5">Tab 5</a></li>
+                  </ul>
+
+        <div  id="test1" >
+           
+          <table>
+ 
+           <tr>
+          <td><label><input  type="checkbox" name="generalAmenities[]" value="Booking"><span class="text">Booking Service</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Bar"><span class="text">Bar</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Restaurant"><span class="text">Restaurant</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Swimming Pool"><span class="text">Swimming Pool</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Jacuzzi"><span class="text">Jacuzzi</span></label></td>
+
+          </tr>
+
+          <tr>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Free Wifi"><span class="text">Free Wifi</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Gym"><span class="text">Gym</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Spa"><span class="text">Spa</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Sauna"><span class="text">Sauna</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Laundry Service"><span class="text">Laundry Service</span></label></td>
+
+          </tr>
+
+          <tr>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="24 Hour Check In"><span class="text">24 Hour check-in</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Elevator"><span class="text">Elevator</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Free Parking"><span class="text">Free Parking</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Security"><span class="text">Security</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Safety Deposit Box"><span class="text">Safety Deposit Box</span></label></td>
+
+          </tr>
+
+          <tr>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Door Man"><span class="text">Door-Man</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Garage"><span class="text">Garage</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Wall Fence"><span class="text">Wall Fence</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Electric Fence"><span class="text">Electric Fence</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Remote Gate"><span class="text">Remote Gate</span></label></td>
+
+          </tr>
+
+          <tr>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Conference Room"><span class="text">Conference Room</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Events Venue"><span class="text">Events Venue</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Shuttle Service"><span class="text">Shuttle Service</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Generator"><span class="text">Generator</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Inverter"><span class="text">Inverter</span></label></td>
+          </tr>
+
+
+          <tr>
+
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Water Tank"><span class="text">Water Tank</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="POS Available"><span class="text">POS Available</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Visa ATM on Premises"><span class="text">ATM on Premises</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Beach"><span class="text">Beach</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Available Phone Reception"><span class="text">Available Phone Reception</span></label></td>
+          </tr>
+
+          <tr>
+
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Ground Floor Shopping"><span class="text">Ground Floor Shopping</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Kiddy Pool"><span class="text">Kiddy Pool</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Kids Playground"><span class="text">Kids Playground</span></label></td>
+
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Tennis Court"><span class="text">Tennis Court</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Basket Ball Court"><span class="text">Basket Ball court</span></label></td>
+          </tr>
+
+          <tr>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Golf Course"><span class="text">Golf Course</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Luggage Trolley"><span class="text">Luggage Trolley</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Self Catering"><span class="text">Self-Catering</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Luggage Trolley"><span class="text">Luggage Trolley</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Lake"><span class="text">Lake</span></label></td>
+
+
+          </tr>
+
+          <tr>
+              <td><label><input type="checkbox" name="generalAmenities[]" value="Wheel Chair Friendly"><span class="text">Wheel Chair Friendly</span></label></td>
+              
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Volley ball Area"><span class="text">Volley ball Area</span></label></td>
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Squash Court"><span class="text">Squash Court</span></label></td>
+              
+          <td><label><input type="checkbox" name="generalAmenities[]" value="Fire Place"><span class="text">Fire Place</span></label></td>
+          </tr>
+</table>
+
+
+<!-- <div class="skip">NEXT</div> -->
+
+</div>
+
+
+  <div  id="test2">
+  <p class="step">ACCOMMODATION</p>
+  <div class="icons">
+  <i class="fa fa-bed fa-2x"></i>  <i class="fa fa-suitcase fa-2x"></i> <i class="fa fa-home fa-2x"></i>
+  </div>
+      <p class="help">NOTE: All the information below will be displayed explicitly on your profile and the Accommodation Category EXCEPT the rates you charge. The rates you indicate will be stored in the database SECURELY and will only be used to help users to find rooms you offer that are in their budget on the Budget Feature which is found on the Accommodation Category. Irrespective of that, your rates will not be shown explicitly or shared.</p>
+  <p class="stages8">ABOUT ROOMS OFFERED (OPTIONAL)</p> 
+  
+
+
+<table>
+
+<tr>
+
+<th>TYPES OF ROOMS</th>
+<th>No. OF ROOMS</th>
+<th>RATE/NIGHT(ZMK)</th>
+<th>MAX No. OF GUESTS</th>
+
+
+
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+<td><input type="text" name="roomType" placeholder="e.g suite, presidential suite"></td>
+<td><input type="number" name="roomNo" placeholder="e.g 10"></td>
+<td><input type="number" name="roomRate" placeholder="e.g 3000"></td>
+<td><input type="number" name="roomLimit" placeholder="e.g 4"></td>
+
+
+
+</tr>
+
+<tr>
+
+
+<td><input type="text" name="roomType1"></td>
+<td><input type="number" name="roomNo1"></td>
+<td><input type="number" name="roomRate1"></td>
+<td><input type="number" name="roomLimit1"></td>
+
+
+</tr>
+
+<tr>
+
+
+<td><input type="text" name="roomType2"></td>
+<td><input type="number" name="roomNo2"></td>
+<td><input type="number" name="roomRate2"></td>
+<td><input type="number" name="roomLimit2"></td>
+
+</tr>
+
+
+
+<tr>
+
+
+<td><input type="text" name="roomType3"></td>
+<td><input type="number" name="roomNo3"></td>
+<td><input type="number" name="roomRate3"></td>
+<td><input type="number" name="roomLimit3"></td>
+
+
+</tr>
+
+
+
+
+<tr>
+
+
+<td><input type="text" name="roomType4"></td>
+<td><input type="number" name="roomNo4"></td>
+<td><input type="number" name="roomRate4"></td>
+<td><input type="number" name="roomLimit4"></td>
+
+</tr>
+
+
+
+
+<tr>
+
+
+<td><input type="text" name="roomType5"></td>
+<td><input type="number" name="roomNo5"></td>
+<td><input type="number" name="roomRate5"></td>
+<td><input type="number" name="roomLimit5"></td>
+
+</tr>
+
+
+<tr>
+
+
+<td><input type="text" name="roomType6"></td>
+<td><input type="number" name="roomNo6"></td>
+<td><input type="number" name="roomRate6"></td>
+<td><input type="number" name="roomLimit6"></td>
+
+
+</tr>
+
+
+<tr>
+
+
+<td><input type="text" name="roomType7"></td>
+<td><input type="number" name="roomNo7"></td>
+<td><input type="number" name="roomRate7"></td>
+<td><input type="number" name="roomLimit7"></td>
+
+
+</tr>
+
+
+<tr>
+
+
+<td><input type="text" name="roomType8"></td>
+<td><input type="number" name="roomNo8"></td>
+<td><input type="number" name="roomRate8"></td>
+<td><input type="number" name="roomLimit8"></td>
+
+</tr>
+
+</table>
+<!-- <div class="skip">NEXT</div>
+<div class="backwards">PREVIOUS</div> -->
+
+
+</div>
+
+
+<div id="test3" class="col s12">
+  <p class="step">ACCOMMODATION</p>
+  <div class="icons">
+  <i class="fa fa-bed fa-2x"></i>  <i class="fa fa-suitcase fa-2x"></i> <i class="fa fa-home fa-2x"></i>
+  </div>
+  <p class="stages9">ROOM AMENITIES OFFERED (OPTIONAL)</p> 
+  
+<table>
+
+<tr>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Mini Bar"><span class="text">Mini-Bar</span></label><br /></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="AirConditioner"><span class="text">Air Conditioner</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Bath Tub"><span class="text">Bath Tub</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Shower"><span class="text">Shower</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Jacuzzi"><span class="text">Jacuzzi</span></label></td>
+ </tr>
+ 
+ <tr>
+  <td><label><input type="checkbox" name="roomAmenities[]" value="Gyser"><span class="text">Gyser</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Shower Soap"><span class="text">Shower Soap</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Towels"><span class="text">Towels</span></label></td>
+  <td><label><input type="checkbox" name="roomAmenities[]" value="Bubble Bath"><span class="text">Bubble Bath</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Bathroom Candles"><span class="text">Bathroom Candles</span></label></td>
+ </tr>
+ 
+ <tr>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Hair Dryer"><span class="text">Hair Dryer</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Mirror"><span class="text">Mirror</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Toilet Paper"><span class="text">Toilet Paper</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Desk Work Space"><span class="text">Desk Workspace</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Lamp Shade"><span class="text">Lampshade</span></label></td>
+ 
+ </tr>
+ 
+ <tr>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Dressing Table"><span class="text">Dressing Table</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Head Board"><span class="text">Head Board</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Closet"><span class="text">Closet</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Drawers"><span class="text">Drawers</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Hangers"><span class="text">Hangers</span></label></td>
+ 
+ </tr>
+ 
+ <tr>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Pressing iron"><span class="text">Pressing Iron</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Mosquito Net"><span class="text">Mosquito Net</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Mosquito repelant"><span class="text">Mosquito Repelant</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Dust bin"><span class="text">Dust Bin</span></label></td>
+<td><label><input type="checkbox" name="roomAmenities[]" value="Kitchen Unit"><span class="text">Kitchen Unit</span></label><br /></td>
+ 
+ </tr>
+ 
+ <tr>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Dining Table"><span class="text">Dining Table</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Kitchen"><span class="text">Kitchen</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Fridge"><span class="text">Fridge</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Money Safe"><span class="text">Money Safe</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Clothes Basket"><span class="text">Clothes Basket</span></label></td>
+ 
+ </tr>
+ 
+ <tr>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Balcony"><span class="text">Balcony</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Seating Room"><span class="text">Seating Room</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Couch"><span class="text">Couch</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Room Furniture"><span class="text">Seating Room Furniture</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Room Service"><span class="text">Room Service</span></label></td>
+</tr>
+ 
+ <tr>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="LandLine Phone"><span class="text">Landline Phone</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Floor Carpet"><span class="text">Floor Carpet</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Fire Place"><span class="text">Fire Place</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="DSTV With Remote"><span class="text">DSTV with remote</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Gotv With Remote"><span class="text">Gotv with remote</span></label></td>
+  </tr>
+  
+  <tr>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="DSTV"><span class="text">DSTV</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Gotv"><span class="text">Gotv</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Flat Screen Tv"><span class="text">Flat Screen Tv</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Free Electricity"><span class="text">Free Electricity</span></label></td>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Ash Tray"><span class="text">Ash Tray</span></label><br /></td>
+ </tr>
+ 
+ <tr>
+ <td><label><input type="checkbox" name="roomAmenities[]" value="Refreshments"><span class="text">Refreshments</span></label><br /></td>
+   <td><label><input type="checkbox" name="roomAmenities[]" value="Ceiling Fan"><span class="text">Ceiling Fan</span></label><br /></td>
+<td><label><input type="checkbox" name="roomAmenities[]" value="Microwave"><span class="text">Microwave</span></label><br /></td>
+   
+ </tr>
+ 
+ </table>
+<!-- <div class="skip">NEXT</div>
+<div class="backwards">PREVIOUS</div> -->
+
+
+</div>
+
+
+    <div id="test4" class="col s12">
+
+
+  <p class="step">ACCOMMODATION</p>
+  
+  <p class="stages7">SAFETY AND SECURITY FEATURES OFFERED (OPTIONAL)</p> 
+  
+<table>
+
+
+<tr>
+<td><label><input type="checkbox" name="roomSafety[]" value="Smoke Detector"><span class="text">Smoke Detector</span></label></td>
+<td><label><input type="checkbox" name="roomSafety[]" value="Fire Extinguisher"><span class="text">Fire Extinguisher</span></label></td>
+<td><label><input type="checkbox" name="roomSafety[]" value="First Aid Kit"><span class="text">First Aid Kit</span></label></td>
+<td><label><input type="checkbox" name="roomSafety[]" value="Emergency Exit"><span class="text">Emergency Exit</span></label></td>
+<td><label><input type="checkbox" name="roomSafety[]" value="Fire Alarm"><span class="text">Fire Alarm</span></label></td>
+</tr>
+
+
+<tr>
+
+<td><label><input type="checkbox" name="roomSafety[]" value="Key Card Locks"><span class="text">Key Card locks</span></label></td>
+<td><label><input type="checkbox" name="roomSafety[]" value="Security Cameras"><span class="text">Security Cameras</span></label></td>
+<td><label><input type="checkbox" name="roomSafety[]" value="Adequate Outdoor Lighting"><span class="text">Adequate Outdoor Lighting</span></label></td>
+<td><label><input type="checkbox" name="roomSafety[]" value="Security Guards"><span class="text">Security Guards</span></label></td>
+<td><label><input type="checkbox" name="roomSafety[]" value="Emergency Manual"><span class="text">Emergency Manual</span></label></td>
+</tr>
+
+<tr>
+
+<td><label><input type="checkbox" name="roomSafety[]" value="Employee ID"><span class="text">Employee ID</span></label></td>
+<td><label><input type="checkbox" name="roomSafety[]" value="Employee Photo ID"><span class="text">Employee Photo ID</span></label></td>
+<td><label><input type="checkbox" name="roomSafety[]" value="Defibrillation Units"><span class="text">Defibrillation Units</span></label></td>
+<td><label><input type="checkbox" name="roomSafety[]" value="Metal Detector"><span class="text">Metal Detector</span></label></td>
+<td><label><input type="checkbox" name="roomSafety[]" value="Emergency Transport"><span class="text">Emergency Transport</span></label></td>
+</tr>
+
+<tr>
+
+
+<td><label><input type="checkbox" name="roomSafety[]" value="Adequate Indoor Lighting"><span class="text">Adequate Indoor Lighting</span></label></td>
+</tr>
+</table>
+
+
+
+
+
+<p class="stages">YOUR PREMISE RULES (OPTIONAL)</p> 
+  
+<table>
+<tr>
+<td><label><input type="checkbox" name="roomRules[]" value="No Smoking"><span class="text">No Smoking</span></label></td>
+<td><label><input type="checkbox" name="roomRules[]" value="No Pets"><span class="text">No Pets</span></label></td>
+<td><label><input type="checkbox" name="roomRules[]" value="No Parties"><span class="text">No Parties</span></label></td>
+<td><label><input type="checkbox" name="roomRules[]" value="No Outside Visitors"><span class="text">No Outside Visitors</span></label></td>
+<td><label><input type="checkbox" name="roomRules[]" value="No Excessive Noise"><span class="text">No Excessive Noise</span></label></td>
+</tr>
+    
+    <tr>
+<td><label><input type="checkbox" name="roomRules[]" value="No Outside Heat Appliances"><span class="text">No Outside Heat &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAppliances</span></label></td>
+<td><label><input type="checkbox" name="roomRules[]" value="Lights Out Period"><span class="text">Lights Out &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPeriod</span></label></td>
+<td><label><input type="checkbox" name="roomRules[]" value="Property Damage Liability"><span class="text">Property Damage &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLiability</span></label></td>
+<td><label><input type="checkbox" name="roomRules[]" value="No Thirdparty Room Transfer"><span class="text">No Thirdparty Room &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTransfer</span></label></td>
+
+</tr>
+</table>
+
+
+ <!-- <div class="skip">NEXT</div>
+ <div class="backwards">PREVIOUS</div> -->
+
+</div>
+
+ 
+ 
+
+<div id="test5" class="col s12">
+  <p class="step">ACCOMMODATION</p>
+  <p class="stages9">FUN ACTIVITIES OFFERED(OPTIONAL)</p>
+ 
+ <table>
+ 
+             <tr>
+             <td><label><input type="checkbox" name="funActivities[]" value="Jet Ski"><span class="text">Jet Ski</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Boat Cruise"><span class="text">Boat Cruise</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Fishing"><span class="text">Fishing</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Hunting"><span class="text">Hunting</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Game Drive"><span class="text">Game Drive</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Game Walk"><span class="text">Game Walk</span></label></td>
+             </tr>
+             
+             <tr>
+             <td><label><input type="checkbox" name="funActivities[]" value="Go Cart"><span class="text">Go Cart Rides</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Quad Bikes"><span class="text">Quad Bikes</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Paint Ball"><span class="text">Paint Ball</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Horse Ride"><span class="text">HorseRide</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Animal Zoo"><span class="text">Animal Zoo</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Scuba Diving"><span class="text">Scuba Diving</span></label></td>
+             </tr>
+             
+             <tr>
+             <td><label><input type="checkbox" name="funActivities[]" value="Elephant Back Ride"><span class="text">Elephant Back Ride</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Lion Walk"><span class="text">Lion Walk</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Cheetah Walk"><span class="text">Cheetah Walk</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Helicopter Flight"><span class="text">Helicopter Flight</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Gorge Swing"><span class="text">Gorge Swing</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Abseiling"><span class="text">Abseiling</span></label></td>
+             </tr>
+             
+             <tr>
+             <td><label><input type="checkbox" name="funActivities[]" value="High Wiring"><span class="text">High Wiring</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Whoopie Slide"><span class="text">Whoopie Slide</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Tandem Jumps"><span class="text">Tandem Jumps</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Rap Jumping"><span class="text">Rap Jumping</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Bird Watching"><span class="text">Bird Watching</span></label></td>
+            <td><label><input type="checkbox" name="funActivities[]" value="Hiking"><span class="text">Hiking</span></label></td>
+             </tr>
+
+            <tr>
+             <td><label><input type="checkbox" name="funActivities[]" value="Pool Table"><span class="text">Pool Table</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Cycling"><span class="text">Cycling</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Kayaks"><span class="text">Kayaks</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Sailing"><span class="text">Sailing</span></label></td>
+            <td><label><input type="checkbox" name="funActivities[]" value="Swimming"><span class="text">Swimming</span></label></td>
+            </tr>
+
+            <tr>
+             <td><label><input type="checkbox" name="funActivities[]" value="Live Band"><span class="text">Live Band</span></label></td>
+             
+              <td><label><input type="checkbox" name="funActivities[]" value="Basket Ball"><span class="text">Basket Ball</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Golf"><span class="text">Golf</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Volleyball"><span class="text">Volleyball</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Tennis"><span class="text">Tennis</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Squash"><span class="text">Squash</span></label></td>
+             <td><label><input type="checkbox" name="funActivities[]" value="Soccer"><span class="text">Soccer</span></label></td>
+    <td><label><input type="checkbox" name="funActivities[]" value="Arts and Crafts Tour"><span class="text">Arts and Crafts Tour</span></label></td>
+            </tr>   
+ </table>
+
+
+    </div>
+
+
+  </div>
+</div>
+
+        
+
+          <!-- end  -->
+          <div class="col s12 m4">
+            <div class="centered2">
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>FOOD &amp; DRINK</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span><a class="modal-trigger" href="#modal2">Dining Restaurant</a></span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Matebeto Restaurant</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Fast-food Restaurant</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Bakery</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Pub &amp; Grill</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Night Club</span>
+                </label>
+              </p>
+               <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Cafe</span>
+                </label>
+              </p>
+            </div>
+
+               <!-- MODEL -->
+              <div id="modal2" class="modal">
+              <div class="modal-content">
+
+
+
+<div class="drinksFieldset1 popDown naked">
+
+  <p class="step">FOOD & DRINK</p>
+  <div class="icons">
+  <i class="fas fa-wine-glass fa-2x" id="glass2"></i>  <i class="fas fa-utensils fa-2x"></i> <i class="fas fa-beer fa-2x"></i> <i class="fas fa-music fa-2x"></i>
+  </div>
+    <p class="help">NOTE: Click the NEXT BUTTON on the bottom right if this section does not apply.</p>
+ <p class="stages7">TYPES OF FOOD YOU SERVE (OPTIONAL)</p>
+                  <ul class="tabs">
+                  <li class="tab col s3"><a class="active" href="#test6">Tab 1</a></li>
+                  <li class="tab col s3"><a href="#test7">Tab 2</a></li>
+                  <li class="tab col s3"><a href="#test8">Tab 3</a></li>
+                  </ul>
+
+
+
+<div id="test6">
+<table class="drinkstable">
+<tr>
+<td><label><input type="checkbox" name="dishes[]" value="Indian"><span class="text">Indian</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Chinese"><span class="text">Chinese</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Italian"><span class="text">Italian</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Thai"><span class="text">Thai</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Portugese"><span class="text">Portugese</span></label></td>
+
+</tr>
+
+
+<tr>
+<td><label><input type="checkbox" name="dishes[]" value="Matebeto"><span class="text">Matebeto</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Steak"><span class="text">Steak</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Chicken"><span class="text">Chicken</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Sea Food"><span class="text">Sea Food</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Pizza"><span class="text">Pizza</span></label></td>
+
+</tr>
+
+
+<tr>
+<td><label><input type="checkbox" name="dishes[]" value="Greek"><span class="text">Greek</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Muchopo"><span class="text">Muchopo</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Mediterranean"><span class="text">Mediterranean</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Mexican"><span class="text">Mexican</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="English"><span class="text">English</span></label></td>
+
+</tr>
+
+<tr>
+
+<td><label><input type="checkbox" name="dishes[]" value="lamb"><span class="text">Lamb</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Goat"><span class="text">Goat</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Lebanese"><span class="text">Lebanese</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="French"><span class="text">French</span></label></td>
+<td><label><input type="checkbox" name="dishes[]" value="Pastries"><span class="text">Pastries</span></label></td>
+</tr>
+</table>
+
+
+
+<p class="stages">MEALS YOU SERVE (OPTIONAL)</p>
+
+<table>
+<tr>
+<td><label class="meal"><input type="checkbox" name="mealType[]" value="Breakfast"><span class="text">Breakfast</span></label></td>
+<td><label class="meal"><input type="checkbox" name="mealType[]" value="Brunch"><span class="text">Brunch</span></label></td>
+<td><label class="meal"><input type="checkbox" name="mealType[]" value="Lunch"><span class="text">Lunch</span></label></td>
+</tr>
+<tr>
+<td><label class="meal"><input type="checkbox" name="mealType[]" value="LateLunch"><span class="text">Late Lunch</span></label></td>
+<td><label class="meal"><input type="checkbox" name="mealType[]" value="Dinner"><span class="text">Dinner</span></label></td>
+<td><label class="meal"><input type="checkbox" name="mealType[]" value="Afterhours"><span class="text">After hours</span></label></td>
+</tr>
+</table>
+
+<div class="move">NEXT</div>
+</div>
+ 
+</div>
+
+
+
+<div id="test7">
+<div class="drinksFieldset2 popDown">
+  <p class="step">FOOD & DRINK</p>
+  <div class="icons">
+  <i class="fas fa-wine-glass fa-2x" id="glass2"></i>  <i class="fas fa-utensils fa-2x"></i> <i class="fas fa-beer fa-2x"></i> <i class="fas fa-music fa-2x"></i>
+  </div>
+ <p class="stages8">WHAT YOU OFFER (OPTIONAL)</p>
+ 
+
+<table>
+
+<tr>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Walk In"><span class="text">Walk-In</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Live Band"><span class="text">Live Band</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Takes Bookings"><span class="text">Takes Bookings</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Table Service"><span class="text">Table Service</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Out Door Seating"><span class="text">OutDoor Seating</span></label></td>
+
+</tr>
+
+<tr>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Delivery Service"><span class="text">Delivery Service</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Take Away"><span class="text">Take-Away</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Doggy Bag"><span class="text">Doggy-Bag</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Airconditioner"><span class="text">Airconditioner</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Outdoor Heaters"><span class="text">Outdoor Heaters</span></label></td>
+
+</tr>
+
+
+<tr>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Suitable For Groups"><span class="text">Suitable For Groups</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Kids Events"><span class="text">Suitable For Kids Events</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Events Venue"><span class="text">Venue For Adult Events</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Kids Playground"><span class="text">Kids Play Ground</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Bar Available"><span class="text">Bar Available</span></label></td>
+
+</tr>
+<tr>
+
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Restaurant Available"><span class="text">Restaurant Available</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Draft Beer"><span class="text">Draft Beer Available</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Sheesha"><span class="text">Sheesha</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Indoor Smoking"><span class="text">Indoor Smoking</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Strictly By Reservation"><span class="text">Strictly By Reservation</span></label></td>
+
+
+
+</tr>
+
+
+<tr>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Urban Music"><span class="text">Urban Music</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Oldies Music"><span class="text">Oldies Music</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="House Music"><span class="text">House Music</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Chinese Music"><span class="text">Chinese Music</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Pool Table"><span class="text">Pool Table</span></label></td>
+
+</tr>
+<tr>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Open Vip Lounge"><span class="text">Open Vip Lounge</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Free Wifi"><span class="text">Free Wifi</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Entrance Fee"><span class="text">Entrance Fee</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Happy Hour"><span class="text">Happy Hour</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Pool Bar"><span class="text">Pool Bar</span></label></td>
+
+</tr>
+<tr>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Swimming Pool"><span class="text">Swimming Pool</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Generator"><span class="text">Generator</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Indian Music"><span class="text">Indian Music</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Dance Floor"><span class="text">Dance Floor</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Karaoke"><span class="text">Karaoke</span></label></td>
+
+</tr>
+
+<tr>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Televise Sports Games"><span class="text">Televise Sports Games</span></label></td>
+
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Closed Vip Lounge"><span class="text">Closed Vip Lounge</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Special Membership"><span class="text">Special Membership Available</span></label></td>
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Smokers Section"><span class="text">Smokers Section</span></label></td>
+
+<td><label><input type="checkbox" name="drinksAmenities[]" value="Halal Certification"><span class="text">Halal Certification</span></label></td>
+
+
+</tr>
+
+</table>
+<div class="move">NEXT</div>
+<div class="back">PREVIOUS</div>
+</div> 
+</div>
+
+
+
+<div id ="test8">
+  <p class="step">FOOD & DRINK</p>
+  <div class="icons">
+  <i class="fas fa-wine-glass fa-2x" id="glass2"></i>  <i class="fas fa-utensils fa-2x"></i> <i class="fas fa-beer fa-2x"></i> <i class="fas fa-music fa-2x"></i>
+  </div>
+ <p class="stages9">PREMISE RULES (OPTIONAL)</p>
+ 
+
+
+
+
+<table class="drinkTable">
+
+
+<tr>
+
+<td><label><input type="checkbox" name="Rules[]" value="No Smoking"><span class="text">No Smoking</span></label></td>
+<td><label><input type="checkbox" name="Rules[]" value="No Fighting"><span class="text">No Fighting</span></label></td>
+<td><label><input type="checkbox" name="Rules[]" value="No Dresses Above Knees"><span class="text">No Dresses Above Knees</span></label></td>
+<td><label><input type="checkbox" name="Rules[]" value="No shorts"><span class="text">No Shorts</span></label></td>
+<td><label><input type="checkbox" name="Rules[]" value="No Open Shoes"><span class="text">No Open Shoes</span></label></td>
+
+</tr>
+
+<tr>
+<td><label><input type="checkbox" name="Rules[]" value="No Hats"><span class="text">No Hats</span></label></td>
+<td><label><input type="checkbox" name="Rules[]" value="No Pets"><span class="text">No Pets</span></label></td>
+<td><label><input type="checkbox" name="Rules[]" value="No Weapons"><span class="text">No Weapons</span></label></td>
+<td><label><input type="checkbox" name="Rules[]" value="No Excessive Noise"><span class="text">No Excessive Noise</span></label></td>
+<td><label><input type="checkbox" name="Rules[]" value="Swimming For Room Guests Only"><span class="text">Swimming For Room Guests Only</span></label></td>
+
+</tr>
+
+
+<tr>
+<td><label><input type="checkbox" name="Rules[]" value="18 years And Above"><span class="text">18 years and Above</span></label></td>
+<td><label><input type="checkbox" name="Rules[]" value="21 years And Above"><span class="text">21 years and Above</span></label></td>
+<td><label><input type="checkbox" name="Rules[]" value="25 years And Above"><span class="text">25 years and Above</span></label></td>
+
+</tr>
+</table>
+
+<!-- <div class="asos1">NEXT</div><br />
+<div class="back">PREVIOUS</div> -->
+ 
+</div>
+
+
+              </div>
+
+ 
+            <!-- END OF MODEL  -->
+          </div>
+
+
+          </div>
+
+         
+
+          <!-- end 3 -->
+          <div class="col s12 m4">
+            <!-- <img > -->
+            <div class="centered2">
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>Child'S PLay</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span><a class="modal-trigger" href="#modal3">Playground</a></span>
+                </label>
+              </p>
+              
+            </div>
+            <!-- Model -->
+
+            <div id="modal3" class="modal">
+              <div class="modal-content">
+          <!-- MODEL  -->
+          <!--kids section-->
+
+
+ <div class="kids">
+ <i class="fas fa-times close fa-2x" id="closeKids"></i>
+
+ 
+ <div class="kiddy popup spot">
+
+  <p class="step">CHILD'S PLAY</p>
+  <div class="icons">
+  <i class="fas fa-child fa-2x"></i>  <i class="fas fa-birthday-cake fa-2x"></i> <i class="fas fa-gamepad fa-2x"></i>  
+  </div>
+ <p class="stages">WHAT YOU OFFER (OPTIONAL)</p>
+ 
+                  <ul class="tabs">
+                  <li class="tab col s3"><a class="active" href="#test6">Tab 1</a></li>
+                  <li class="tab col s3"><a href="#test7">Tab 2</a></li>
+                  <li class="tab col s3"><a href="#test8">Tab 3</a></li>
+                  </ul>
+ 
+<table>
+
+<tr>
+<td><label><input type="checkbox" name="play[]" value="Kiddies Pool"><span class="text">Kiddies Pool</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Water Guns"><span class="text">Water Guns</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Water Ballons"><span class="text">Water Ballons</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Ballons"><span class="text">Ballons</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Water Slides"><span class="text">Water Slides</span></label></td>
+</tr>
+
+
+
+<tr>
+<td><label><input type="checkbox" name="play[]" value="Jumping Castle"><span class="text">Jumping Castle</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Video Games"><span class="text">Video Games</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Face Painting"><span class="text">Face Painting</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Go Carts"><span class="text">Go Carts</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Kids Karaoke"><span class="text">Kids Karaoke</span></label></td>
+
+
+
+
+</tr>
+
+<tr>
+<td><label><input type="checkbox" name="play[]" value="Pinata"><span class="text">Pinata</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Removable Tatoos"><span class="text">Removable Tatoos</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Costumes"><span class="text">Costumes</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Playing Tunnel"><span class="text">Playing Tunnel</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Trampoline"><span class="text">Trampoline</span></label></td>
+
+</tr>
+<tr>
+<td><label><input type="checkbox" name="play[]" value="Climbers"><span class="text">Climbers</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="TreeHouse"><span class="text">Tree House</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Merry Go Round"><span class="text">Merry-Go-Round</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Swingset"><span class="text">Swing-set</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Sandbox"><span class="text">Sand-box</span></label></td>
+
+
+</tr>
+<tr>
+<td><label><input type="checkbox" name="play[]" value="Maze Box"><span class="text">Maze-Box</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Seasaw"><span class="text">Seasaw</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Trapeze Ring"><span class="text">Trapeze Ring</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Board Games"><span class="text">Board Games</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Jungle Gym"><span class="text">Jungle Gym</span></label></td>
+
+
+
+</tr>
+
+
+
+
+
+<tr>
+<td><label><input type="checkbox" name="play[]" value="Play House"><span class="text">Play House</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Slides"><span class="text">Slides</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Bikes"><span class="text">Bikes</span></label></td>
+
+<td><label><input type="checkbox" name="play[]" value="Scooters"><span class="text">Scooters</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="RideOns"><span class="text">RideOns</span></label></td>
+
+
+
+
+
+
+</tr>
+
+
+
+
+
+<tr>
+<td><label><input type="checkbox" name="play[]" value="Sand Toys"><span class="text">Sand Toys</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Nets"><span class="text">Nets</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Crawl Tubes"><span class="text">CrawlTubes</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Candy Floss"><span class="text">CandyFloss</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Pop Corn"><span class="text">PopCorn</span></label></td>
+
+
+
+
+</tr>
+
+<tr>
+
+<td><label><input type="checkbox" name="play[]" value="Ice Cream"><span class="text">IceCream</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Kids Events Venue"><span class="text">Kids Events Venue</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Indoor Playground"><span class="text">Indoor Playground</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Outdoor Playground"><span class="text">Outdoor Playground</span></label></td>
+<td><label><input type="checkbox" name="play[]" value="Play Ground Supervisors"><span class="text">Playground Supervisors</span></label></td>
+
+</tr>
+
+
+</table>
+
+<div class="jumpTo">NEXT</div>
+
+</div>
+
+
+
+
+<div class="kiddy2 popup">
+
+  <p class="step">CHILD'S PLAY</p>
+  <div class="icons">
+  <i class="fas fa-child fa-2x"></i>  <i class="fas fa-birthday-cake fa-2x"></i> <i class="fas fa-gamepad fa-2x"></i>
+  </div>
+ <p class="stages7">ADULT SECTION OFFERS (OPTIONAL)</p>
+ 
+ 
+<table>
+
+<tr>
+<td><label><input type="checkbox" name="childsPlayAdults[]" value="Restaurant"><span class="text">Restaurant</span></label></td>
+<td><label><input type="checkbox" name="childsPlayAdults[]" value="Cash Bar"><span class="text">Cash bar</span></label></td>
+<td><label><input type="checkbox" name="childsPlayAdults[]" value="FreeWifi"><span class="text">Free wifi</span></label></td>
+</tr>
+<tr>
+<td><label><input type="checkbox" name="childsPlayAdults[]" value="Live Sports Games"><span class="text">Live Sports Games</span></label></td>
+
+</tr>
+</table>
+
+<!-- <div class="asos2">NEXT</div>
+<div class="jumpBack go">PREVIOUS</div> -->
+</div>
+</div>
+  </div>
+</div>
+            <!-- end of child plaly model -->
+          </div>
+
+
+  
+
+
+
+
+      
+        <!-- end -->
+
+
+
+        <!-- second  -->
+
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="centered2">
+              <p >
+                <label >
+                <input type="checkbox" id="1" class="filled-in" checked="checked"/>
+                <span for="1">WEDDING</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="2" class="filled-in"  />
+                  <span><a href="#modal4" class="modal-trigger">Venue</a></span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="3" class="filled-in"  />
+                  <span >Outfit Seller</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="4" class="filled-in"  />
+                  <span>Choreographer</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="5" class="filled-in"  />
+                  <span>Decorator</span>
+                </label>
+              </p>
+               <p>
+                <label>
+                  <input type="checkbox" id="5" class="filled-in"  />
+                  <span>Catering Service</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="5" class="filled-in"  />
+                  <span>Event Hire</span>
+                </label>
+              </p>
+              
+            </div>
+            <!-- Modal -->
+            <div id="modal4" class="modal">
+              <div class="modal-content">
+                <h4>WEDDING</h4>
+                <hr>
+                  <p class="white" style="background-color: red;">WHAT YOU OFFER (OPTIONAL)</p>
+                <hr>
+                  <ul class="tabs">
+                  <li class="tab col s3"><a href="#test10">Tab 1</a></li>
+                  <li class="tab col s3"><a href="#test11">Tab 2</a></li>
+                  </ul>
+
+
+
+<!--wedding section--> 
+ <div id="test10">
+
+ 
+<table>
+  
+  <tr>
+  
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Out Door Venue"><span class="text">Outdoor Venue</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Indoor Venue"><span class="text">Indoor Venue</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Grass Lawn"><span class="text">Grass Lawn</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Grass Lawn with trees"><span class="text">Grass Lawn with trees</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Garden"><span class="text">Garden</span></label></td>
+  
+  </tr>
+  
+  
+  <tr>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Fish Pond"><span class="text">Fish Pond</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Fountain"><span class="text">Fountain</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Swimming Pool"><span class="text">Swimming Pool</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Secure Car Park"><span class="text">Secure Car Park</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Security"><span class="text">Security</span></label></td>
+  
+  </tr>
+  
+  <tr>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Waiters"><span class="text">Waiters</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Catering"><span class="text">Catering</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Tailor Made Food Menu"><span class="text">Tailor Made Food Menu</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Red Carpet"><span class="text">Red Carpet</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Music System"><span class="text">Music System</span></label></td>
+  
+  </tr>
+  
+  
+  
+  <tr>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Dj Booth"><span class="text">Dj Booth</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Tables"><span class="text">Tables</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Chairs"><span class="text">Chairs</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Changing Room"><span class="text">Changing Room</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Cash Bar"><span class="text">Cash Bar</span></label></td>
+  
+  </tr>
+  
+  
+  <tr>
+  
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Restaurant"><span class="text">Restaurant</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Chapel"><span class="text">Chapel</span></label></td>
+  <td><label><input type="checkbox" name="weddingAmenities[]" value="Dance Floor"><span class="text">Dance Floor</span></label></td>
+  
+  
+  </tr>
+
+  
+  
+  </table>
+
+  </div>
+
+
+
+  
+  <div id="test11">
+
+  <p class="step">WEDDING</p>
+  <div class="icons">
+  <i class="far fa-gem fa-2x"></i>  <i class="fas fa-male fa-2x"></i> <i class="fas fa-female fa-2x"></i> <i class="fas fa-wine-glass fa-2x"></i>
+  </div>
+ <p class="stages9">SAFETY AND SECURITY FEATURES OFFERED (OPTIONAL)</p>
+ 
+ 
+  <table>
+  <tr>
+<td><label><input type="checkbox" name="venueSafety[]" value="Smoke Detecter"><span class="text">Smoke Detecter </span></label></td>
+<td><label><input type="checkbox" name="venueSafety[]" value="Fire Extinguisher"><span class="text">Fire Extinguisher </span></label></td>
+      <td><label><input type="checkbox" name="venueSafety[]" value="First Aid Kit"><span class="text">First Aid Kit </span></label></td>
+<td><label><input type="checkbox" name="venueSafety[]" value="Emergency Exit"><span class="text">Emergency Exit </span></label></td>
+</tr>
+
+<tr>
+<td><label><input type="checkbox" name="venueSafety[]" value="Fire Alarm"><span class="text">Fire Alarm </span></label></td>
+<td><label><input type="checkbox" name="venueSafety[]" value="Adequate Outdoor Lighting"><span class="text">Adequate Outdoor Lighting </span></label></td>
+    <td><label><input type="checkbox" name="venueSafety[]" value="Security Guards"><span class="text">Security Guards </span></label></td>
+<td><label><input type="checkbox" name="venueSafety[]" value="Security Cameras"><span class="text">Security Cameras </span></label></td>
+</tr>
+<tr>
+<td><label><input type="checkbox" name="venueSafety[]" value="Employee ID"><span class="text">Employee ID </span></label></td>
+<td><label><input type="checkbox" name="venueSafety[]" value="Employee Photo ID"><span class="text">Employee Photo ID </span></label></td>
+      </tr>
+</table>
+<!--   <div class="asos4">NEXT</div>
+<div class="backTo">PREVIOUS</div> -->
+
+  </div>
+
+
+
+   <!-- END OF MODEL -->
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+          <!-- end  -->
+          <div class="col s12 m4">
+            <div class="centered2">
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>FITNESS &amp; BEAUTY</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span><a class="modal-trigger" href="#modal5">Gym</a></span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Fitness Club</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Physio Center</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Beauty Spa</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Health Store</span>
+                </label>
+              </p>
+            </div>
+
+            <!-- MODEL  -->
+
+
+<div id="modal5" class="modal">
+              <div class="modal-content">
+                <h4>FITNESS &amp; BEAUTY</h4>
+                <hr>
+                  <p class="white" style="background-color: red;">WHAT YOU OFFER (OPTIONAL</p>
+                <hr>
+                <ul class="tabs">
+                  <li class="tab col s3"><a href="#test12">Tab 1</a></li>
+                  <li class="tab col s3"><a href="#test13">Tab 2</a></li>
+                </ul>
+                  <div class="sparSection">
+
+
+ 
+ <div id="test12">
+
+
+<table>
+<tr>
+<td><label><input type="checkbox" name="spar[]" value="Manicure"><span class="text">Manicure</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Pedicure"><span class="text">Pedicure</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Massage"><span class="text">Massage</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Deep Tissue Massage"><span class="text">Deep Tissue Massage</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Waxing"><span class="text">Waxing</span></label></td>
+
+</tr>
+
+<tr>
+<td><label><input type="checkbox" name="spar[]" value="Body Scrub"><span class="text">Body Scrub</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Mud Wrap"><span class="text">Mud-Wrap </span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Complementary Refreshments"><span class="text">Complementary Refreshments</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Jacuzzi"><span class="text">Jacuzzi</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Salon"><span class="text">Salon</span></label></td>
+
+</tr>
+
+
+<tr>
+<td><label><input type="checkbox" name="spar[]" value="Locker Room"><span class="text">Locker Room</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Shower"><span class="text">Shower</span></label></td>
+
+<td><label><input type="checkbox" name="spar[]" value="Reflexology Massage"><span class="text">Reflexology Massage</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Booking Allowed"><span class="text">Booking Allowed</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Barbershop"><span class="text">Barbershop</span></label></td>
+
+
+</tr>
+
+
+<tr>
+
+
+
+<td><label><input type="checkbox" name="spar[]" value="Free Gown"><span class="text">Free Gown</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Free Slippers"><span class="text">Free Slippers</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Free Towels"><span class="text">Free Towels</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Little Girl Salon"><span class="text">Little Girl Salon</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Make Up Artistry"><span class="text">Make Up Artistry</span></label></td>
+</tr>
+
+<tr>
+<td><label><input type="checkbox" name="spar[]" value="Bridal Make Up"><span class="text">Bridal Make Up</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Steam Room"><span class="text">Steam Room</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Swimming Pool"><span class="text">Swimming Pool</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Ear Candling"><span class="text">Ear Candling</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Hot Tub"><span class="text">Hot Tub</span></label></td>
+</tr>
+
+<tr>
+<td><label><input type="checkbox" name="spar[]" value="Moxibustion Therapy"><span class="text">Moxibustion Therapy</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Gua Sha"><span class="text">Gua Sha</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Swedish Massage"><span class="text">Swedish Massage</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Aromatherapy Massage"><span class="text">Aromatherapy Massage</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="HotStone Massage"><span class="text">HotStone Massage</span></label></td>
+</tr>
+
+<tr>
+
+<td><label><input type="checkbox" name="spar[]" value="Shiastsu Massage"><span class="text">Shiastsu Massage</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Soap"><span class="text">Soap</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Thai Massage"><span class="text">Thai Massage</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Pregnancy Massage"><span class="text">Pregnancy Massage</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Sauna"><span class="text">Sauna</span></label></td>
+
+</tr>
+
+<tr>
+<td><label><input type="checkbox" name="spar[]" value="Sports Massage"><span class="text">Sports Massage</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Complementary Wine"><span class="text">Complementary Wine</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Facial"><span class="text">Facial</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Special Membership"><span class="text">Special Membership</span></label></td>
+<td><label><input type="checkbox" name="spar[]" value="Membership Cards"><span class="text">Membership Cards</span></label></td>
+</tr>
+
+
+
+</table>
+
+</div>
+
+
+
+
+<!--gym features-->
+<div id="test13">
+
+  <p class="steps">FITNESS & BEAUTY</p>
+  <div class="icons">
+  <i class="fas fa-male fa-2x" id="male"></i>  <i class="fas fa-heartbeat fa-2x"></i> <i class="fas fa-female fa-2x"></i>  
+  </div>
+ <p class="stages">WHAT YOU OFFER</p>
+
+ <table>
+  
+
+   <tr>
+       <td><label><input type="checkbox" name="gymAmenities[]" value="Step Class" ><span class="text">Step Class</span></label></td>
+  
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Swimming Pool" ><span class="text">Swimming Pool</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Locker Room" ><span class="text">Locker Room</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Free Towels" ><span class="text">Free Towels</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Fee Paying Towels" ><span class="text">Fee Paying Towels</span></label></td>
+  
+  </tr>
+  
+  <tr>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Shower" ><span class="text">Shower</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Soap" ><span class="text">Soap</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Aerobics Class"><span class="text">Aerobics Class</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Spin Class"><span class="text">Spin Class</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Spin Bike" ><span class="text">Spin Bike</span></label></td>
+  
+  
+  </tr>
+  
+  
+  <tr>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Standing Steps" ><span class="text">Standing Steps</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Kettle Bells" ><span class="text">Kettle Bells</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Upright Bike" ><span class="text">Upright Bike</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Stability Balls" ><span class="text">Stability Balls</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="leg Press" ><span class="text">Leg Press</span></label></td>
+  
+  
+  </tr>
+  
+  <tr>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Punching Bag" ><span class="text">Punching Bag</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Boxing Cloves" ><span class="text">Boxing Cloves</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Weight Lifting Cloves" ><span class="text">Weight Lifting Cloves</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Tread Mill" ><span class="text">Tread Mill</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Bench Press" ><span class="text">Bench Press</span></label></td>
+  
+  </tr>
+  
+ 
+  
+  <tr>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Sit Up Bench" ><span class="text">Sit Up Bench</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Elliptical Machine" ><span class="text">Elliptical Machine</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Cardio Endurance Machine" ><span class="text">Cardio And Endurance &nbsp&nbsp&nbsp&nbsp&nbsp&nbspMachine</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Smith Machine" ><span class="text">Smith Machine</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="IsoLateral Machine" ><span class="text">IsoLateral Machine</span></label></td>
+  
+  </tr>
+  
+  <tr>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Adjustable BenchPress" ><span class="text">Adjustable Bench &nbsp&nbsp&nbsp&nbsp&nbsp&nbspPress</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Olympic Weight Set" ><span class="text">Olympic Weight Set</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Multi Station Weight Machine" ><span class="text">Multi Station Weight Machine</span></label></td>
+    <td><label><input type="checkbox" name="gymAmenities[]" value="Arm Preacher Curl" ><span class="text">Arm Preacher Curl</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Push Up Bars" ><span class="text">Push Up Bars</span></label></td>
+  
+  
+  
+  
+  </tr>
+  
+  <tr>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Sell Energy Drinks" ><span class="text">Sell Energy Drinks</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Sell Water" ><span class="text">Sell Water &nbsp&nbsp&nbsp&nbsp&nbsp&nbspRefreshments</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Steam Bath" ><span class="text">Steam Bath</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Spa" ><span class="text">Spa and Massage</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Jacuzzi" ><span class="text">Jacuzzi</span></label></td>
+  </tr>
+  
+  <tr>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Aerobics Floor Mats" ><span class="text">Aerobics Floor Mats</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Air Conditioner" ><span class="text">Air Conditioner</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Sauna" ><span class="text">Sauna</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Tyre Based Exercise" ><span class="text">Tyre Based &nbsp&nbsp&nbsp&nbsp&nbsp&nbspExercise</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Heated Swimming Pool" ><span class="text">Heated Swimming &nbsp&nbsp&nbsp&nbsp&nbsp&nbspPool</span></label></td>
+  </tr>
+  
+  <tr>
+      <td><label><input type="checkbox" name="gymAmenities[]" value="Student Subscription"><span class="text">Student Subscription</span></label></td>
+  
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Personal Trainer" ><span class="text">Personal Trainer</span></label></td>
+<td><label><input type="checkbox" name="gymAmenities[]" value="Multi Shower" ><span class="text">Multi Shower</span></label></td>
+<td><label><input type="checkbox" name="gymAmenities[]" value="Yoga" ><span class="text">Yoga</span></label></td>
+  <td><label><input type="checkbox" name="gymAmenities[]" value="Pilates Class"><span class="text">Pilates Class</span></label></td>
+  </tr>
+  
+  </table>
+   
+
+
+</div>
+
+
+  </div>
+
+  <buton type="cancel" class="btn red">Cancel</buton>
+
+
+             
+
+            </div>
+
+            <!-- END OF MODEL  -->
+          </div>
+
+</div>
+
+
+         
+
+
+
+          <!-- end 3 -->
+          <div class="col s12 m4">
+            <!-- <img > -->
+            <div class="centered2">
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>LADIES</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Cosmetic Store</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Hair Store</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Hair Salon</span>
+                </label>
+              </p>
+              
+            </div>
+          </div>
+
+
+        </div>
+         
+        <!-- end of second  -->
+
+
+
+
+
+
+        <!-- third -->
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="centered2">
+              <p >
+                <label >
+                <input type="checkbox" id="1" class="filled-in" checked="checked"/>
+                <span for="1">LEISURE</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="2" class="filled-in"  />
+                  <span>Casino</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="3" class="filled-in"  />
+                  <span >Cinema</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="4" class="filled-in"  />
+                  <span>Membership Club</span>
+                </label>
+              </p>
+              
+            </div>
+            <!-- Modal -->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <h4>Accommodation</h4>
+                <hr >
+                  <p  style="background-color: red;">General Amenities Offered</p>
+                <hr>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Booking Service</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Free Wi-Fi</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>24 Hour check-in</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Door-Man</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Conference Room</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Gym</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Garage</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Elevator</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Events Venue</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>POS Available</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Booking Service</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Free Wi-Fi</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>24 Hour check-in</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Door-Man</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Conference Room</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Booking Service</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Free Wi-Fi</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>24 Hour check-in</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Door-Man</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Conference Room</span>
+                    </label>
+                  </p>
+                </div>
+                <a href="#">Close</a>
+              </div>
+
+            </div>
+            <!-- end of model -->
+
+
+          </div>
+
+          <!-- end  -->
+          <div class="col s12 m4">
+            <div class="centered2">
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>CLOTHING</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Mens Store</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Womens Store</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Sports Store</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>kids Store</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>General Store</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Dry Cleaner</span>
+                </label>
+              </p>
+            </div>
+          </div>
+
+
+          <!-- end 3 -->
+          <div class="col s12 m4">
+            <!-- <img > -->
+            <div class="centered2">
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>SHOPPING</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Department Store</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Supermarket</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Butchery</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Stationery Store</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Electronics Store</span>
+                </label>
+              </p>
+              
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- end of third -->
+
+
+        <!-- fourth  -->
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="centered2">
+              <p >
+                <label >
+                <input type="checkbox" id="1" class="filled-in" checked="checked"/>
+                <span   for="1">HOME</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="2" class="filled-in"  />
+                  <span>Interior Designer</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="3" class="filled-in"  />
+                  <span >Homeware Store</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="4" class="filled-in"  />
+                  <span>Hardware Store</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="5" class="filled-in"  />
+                  <span>Kitchenware Store</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="5" class="filled-in"  />
+                  <span>Maid Center</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="4" class="filled-in"  />
+                  <span>Estate Agency</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="5" class="filled-in"  />
+                  <span>Sanitary Service</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="5" class="filled-in"  />
+                  <span>Security Service</span>
+                </label>
+              </p>
+              
+            </div>
+            <!-- Modal -->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <h4>Accommodation</h4>
+                <hr>
+                  <p class="white" style="background-color: red;">General Amenities Offered</p>
+                <hr>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Booking Service</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Free Wi-Fi</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>24 Hour check-in</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Door-Man</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Conference Room</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Gym</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Garage</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Elevator</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Events Venue</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>POS Available</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Booking Service</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Free Wi-Fi</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>24 Hour check-in</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Door-Man</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Conference Room</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Booking Service</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Free Wi-Fi</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>24 Hour check-in</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Door-Man</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Conference Room</span>
+                    </label>
+                  </p>
+                </div>
+                <a href="#">Close</a>
+              </div>
+
+            </div>
+            <!-- end of model -->
+
+
+          </div>
+
+          <!-- end  -->
+          <div class="col s12 m4">
+            <div class="centered2">
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>MEDIA</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Photo Agency</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Marketing Agency</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Video Agency</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Event Planner</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Modelling Agency</span>
+                </label>
+              </p>
+              
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>TV Station</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>checkbox Station</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Equipment Hire</span>
+                </label>
+              </p>
+            </div>
+          </div>
+
+
+          <!-- end 3 -->
+          <div class="col s12 m4">
+            <!-- <img > -->
+            <div class="centered2">
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>TRAVEL</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Airline</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>Travel Agency</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Bureau</span>
+                </label>
+              </p>
+              
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- end fourth -->
+
+
+
+
+
+        <!-- fith -->
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="centered2">
+              <p >
+                <label >
+                <input type="checkbox" id="1" class="filled-in" checked="checked"/>
+                <span   for="1">SPORT</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="2" class="filled-in"  />
+                  <span>Soccer Academy</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="3" class="filled-in"  />
+                  <span >Tennis Academy</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="4" class="filled-in"  />
+                  <span>Golf Academy</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="5" class="filled-in"  />
+                  <span>Basketball Academy</span>
+                </label>
+              </p>
+              
+            </div>
+            <!-- Modal -->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <h4>Accommodation</h4>
+                <hr>
+                  <p class="white" style="background-color: red;">General Amenities Offered</p>
+                <hr>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Booking Service</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Free Wi-Fi</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>24 Hour check-in</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Door-Man</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Conference Room</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Gym</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Garage</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Elevator</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Events Venue</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>POS Available</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Booking Service</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Free Wi-Fi</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>24 Hour check-in</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Door-Man</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Conference Room</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Booking Service</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Free Wi-Fi</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>24 Hour check-in</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Door-Man</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Conference Room</span>
+                    </label>
+                  </p>
+                </div>
+                <a href="#">Close</a>
+              </div>
+
+            </div>
+            <!-- end of model -->
+
+
+          </div>
+
+          <!-- end  -->
+          <div class="col s12 m4">
+            <div class="centered2">
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>PRINTING</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Printing Service</span>
+                </label>
+              </p>
+            </div>
+          </div>
+
+
+          <!-- end 3 -->
+          <div class="col s12 m4">
+            <!-- <img > -->
+            <div class="centered2">
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>TECHNOLOGY</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Telecom Company</span>
+                </label>
+              </p>
+               <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>IT Service</span>
+                </label>
+              </p>
+               <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Internet Provider</span>
+                </label>
+              </p>
+              
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- end  -->
+
+
+        <!-- sixth -->
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="centered2">
+              <p >
+                <label >
+                <input type="checkbox" id="1" class="filled-in" checked="checked"/>
+                <span  for="1">AUTOMOBILE</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="2" class="filled-in"  />
+                  <span>Spares Store</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="3" class="filled-in"  />
+                  <span >Garage</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="4" class="filled-in"  />
+                  <span>Car Dealership</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="5" class="filled-in"  />
+                  <span>Car Hire</span>
+                </label>
+              </p>
+               <p>
+                <label>
+                  <input type="checkbox" id="5" class="filled-in"  />
+                  <span>Car Wash</span>
+                </label>
+              </p>
+               <p>
+                <label>
+                  <input type="checkbox" id="5" class="filled-in"  />
+                  <span>Driving School</span>
+                </label>
+              </p>
+              
+            </div>
+            <!-- Modal -->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <h4>Accommodation</h4>
+                <hr>
+                  <p class="white" style="background-color: red;">General Amenities Offered</p>
+                <hr>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Booking Service</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Free Wi-Fi</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>24 Hour check-in</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Door-Man</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Conference Room</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Gym</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Garage</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Elevator</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Events Venue</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>POS Available</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Booking Service</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Free Wi-Fi</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>24 Hour check-in</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Door-Man</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Conference Room</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Booking Service</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Free Wi-Fi</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>24 Hour check-in</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Door-Man</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Conference Room</span>
+                    </label>
+                  </p>
+                </div>
+                <a href="#">Close</a>
+              </div>
+
+            </div>
+            <!-- end of model -->
+
+
+          </div>
+
+          <!-- end  -->
+          <div class="col s12 m4">
+            <div class="centered2">
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>TRANSPORT</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Bus Service</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Truck Service</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Courier Service</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Clearing Agent</span>
+                </label>
+              </p>
+            </div>
+          </div>
+
+
+          <!-- end 3 -->
+          <div class="col s12 m4">
+            <!-- <img > -->
+            <div class="centered2">
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>HEALTH</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Hospital</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Clinic</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Pharmacy</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Dentist</span>
+                </label>
+              </p>
+              
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- end of sixth -->
+
+        <!-- seventh -->
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="centered2">
+              <p >
+                <label >
+                <input type="checkbox" id="1" class="filled-in" checked="checked"/>
+                <span  for="1">FINANCE</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="2" class="filled-in"  />
+                  <span>Bank</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="3" class="filled-in"  />
+                  <span >Insurance Broker</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="4" class="filled-in"  />
+                  <span>Accounting Firm</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="5" class="filled-in"  />
+                  <span>Micro Finance Firm</span>
+                </label>
+              </p>
+              
+            </div>
+            <!-- Modal -->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <h4>Accommodation</h4>
+                <hr>
+                  <p class="white" style="background-color: red;">General Amenities Offered</p>
+                <hr>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Booking Service</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Free Wi-Fi</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>24 Hour check-in</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Door-Man</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Conference Room</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Gym</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Garage</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Elevator</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Events Venue</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>POS Available</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Booking Service</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Free Wi-Fi</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>24 Hour check-in</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Door-Man</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Conference Room</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Booking Service</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Free Wi-Fi</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>24 Hour check-in</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Door-Man</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Conference Room</span>
+                    </label>
+                  </p>
+                </div>
+                <a href="#">Close</a>
+              </div>
+
+            </div>
+            <!-- end of model -->
+
+
+          </div>
+
+          <!-- end  -->
+          <div class="col s12 m4">
+            <div class="centered2">
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>LEGAL-CONSULTANCY</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Law firm</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Consultancy Firm</span>
+                </label>
+              </p>
+            </div>
+          </div>
+
+
+          <!-- end 3 -->
+          <div class="col s12 m4">
+            <!-- <img > -->
+            <div class="centered2">
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>EDUCATION</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Nursery School</span>
+                </label>
+              </p>
+               <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Pri-Sec School</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Primary School</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Secondary School</span>
+                </label>
+              </p>
+               <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Tuition Center</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>University</span>
+                </label>
+              </p>
+             
+              
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- end of seventh -->
+
+            <!-- eigth -->
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="centered2">
+              <p >
+                <label >
+                <input type="checkbox" id="1" class="filled-in" checked="checked"/>
+                <span  for="1">AGRICULTURE</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="2" class="filled-in"  />
+                  <span>Crop Farm</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="3" class="filled-in"  />
+                  <span >Pig Farm</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="4" class="filled-in"  />
+                  <span>Poultry Farm</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="5" class="filled-in"  />
+                  <span>Cattle Farm</span>
+                </label>
+              </p>
+               <p>
+                <label>
+                  <input type="checkbox" id="3" class="filled-in"  />
+                  <span >Diary Farm</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="4" class="filled-in"  />
+                  <span>Farm Product Store</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="5" class="filled-in"  />
+                  <span>Farm Equipment Store</span>
+                </label>
+              </p>
+              
+            </div>
+            <!-- Modal -->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <h4>Accommodation</h4>
+                <hr>
+                  <p class="white" style="background-color: red;">General Amenities Offered</p>
+                <hr>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Booking Service</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Free Wi-Fi</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>24 Hour check-in</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Door-Man</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Conference Room</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Gym</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Garage</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Elevator</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Events Venue</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>POS Available</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Booking Service</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Free Wi-Fi</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>24 Hour check-in</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Door-Man</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Conference Room</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Booking Service</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Free Wi-Fi</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>24 Hour check-in</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Door-Man</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Conference Room</span>
+                    </label>
+                  </p>
+                </div>
+                <a href="#">Close</a>
+              </div>
+
+            </div>
+            <!-- end of model -->
+
+
+          </div>
+
+          <!-- end  -->
+          <div class="col s12 m4">
+            <div class="centered2">
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>ANIMAL</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Pet Shop</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Veterinary</span>
+                </label>
+              </p>
+            </div>
+          </div>
+
+
+          <!-- end 3 -->
+          <div class="col s12 m4">
+            <!-- <img > -->
+            <div class="centered2">
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>MANUFACTURERS</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Textiles Manufacturer</span>
+                </label>
+              </p>
+               <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Commodity Manufacture</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Building Material Manufacturer</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Hardware Manufacturer</span>
+                </label>
+              </p>
+               <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Timber Manufacturer</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Steel Manufacturer</span>
+                </label>
+              </p>
+             
+              
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- end of eigth -->
+
+             <!-- Ninth -->
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="centered2">
+              <p >
+                <label >
+                <input type="checkbox" id="1" class="filled-in" checked="checked"/>
+                <span  for="1"> CONSTRUCTION</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="2" class="filled-in"  />
+                  <span>Equipment Hire</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="3" class="filled-in"  />
+                  <span >Equipment Repairer</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" id="4" class="filled-in"  />
+                  <span>Engineering Company</span>
+                </label>
+              </p>
+              
+              
+            </div>
+            <!-- Modal -->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <h4>Accommodation</h4>
+                <hr>
+                  <p class="white" style="background-color: red;">General Amenities Offered</p>
+                <hr>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Booking Service</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Free Wi-Fi</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>24 Hour check-in</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Door-Man</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Conference Room</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Gym</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Garage</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Elevator</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Events Venue</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>POS Available</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Booking Service</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Free Wi-Fi</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>24 Hour check-in</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Door-Man</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Conference Room</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col s3">
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Booking Service</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Bar</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Free Wi-Fi</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>24 Hour check-in</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Door-Man</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" id="5" class="filled-in" />
+                      <span>Conference Room</span>
+                    </label>
+                  </p>
+                </div>
+                <a href="#">Close</a>
+              </div>
+
+            </div>
+            <!-- end of model -->
+
+
+          </div>
+
+          <!-- end  -->
+         
+
+
+          
+
+
+        </div>
+
+        <!-- end of eigth -->
+
+                <div class="center">
+                 <a class ="btn red" href="tab3.html">Previous</a>
+                 <a class ="btn red" href="tab5.html">Next</a>
+                </div>
+              </div>
+        
+          </div>
+        </div>
+
+      <!-- end tab 3 -->
+
+      <!-- model -->
+
+
+
+
+
+  
+ 
+ 
+ </div>
+ 
+ 
+ 
+ 
+ <br /><br />
+ 
+ 
+
+
+<!-- Modals -->
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+
+
+// test
+
+$("input:checkbox").on('click', function() {
+  // in the handler, 'this' refers to the box clicked on
+  var $box = $(this);
+  if ($box.is(":checked")) {
+    // the name of the box is retrieved using the .attr() method
+    // as it is assumed and expected to be immutable
+    var group = "input:checkbox[name='" + $box.attr("name") + "']";
+    // the checked state of the group/box on the other hand will change
+    // and the current value is retrieved using .prop() method
+    $(group).prop("checked", false);
+    $box.prop("checked", true);
+  } else {
+    $box.prop("checked", false);
+  }
+});
+
+</script>
+
+
+
+
+<script src="../../../js/jquery-3.1.1.min.js"></script>
+<script src='../../../js/init.js'></script>
+<script src="../../../js/materialize.js"></script>
+<script src='../../../js/materialize.min.js'></script>
+<script src='../../../js/jquery.steps.min.js'></script>
+<!--<script  src="js/index.js"></script> -->
+
+</body>
+</html>
