@@ -85,7 +85,7 @@ span.progress{
   margin-right: 16px;
   margin-bottom: 16px;
   float: left;
-  width: 60px;
+  width: 58px;
   height: 45px;
   overflow: hidden;
   left: 15px;
@@ -145,4 +145,8 @@ td, th {
 
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+
+.navss {
+  padding-left: 335px;
 }
